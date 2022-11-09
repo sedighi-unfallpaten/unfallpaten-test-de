@@ -1,0 +1,7272 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Axiforma';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#scrolli {
+    position: fixed;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    bottom: 0px;
+    right: 0px;
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+    opacity: 80%;
+    transition: 0.9s;
+    text-decoration: none;
+}
+
+#scrolli:focus {
+    outline: none;
+}
+
+.fa {
+    color: #140f2d;
+    font-size: 18px;
+}
+
+#scrolli:hover {
+    background-color: #ff8113;
+}
+
+header.navtop {
+    background-color: #FFFFFF;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    opacity: 96%;
+    transition: 0.4s;
+    /* max-height: 5.5%; */
+}
+
+
+/* header.navtop nav a img {
+    position: relative;
+    width: 55%;
+    top: 4pxpx;
+} */
+
+.pe-richsnippets {
+    display: none;
+}
+
+
+/* @media screen and (max-width: 981px) {
+    header.navtop {
+        height: 2.5%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    header.navtop {
+        height: 3.5%;
+    }
+} */
+
+
+/* @media screen and (max-width: 980px) {
+    header.navtop .imgobenrechts {
+        width: auto;
+        height: auto;
+    }
+} */
+
+@media screen and (max-width: 980px) {
+    header.navtop .imgoben {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    header.navtop .imgobenlinks {
+        position: relative;
+        bottom: 10px;
+    }
+}
+
+
+/* @media screen and (max-width: 980px) {
+    header.navtop {
+        height: 54px;
+    }
+} */
+
+header.navtop .bl {
+    bottom: auto;
+}
+
+@media (min-width: 150px) and (max-width: 778px) {
+    /* header.navtop nav a img {
+        position: relative;
+        width: 40%;
+        /* top: 4pxpx;
+    } */
+    header.navtop .imgobenrechts {
+        width: 90%;
+        position: relative;
+        bottom: 17.6px;
+        /* height: auto; */
+    }
+}
+
+@media (min-width: 778) and (max-width: 899px) {
+    /* header.navtop nav a img {
+        position: relative;
+        width: 40%;
+        /* top: 4pxpx;
+    } */
+    header.navtop .imgobenrechts {
+        width: 50%;
+        /* height: auto; */
+    }
+}
+
+@media (min-width: 900px) and (max-width: 4000px) {
+    header.navtop .imgobenrechts {
+        width: 50%;
+        /* height: auto; */
+    }
+}
+
+@media (min-width: 200px) and (max-width: 4000px) {
+    header.navtop ul li a {
+        position: relative;
+        align-items: center;
+        /* bottom: -3%; */
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1700px) and (max-width: 4000px) {
+    header.navtop .bl {
+        bottom: 3.8px;
+        position: relative;
+        align-items: center;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1444px) and (max-width: 1800px) {
+    header.navtop .bl {
+        top: -2.6px;
+        position: relative;
+        align-items: center;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1151px) and (max-width: 1444px) {
+    header.navtop .bl {
+        top: -1px;
+        position: relative;
+        align-items: center;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1150px) {
+    header.navtop .bl {
+        top: -0.4px;
+        position: relative;
+        align-items: center;
+        font-size: 13px;
+    }
+}
+
+@media(min-width: 200px) and (max-width: 4000px) {
+    header.navtop {
+        height: 60px !important;
+    }
+}
+
+@media(min-height: 200px) and (max-height: 4000px) {
+    header.navtop {
+        height: auto;
+    }
+    header.navtop nav a img {
+        width: 60%;
+        /* top: 4px; */
+    }
+}
+
+@media screen and (Max-Width:980px) {
+    #scrolli {
+        position: fixed;
+        margin-bottom: 5px;
+        margin-right: 5px;
+        margin-top: 5px;
+        bottom: 0px;
+        right: 0px;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+    }
+}
+
+body,
+textarea,
+input {
+    padding: 0;
+    margin: 0;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #000000;
+    font-family: 'Axiforma';
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    display: inline-block;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-Thin.eot');
+    src: local('Axiforma Thin'), local('Axiforma-Thin'), url('../fonts/Axiforma-Thin.eot?#iefix') format('embedded-opentype'), url('../fonts/Axiforma-Thin.woff2') format('woff2'), url('../fonts/Axiforma-Thin.woff') format('woff'), url('../fonts/Axiforma-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-ThinItalic.eot');
+    src: local('Axiforma Thin Italic'), local('Axiforma-ThinItalic'), url('../fonts/Axiforma-ThinItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/Axiforma-ThinItalic.woff2') format('woff2'), url('../fonts/Axiforma-ThinItalic.woff') format('woff'), url('../fonts/Axiforma-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-Light.eot');
+    src: local('Axiforma Light'), local('Axiforma-Light'), url('../fonts/Axiforma-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Axiforma-Light.woff2') format('woff2'), url('../fonts/Axiforma-Light.woff') format('woff'), url('../fonts/Axiforma-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-LightItalic.eot');
+    src: local('Axiforma Light Italic'), local('Axiforma-LightItalic'), url('../fonts/Axiforma-LightItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/Axiforma-LightItalic.woff2') format('woff2'), url('../fonts/Axiforma-LightItalic.woff') format('woff'), url('../fonts/Axiforma-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-Regular.eot');
+    src: local('Axiforma Regular'), local('Axiforma-Regular'), url('../fonts/Axiforma-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Axiforma-Regular.woff2') format('woff2'), url('../fonts/Axiforma-Regular.woff') format('woff'), url('../fonts/Axiforma-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-Italic.eot');
+    src: local('Axiforma Italic'), local('Axiforma-Italic'), url('../fonts/Axiforma-Italic.eot?#iefix') format('embedded-opentype'), url('../fonts/Axiforma-Italic.woff2') format('woff2'), url('../fonts/Axiforma-Italic.woff') format('woff'), url('../fonts/Axiforma-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-Medium.eot');
+    src: local('Axiforma Medium'), local('Axiforma-Medium'), url('../fonts/Axiforma-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Axiforma-Medium.woff2') format('woff2'), url('../fonts/Axiforma-Medium.woff') format('woff'), url('../fonts/Axiforma-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-MediumItalic.eot');
+    src: local('Axiforma Medium Italic'), local('Axiforma-MediumItalic'), url('../fonts/Axiforma-MediumItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/Axiforma-MediumItalic.woff2') format('woff2'), url('../fonts/Axiforma-MediumItalic.woff') format('woff'), url('../fonts/Axiforma-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-SemiBold.eot');
+    src: local('Axiforma SemiBold'), local('Axiforma-SemiBold'), url('../fonts/Axiforma-SemiBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Axiforma-SemiBold.woff2') format('woff2'), url('../fonts/Axiforma-SemiBold.woff') format('woff'), url('../fonts/Axiforma-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-SemiBoldItalic.eot');
+    src: local('Axiforma SemiBold Italic'), local('Axiforma-SemiBoldItalic'), url('../fonts/Axiforma-SemiBoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/Axiforma-SemiBoldItalic.woff2') format('woff2'), url('../fonts/Axiforma-SemiBoldItalic.woff') format('woff'), url('../fonts/Axiforma-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-Bold.eot');
+    src: local('Axiforma Bold'), local('Axiforma-Bold'), url('../fonts/Axiforma-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Axiforma-Bold.woff2') format('woff2'), url('../fonts/Axiforma-Bold.woff') format('woff'), url('../fonts/Axiforma-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-BoldItalic.eot');
+    src: local('Axiforma Bold Italic'), local('Axiforma-BoldItalic'), url('../fonts/Axiforma-BoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/Axiforma-BoldItalic.woff2') format('woff2'), url('../fonts/Axiforma-BoldItalic.woff') format('woff'), url('../fonts/Axiforma-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-Book.eot');
+    src: local('Axiforma Book'), local('Axiforma-Book'), url('../fonts/Axiforma-Book.eot?#iefix') format('embedded-opentype'), url('../fonts/Axiforma-Book.woff2') format('woff2'), url('../fonts/Axiforma-Book.woff') format('woff'), url('../fonts/Axiforma-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-BookItalic.eot');
+    src: local('Axiforma Book Italic'), local('Axiforma-BookItalic'), url('../fonts/Axiforma-BookItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/Axiforma-BookItalic.woff2') format('woff2'), url('../fonts/Axiforma-BookItalic.woff') format('woff'), url('../fonts/Axiforma-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-ExtraBold.eot');
+    src: local('Axiforma ExtraBold'), local('Axiforma-ExtraBold'), url('../fonts/Axiforma-ExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/Axiforma-ExtraBold.woff2') format('woff2'), url('../fonts/Axiforma-ExtraBold.woff') format('woff'), url('../fonts/Axiforma-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-ExtraBoldItalic.eot');
+    src: local('Axiforma ExtraBold Italic'), local('Axiforma-ExtraBoldItalic'), url('../fonts/Axiforma-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/Axiforma-ExtraBoldItalic.woff2') format('woff2'), url('../fonts/Axiforma-ExtraBoldItalic.woff') format('woff'), url('../fonts/Axiforma-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-Heavy.eot');
+    src: local('Axiforma Heavy'), local('Axiforma-Heavy'), url('../fonts/Axiforma-Heavy.eot?#iefix') format('embedded-opentype'), url('../fonts/Axiforma-Heavy.woff2') format('woff2'), url('../fonts/Axiforma-Heavy.woff') format('woff'), url('../fonts/Axiforma-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-HeavyItalic.eot');
+    src: local('Axiforma Heavy Italic'), local('Axiforma-HeavyItalic'), url('../fonts/Axiforma-HeavyItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/Axiforma-HeavyItalic.woff2') format('woff2'), url('../fonts/Axiforma-HeavyItalic.woff') format('woff'), url('../fonts/Axiforma-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-Black.eot');
+    src: local('Axiforma Black'), local('Axiforma-Black'), url('../fonts/Axiforma-Black.eot?#iefix') format('embedded-opentype'), url('../fonts/Axiforma-Black.woff2') format('woff2'), url('../fonts/Axiforma-Black.woff') format('woff'), url('../fonts/Axiforma-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-BlackItalic.eot');
+    src: local('Axiforma Black Italic'), local('Axiforma-BlackItalic'), url('../fonts/Axiforma-BlackItalic.eot?#iefix') format('embedded-opentype'), url('../fonts/Axiforma-BlackItalic.woff2') format('woff2'), url('../fonts/Axiforma-BlackItalic.woff') format('woff'), url('../fonts/Axiforma-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+/*-_-_Header_CSS_Start_-_-*/
+
+header .navbar {
+    padding: 17.8px 5px 13.3px;
+}
+
+header .navbar .navbar-brand {
+    padding: 0;
+}
+
+header .navbar .navbar-brand img {
+    max-width: 334px;
+}
+
+header .navbar-nav {
+    align-items: center;
+}
+
+header .navbar-nav li {
+    margin-left: 50px;
+}
+
+header .navbar-nav li:first-child {
+    margin-left: 0;
+}
+
+header .navbar-nav li:last-child {
+    margin-left: 65px;
+}
+
+header .navbar-nav li a {
+    font-size: 24px;
+    line-height: 1.35;
+    color: #343434;
+    display: inline-block;
+    padding: 0 !important;
+}
+
+header .navbar-nav li a.dropdown-toggle::after {
+    content: "\f107";
+    font-family: "Fontawesome";
+    border: 0;
+    margin-left: 17.7px;
+    font-size: 24px;
+    line-height: 1;
+    vertical-align: unset;
+    color: #343434;
+}
+
+header .navbar-nav li .dropdown-menu .dropdown-item {
+    border-radius: 29px;
+    padding: 8px 30px 8px 20px !important;
+    font-size: 22px;
+    transition: transform;
+}
+
+header .navbar-nav li .dropdown-menu .dropdown-item:hover {
+    transition: 0.4s;
+    transform: scale(1.06);
+    border-bottom: rgb(214, 131, 22), 3px solid;
+    color: #ff8113;
+}
+
+header .navbar-nav ul #nava {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+}
+
+#nava li:hover ul#nava {
+    opacity: 1;
+    visibility: visible;
+}
+
+header .navbar-nav li:last-child a {
+    border-radius: 20px;
+    border: 3px solid #FF7800;
+    padding: 0.5px 30px !important;
+    display: inline-block;
+}
+
+.user-dropdown {
+    display: none;
+}
+
+
+/*-_-_Header_CSS_End_-_-*/
+
+
+/*-_-_Banner_CSS_Start_-_-*/
+
+.banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    border: 2px solid #F07D00;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: #ff8c00;
+}
+
+header .navbar-nav li .dropdown-menu .fa:hover {
+    transition: 0.4s;
+    transform: scale(1.06);
+    border-bottom: rgb(214, 131, 22), 3px solid;
+    color: #ff8113;
+}
+
+
+/*
+.claims-settlement-wrap .claims-settlement-content .bild1 {
+
+height: 90px;
+width: 100px;
+}
+.claims-settlement-wrap .claims-settlement-content .bild2 {
+
+	height: 90px;
+	width: 100px;
+}
+.claims-settlement-wrap .claims-settlement-content .bild3 {
+
+		height: 90px;
+		width: 100px;
+}
+.claims-settlement-wrap .claims-settlement-content .bild4 {
+
+		height: 90px;
+		width: 100px;
+}
+
+*/
+
+.banner .call-now {
+    font-weight: bolder;
+    font-family: Axiforma;
+    height: 61px;
+    width: 240px;
+    background: #000000;
+    font-size: 21px;
+    line-height: 1;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    position: fixed;
+    top: 235px;
+    right: -89px;
+    transform: rotate(270deg);
+    z-index: 4;
+}
+
+.call-now .fa {
+    color: #FFFFFF;
+    z-index: 5;
+}
+
+.banner .wa-now {
+    height: 61px;
+    width: 240px;
+    background: #34af23;
+    border-radius: 2px;
+    font-size: 22px;
+    line-height: 1;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    position: fixed;
+    top: 235px;
+    right: -89px;
+    transform: rotate(270deg);
+    z-index: 50;
+}
+
+.banner .wa-now i {
+    margin-right: 9px;
+    font-size: 24px;
+}
+
+.banner .call-now i {
+    margin-right: 9px;
+    font-size: 24px;
+}
+
+.banner .banner-content {
+    padding: 155.5px 0 171px;
+    z-index: 1;
+    width: 50%;
+}
+
+.banner .banner-content h1,
+.banner .banner-content h2 {
+    font-size: 48px;
+    line-height: 1.34;
+    font-weight: 700;
+    color: #FF7800;
+    margin-bottom: 7px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner .banner-content h1 {
+    opacity: 0;
+    z-index: -50;
+    position: absolute;
+}
+
+.banner .banner-content h2:last-child {
+    margin-bottom: 0;
+}
+
+.banner .banner-content p {
+    font-size: 36px;
+    line-height: 1.34;
+    color: #FF7800;
+    margin-bottom: 22px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner .banner-content .banner-btn {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 22px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner .banner-content .banner-btn a {
+    font-size: 25px;
+    line-height: 1.3;
+    height: 63px;
+    border-radius: 36px;
+    background: #373737;
+    margin-right: 39px;
+    width: 347px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 8px rgb(189, 181, 181);
+}
+
+.banner .banner-content .kfz-gutachter a {
+    box-shadow: 1px 1px 1px rgb(163, 79, 79);
+}
+
+
+/* 	text-shadow: 0 0 0.125em rgb(219, 217, 217), 0 0 0.25em currentColor;*/
+
+.banner .banner-content .banner-btn a:hover {
+    background-color: transparent;
+    border: 2px solid #FF7800;
+    cursor: pointer;
+    color: #000000;
+    transition: 0.4s;
+}
+
+.banner .banner-content .btn a:hover {
+    background-color: #FFFFFF;
+    border: 2px solid #FF7800;
+    cursor: pointer;
+    color: #000000;
+    transition: 0.4s;
+}
+
+.banner .banner-content .kfz-gutachter a:hover {
+    background-color: transparent;
+    border: 2px solid rgb(85, 85, 85);
+    cursor: pointer;
+    color: #000000;
+    transition: 0.3s;
+    background: whitesmoke;
+}
+
+.banner .banner-content .banner-btn a:last-child {
+    margin-right: 0;
+}
+
+.banner .banner-content ul {
+    padding-left: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner .banner-content ul li {
+    font-size: 36px;
+    line-height: 1.4;
+    padding-left: 45.5px;
+    color: #343434;
+    position: relative;
+}
+
+.banner .banner-content ul li.active {
+    font-weight: 700;
+}
+
+.banner .banner-content ul li::before {
+    content: "";
+    background: url(../img/page/check-mark.svg) center center no-repeat;
+    background-size: contain;
+    width: 29px;
+    height: 24px;
+    top: 10px;
+    left: 0;
+    position: absolute;
+}
+
+.banner .banner-content img.banner-desktop-img {
+    position: absolute;
+    top: 55.5px;
+    right: -6.5%;
+    width: 85%;
+    z-index: 0;
+}
+
+.banner .banner-content img.banner-mobile-img {
+    display: none;
+}
+
+
+/*-_-_Banner_CSS_End_-_-*/
+
+
+/*-_-_Content_CSS_Start_-_-*/
+
+h2 {
+    font-size: 51px;
+    line-height: 1;
+    color: #fff;
+}
+
+h3 {
+    font-size: 36px;
+    line-height: 1;
+    color: #fff;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 1;
+}
+
+.claims-settlement-wrap {
+    background: #F8F8F8;
+}
+
+.claims-settlement-wrap .claims-settlement-content {
+    text-align: center;
+    padding: 23px 0 42px;
+}
+
+.claims-settlement-wrap .claims-settlement-content p {
+    font-size: 25px;
+    line-height: 1;
+    margin-bottom: 18px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.58);
+    font-weight: bold;
+}
+
+.claims-settlement-wrap .claims-settlement-content ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.claims-settlement-wrap .claims-settlement-content ul li {
+    padding: 0 35.5px;
+}
+
+.handling-accident-step-wrap {
+    background: #FF9D33;
+}
+
+.handling-accident-step-wrap .handling-accident-step {
+    text-align: center;
+    padding: 77px 0 173px;
+}
+
+.handling-accident-step-wrap .handling-accident-step h2 {
+    color: #fff;
+    margin-bottom: 136px;
+}
+
+.handling-accident-step-wrap .handling-accident-step h2 span {
+    font-weight: 700;
+}
+
+.handling-accident-step-row {
+    margin: 0 -29.5px;
+}
+
+.handling-accident-step-row .handling-accident-step-col {
+    padding: 0 29.5px;
+}
+
+.handling-accident-step-img {
+    width: 172px;
+    height: 163px;
+    margin: 0 auto 78.6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.handling-accident-step-accordian .handling-accident-step-heading {
+    font-size: 30px;
+    line-height: 1;
+    padding: 20px 64.5px 11.4px;
+    border-radius: 32px;
+    background: #fff;
+    display: block;
+    color: #1A1A1A;
+    position: relative;
+    transition: 0.4s all ease;
+}
+
+.handling-accident-step-accordian.active .handling-accident-step-heading {
+    border-radius: 32px 32px 0 0;
+}
+
+.handling-accident-step-accordian.active .handling-accident-step-heading::after {
+    border: 0;
+    transform: rotate(180deg);
+}
+
+.handling-accident-step-accordian .handling-accident-step-heading::after {
+    width: 64.5px;
+    height: 100%;
+    content: "\f107";
+    font-family: "Fontawesome";
+    right: 0px;
+    top: 0;
+    border-left: 1px solid #FFA23F;
+    position: absolute;
+    color: #FFA23F;
+    font-size: 50px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 6px;
+    transition: 0.2s all ease;
+}
+
+.handling-accident-step-accordian .handling-accident-step-content {
+    padding: 15px 20px 24px;
+    border-radius: 0 0 32px 32px;
+    background: #fff;
+    display: none;
+}
+
+.handling-accident-step-accordian .handling-accident-step-content p {
+    font-size: 18px;
+    line-height: 1.48;
+}
+
+.accident-sponsors-wrap {
+    background: #424242;
+}
+
+.accident-sponsors-wrap .accident-sponsors-content {
+    padding: 62px 0 85px;
+}
+
+.accident-sponsors-wrap .accident-sponsors-content>h3 {
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 107px;
+    text-align: center;
+}
+
+.accident-sponsors-wrap .accident-sponsors-content .accident-sponsors-row {
+    justify-content: center;
+}
+
+.accident-sponsors-content-inner {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 370px;
+}
+
+.accident-sponsors-content-inner h3 {
+    /* font-weight: 700; */
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.accident-sponsors-content-inner h3:last-child {
+    margin-bottom: 0;
+    line-height: 1.34;
+}
+
+.accident-sponsors-content-inner h2 {
+    font-weight: 700;
+    color: #F07D00;
+    margin-bottom: 16px;
+}
+
+.all-services-wrap {
+    background: #FF9D33;
+}
+
+.all-services-wrap .all-services-content {
+    padding: 124px 0 80px;
+}
+
+.all-services-wrap .all-services-content>h2 {
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.all-services-wrap .all-services-content>h3 {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 138px;
+}
+
+.our-services {
+    display: flex;
+    align-items: center;
+    padding-left: 62px;
+    margin-bottom: 79px;
+}
+
+.our-services .our-services-img {
+    height: 167px;
+    width: 154px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 67px;
+}
+
+.our-services .our-services-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.our-services .our-services-content {
+    max-width: 407px;
+}
+
+.our-services .our-services-content .qua {
+    color: #000000;
+}
+
+.insurance-claim-wrap .versicherung {
+    color: #000000;
+}
+
+.our-services .our-services-content h3 {
+    margin-bottom: 21px;
+    font-weight: bold;
+}
+
+.our-services .our-services-content p {
+    font-size: 22px;
+    line-height: 1.35;
+}
+
+.free-accident-handling-wrap {
+    background: rgb(35, 31, 31);
+}
+
+.free-accident-handling-wrap .free-accident-handling-content {
+    padding: 60px 0 98px;
+    text-align: center;
+    max-width: 925px;
+    margin: 0 auto;
+}
+
+.free-accident-handling-wrap .free-accident-handling-content h3 {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.free-accident-handling-wrap .free-accident-handling-content p {
+    color: #fff;
+    font-size: 25px;
+    line-height: 1.56;
+    margin-bottom: 41px;
+}
+
+.free-accident-handling-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.free-accident-handling-btn li {
+    margin-right: 39px;
+}
+
+.free-accident-handling-btn li:last-child {
+    margin-right: 0px;
+}
+
+.free-accident-handling-btn li a {
+    font-size: 25px;
+    line-height: 1.3;
+    height: 63px;
+    border-radius: 36px;
+    background: #FF9D33;
+    width: 347px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.free-accident-handling-btn li a:hover {
+    background-color: transparent;
+    border: 2px solid #FF7800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.free-accident-handling-btn-weiss-orange {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.free-accident-handling-btn-weiss-orange li {
+    margin-right: 39px;
+}
+
+.free-accident-handling-btn-weiss-orange li:last-child {
+    margin-right: 0px;
+}
+
+.free-accident-handling-btn-weiss-orange li a {
+    font-size: 25px;
+    line-height: 1.3;
+    height: 63px;
+    border-radius: 36px;
+    background: #FF7800;
+    width: 347px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 8px #858585;
+}
+
+
+/*	box-shadow: 3px 3px 8px #858585;
+*/
+
+.free-accident-handling-btn-weiss-orange a:hover {
+    background-color: transparent;
+    border: 2px solid #FF7800;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #000000;
+}
+
+.insurance-claim-wrap {
+    padding: 159px 0 108px;
+}
+
+.insurance-claim-wrap .insurance-claim-content {
+    max-width: 980px;
+    display: flex;
+    align-items: flex-end;
+    margin: 0 auto;
+}
+
+.insurance-claim-wrap .insurance-claim-content img {
+    width: 204px;
+}
+
+.insurance-claim-wrap .insurance-claim-content .insurance-claim-content-inner {
+    padding-left: 88px;
+    width: calc(100% - 204px);
+}
+
+.insurance-claim-wrap .insurance-claim-content .insurance-claim-content-inner h3 {
+    margin-bottom: 28px;
+    line-height: 1.2;
+    color: #1A1A1A;
+    font-weight: 700;
+}
+
+.insurance-claim-wrap .insurance-claim-content .insurance-claim-content-inner p {
+    font-size: 22px;
+    line-height: 1.56;
+    color: #000000;
+}
+
+.opposing-insurance-wrap {
+    padding: 100px 0 149px;
+}
+
+.opposing-insurance-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.opposing-insurance-row .opposing-insurance-col {
+    max-width: 468px;
+    width: 100%;
+}
+
+.opposing-insurance-row .opposing-insurance-col.active {
+    max-width: 533px;
+}
+
+.opposing-insurance-wrap .opposing-insurance-col.active .opposing-insurance-content {
+    padding: 34px 44px 56px 55px;
+    background: rgba(255, 120, 0, 0.07);
+    border-width: 3px;
+}
+
+.opposing-insurance-wrap .opposing-insurance-col.active ul li {
+    padding-left: 44px;
+}
+
+.opposing-insurance-wrap .opposing-insurance-content {
+    border: 1px solid #FF7800;
+    border-radius: 20px;
+    background: #FAFAFA;
+    padding: 58px 35px 74px 52px;
+}
+
+.opposing-insurance-wrap .opposing-insurance-content h5 {
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 58px;
+}
+
+.opposing-insurance-wrap .opposing-insurance-content>img {
+    display: block;
+    max-width: 333px;
+    margin: 0 auto 44px;
+}
+
+.opposing-insurance-wrap .opposing-insurance-content ul {
+    margin-bottom: 70px;
+}
+
+.opposing-insurance-wrap .opposing-insurance-content ul:last-child {
+    margin-bottom: 0px;
+}
+
+.opposing-insurance-wrap .opposing-insurance-content ul li {
+    border-bottom: 1px solid #B9B9B9;
+    padding: 30px 0 23.5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.opposing-insurance-wrap .opposing-insurance-content ul li:first-child {
+    padding-top: 0;
+}
+
+.opposing-insurance-wrap .opposing-insurance-content ul li:last-child {
+    padding-bottom: 0;
+    border: 0;
+}
+
+.opposing-insurance-wrap .opposing-insurance-content ul li img {
+    width: 67px;
+}
+
+.opposing-insurance-wrap .opposing-insurance-content ul li .opposing-insurance-content-inner {
+    width: calc(100% - 67px);
+    padding-left: 43px;
+}
+
+.opposing-insurance-content-inner h6 {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.opposing-insurance-content-inner p {
+    font-size: 22px;
+    line-height: 1.35;
+}
+
+.opposing-insurance-wrap .opposing-insurance-content .opposing-insurance-btn {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 13px;
+}
+
+.opposing-insurance-wrap .opposing-insurance-content .opposing-insurance-btn a {
+    font-size: 22px;
+    line-height: 1.3;
+    height: 54px;
+    border-radius: 30px;
+    background: #FF7800;
+    width: 260px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.opposing-insurance-wrap .opposing-insurance-content .opposing-insurance-btn a:last-child {
+    margin-bottom: 0;
+}
+
+.customers-say-wrap {
+    background: #F8F8F8;
+    padding: 80px 0 114px;
+}
+
+.customers-say-slider.slick-slider.customers-say-slider-mobile {
+    display: none !important;
+}
+
+.customers-say-wrap .customers-say-content {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.customers-say-wrap .customers-say-content h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 115px;
+}
+
+.customers-say-slider .customers-say-slide {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 31px;
+}
+
+.customers-say-slider .customers-say-slide .customers-say-slide-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 112px;
+    align-items: center;
+}
+
+.customers-say-slide-img {
+    width: 198px;
+    height: 198px;
+    border: 10px solid #FF7800;
+    border-radius: 100px;
+    position: relative;
+}
+
+.customers-say-slide-content .customers-say-slide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.customers-say-slide-content .customers-say-slide-img .customers-say-slide-video {
+    background: rgba(255, 120, 0, 0.47);
+    height: 43px;
+    width: 100%;
+    font-size: 22px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    padding: 10px 0;
+    text-align: center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 15px;
+}
+
+.customers-say-slide-content .customers-say-slide-img .customers-say-slide-video i {
+    margin-right: 4px;
+}
+
+.customers-say-slide-content .customers-say-slide-content-inner {
+    width: calc(100% - 198px);
+    padding-left: 45px;
+}
+
+.customers-say-slide-content .customers-say-slide-content-inner h3 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    padding-left: 8px;
+    color: #000000;
+}
+
+.customers-say-slide-content .customers-say-slide-content-inner p {
+    font-size: 22px;
+    line-height: 1.2;
+    color: #000000;
+}
+
+.customers-say-slider.slick-slider {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+.customers-say-slider .slick-dots {
+    bottom: 0;
+}
+
+.customers-say-slider .slick-dots li,
+.customers-say-slider .slick-dots li button {
+    width: 70px;
+    height: 10px;
+    margin: 0;
+}
+
+.customers-say-slider .slick-dots li {
+    margin: 0 6px;
+}
+
+.customers-say-slider .slick-dots li button:before {
+    content: "";
+    background: rgba(255, 120, 0, 0.5);
+    width: 70px;
+    height: 10px;
+    opacity: 1;
+}
+
+.customers-say-slider .slick-dots .slick-active button:before {
+    background: rgba(255, 120, 0, 1);
+}
+
+.stay-in-touch-wrap {
+    background: #FF9D33;
+}
+
+.stay-in-touch-wrap .stay-in-touch-content {
+    padding: 35px 0 46px;
+    margin: 0 auto;
+    max-width: 845px;
+    text-align: center;
+}
+
+.stay-in-touch-wrap .stay-in-touch-content h3 {
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.stay-in-touch-wrap .stay-in-touch-content h6 {
+    font-size: 25px;
+    line-height: 1;
+    color: #000000;
+    margin-bottom: 13px;
+}
+
+.stay-in-touch-wrap .stay-in-touch-content p {
+    font-size: 25px;
+    line-height: 1.22;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.stay-in-touch-wrap .stay-in-touch-content form {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 420px;
+}
+
+.stay-in-touch-wrap .stay-in-touch-content form input {
+    width: calc(100% - 165px);
+    padding: 3px 28px 0 28px;
+    border-radius: 28px 0 0 28px;
+    background: #373737;
+    border: 0;
+    font-size: 21px;
+    font-weight: 400;
+    color: #fff;
+    outline: unset;
+    height: 56px;
+}
+
+.stay-in-touch-wrap .stay-in-touch-content form input::placeholder {
+    color: #fff;
+}
+
+.stay-in-touch-wrap .stay-in-touch-content form button {
+    font-size: 22px;
+    line-height: 1;
+    height: 56px;
+    border-radius: 0 28px 28px 0;
+    border: 0;
+    background: #fff;
+    width: 165px;
+    text-align: center;
+    outline: unset;
+    padding: 0;
+    padding-top: 3px;
+}
+
+
+/*-_-_Content_CSS_End_-_-*/
+
+
+/*-_-_Footer_CSS_Start_-_-*/
+
+footer {
+    background: #373737;
+}
+
+footer .footer-content {
+    padding: 143px 0 150px;
+    max-width: 1030px;
+    margin: 0 auto;
+}
+
+footer .footer-content .footer-logo {
+    max-width: 458px;
+    display: block;
+    margin: 0 auto 61px;
+}
+
+footer .footer-content .footer-logo img {
+    max-width: 100%;
+}
+
+footer .footer-content p {
+    font-size: 25px;
+    line-height: 1.42;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 214px;
+}
+
+.footer-link-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 884px;
+    width: 100%;
+    margin: 0 auto 33px;
+}
+
+.footer-link-wrap .footer-link-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.footer-link-wrap .footer-link-content:last-child {
+    max-width: 316px;
+}
+
+.footer-link-wrap .footer-link-content h5 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 45px;
+    width: 100%;
+}
+
+.footer-link-wrap .footer-link-content ul li a {
+    font-size: 24px;
+    line-height: 1.7;
+    color: #fff;
+}
+
+.footer-link-wrap .footer-link-content ul li a:hover {
+    color: #FF9D33;
+    transition: .4s;
+}
+
+.footer-link-wrap .footer-link-content ul {
+    margin-right: 55px;
+}
+
+.footer-link-wrap .footer-link-content ul:last-child {
+    margin-right: 0px;
+}
+
+.footer-social-outer-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 884px;
+    width: 100%;
+    margin: 0 auto 121px;
+}
+
+.ganzuntenlogs {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.footer-social-outer-wrap .footer-social-wrap {
+    padding-bottom: 10px;
+}
+
+.footer-social-outer-wrap .footer-social-wrap h6 {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #fff;
+    margin-bottom: 34px;
+}
+
+.footer-social-outer-wrap .footer-social-wrap ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-social-outer-wrap .footer-social-wrap ul li {
+    margin-right: 42.5px;
+}
+
+.footer-social-outer-wrap .footer-img-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.footer-social-outer-wrap .footer-img-wrap img {
+    margin-left: 21px;
+}
+
+.footer-social-outer-wrap .footer-img-wrap img:first-child {
+    width: 200px;
+    margin-left: 0;
+}
+
+.footer-social-outer-wrap .footer-img-wrap img:last-child {
+    width: 120px;
+    margin-bottom: 8px;
+}
+
+.footer-social-outer-wrap .footer-social-wrap img:first-child {
+    width: 32px;
+    text-align: center;
+}
+
+.footer-social-outer-wrap .footer-social-wrap img:last-child {
+    width: 32px;
+    text-align: center;
+}
+
+.footer-other-link-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*.faq {
+	padding-left: 250px;
+
+}*/
+
+.footer-other-link-wrap li {
+    padding: 0 8px;
+    position: relative;
+}
+
+.footer-other-link-wrap li::before {
+    position: absolute;
+    content: "|";
+    right: -3px;
+    top: -3px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.footer-other-link-wrap li:last-child:before {
+    display: none;
+}
+
+.footer-other-link-wrap li a {
+    font-size: 24px;
+    line-height: 1.05;
+    color: #fff;
+}
+
+
+/*-_-_Footer_CSS_End_-_-*/
+
+
+/*-_-_Index2_CSS_Start_-_-*/
+
+header.index2-header {
+    background: #FF9D33;
+}
+
+header.index2-header .navbar-nav li a {
+    color: #fff;
+}
+
+header.index2-header .navbar-nav li a.dropdown-toggle::after {
+    color: #fff;
+}
+
+header.index2-header .navbar-nav li:last-child a {
+    border-color: #fff;
+}
+
+header.index2-header .navbar-nav li .dropdown-menu .dropdown-item {
+    color: #373737;
+}
+
+header.index2-header .navbar-nav li .dropdown-menu .dropdown-item:hover {
+    color: #FF9D33;
+}
+
+.index2-banner.banner {
+    background: #FF9D33;
+}
+
+.index2-banner.banner .banner-content h1,
+.index2-banner.banner .banner-content h2,
+.index2-banner.banner .banner-content p,
+.index2-banner.banner .banner-content ul li {
+    color: #fff;
+}
+
+.index2-banner.banner .banner-content img.banner-desktop-img {
+    top: 105.5px;
+    right: -9%;
+    width: 68.8%;
+    height: auto;
+}
+
+.does-it-work-wrap {
+    background: #fff;
+    padding: 59px 0 130px;
+}
+
+.does-it-work-wrap h2 {
+    margin-bottom: 100px;
+    color: #000000;
+    text-align: center;
+}
+
+.does-it-work-wrap h3 {
+    color: #000000;
+}
+
+.does-it-work-wrap .does-it-work-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.does-it-work-wrap .does-it-work-content h3 {
+    margin-bottom: 74px;
+    font-weight: 700;
+}
+
+.does-it-work-wrap .does-it-work-list ul li {
+    font-size: 36px;
+    line-height: 2;
+    padding-left: 78px;
+    position: relative;
+    color: #000000;
+    margin-bottom: 6px;
+}
+
+.does-it-work-wrap .does-it-work-list ul li:last-child {
+    margin-bottom: 0;
+}
+
+.does-it-work-wrap .does-it-work-list ul li span {
+    position: absolute;
+    font-size: 36px;
+    line-height: 1;
+    width: 57px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    left: 0;
+    top: 4px;
+    padding-top: 5px;
+}
+
+.free-service-wrap {
+    background: #F8F8F8;
+    padding: 83px 0 85.5px;
+}
+
+.free-service-video video {
+    width: 100%;
+    height: 510px;
+}
+
+.free-service-img img {
+    height: 200px;
+    margin: 50px auto;
+    display: block;
+}
+
+.free-service-list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10%;
+}
+
+.free-service-list ul li {
+    font-size: 36px;
+    line-height: 2;
+    margin-bottom: 6px;
+    font-weight: 700;
+    padding-left: 53px;
+    position: relative;
+}
+
+.free-service-list ul li:last-child {
+    margin-bottom: 0;
+}
+
+.free-service-list ul li::before {
+    content: "";
+    background: url(../img/page/check-mark.svg) center center no-repeat;
+    background-size: contain;
+    width: 43px;
+    height: 32px;
+    top: 15px;
+    left: 0;
+    position: absolute;
+}
+
+.blitzmerker-wrap {
+    padding: 105px 0 71px;
+}
+
+.blitzmerker-wrap .blitzmerker-content {
+    text-align: center;
+}
+
+.blitzmerker-wrap .blitzmerker-content img {
+    margin-bottom: 29px;
+}
+
+.blitzmerker-wrap .blitzmerker-content h3 {
+    margin-bottom: 17px;
+    color: #FF7800;
+    font-weight: 700;
+}
+
+.blitzmerker-wrap .blitzmerker-content p {
+    font-size: 36px;
+    line-height: 1.2;
+    color: #000000;
+    max-width: 1536px;
+    margin: 0 auto;
+}
+
+.rental-car-wrap {
+    padding: 71px 0 162px;
+    position: relative;
+}
+
+.rental-car-wrap h2 {
+    margin-bottom: 82px;
+    text-align: center;
+    font-weight: 700;
+    color: #FF7800;
+}
+
+.rental-car-wrap .rental-car-content h2 {
+    display: none;
+}
+
+.rental-car-wrap .rental-car-content a {
+    font-size: 22px;
+    font-weight: 700;
+    color: #FF7800;
+    margin-left: 29px;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+.rental-car-wrap .rental-car-content a img {
+    display: none;
+}
+
+.rental-car-wrap ul li {
+    padding-left: 29px;
+    position: relative;
+    font-size: 22px;
+    line-height: 1.65;
+    margin-bottom: 36px;
+}
+
+.rental-car-wrap .rental-car-content ul.rental-car-hide-show {
+    display: none;
+}
+
+
+/* .rental-car-wrap ul li:last-child {
+	margin-bottom: 0;
+} */
+
+.rental-car-wrap ul li span {
+    font-weight: 700;
+    color: #F07D00;
+}
+
+.rental-car-wrap ul li::before {
+    content: "";
+    background: #FF7800;
+    left: 0;
+    top: 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.rental-car-wrap .rental-car-img-wrap {
+    position: static;
+}
+
+.rental-car-wrap .rental-car-img img {
+    position: absolute;
+    width: calc(50% - 15px);
+    top: 53%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.compensation-loss-wrap.accident-sponsors-wrap {
+    background: #FF9D33;
+}
+
+.compensation-loss-wrap.accident-sponsors-wrap .accident-sponsors-content {
+    padding: 106px 0 115px;
+}
+
+.compensation-loss-wrap .accident-sponsors-content-inner h2 {
+    color: #ffffff;
+}
+
+.similar-services-wrap {
+    padding: 90px 0 140px;
+}
+
+.similar-services-wrap .similar-services-content h2 {
+    text-align: center;
+    color: #FF7800;
+    margin-bottom: 43px;
+}
+
+.similar-services-wrap .similar-services-row {
+    margin: 0 -8px;
+}
+
+.similar-services-wrap .similar-services-row .similar-services-col {
+    padding: 0 8px;
+}
+
+.similar-services-wrap .similar-services-content-inner {
+    padding: 30px 12px 13px 32px;
+    position: relative;
+    height: 339px;
+}
+
+
+/*
+.similar-services-wrap .gutach .gutachter {
+	position: relative;
+	height: 235px;
+}*/
+
+.similar-services-wrap .kfz-werkstatt-services .similar-services-content-inner {
+    background: url(../img/page/kfz-werkstatt.png) left top no-repeat;
+    background-size: cover;
+    background-position: 0px 2px;
+}
+
+.similar-services-wrap .verkehrsrecht-services .similar-services-content-inner {
+    background: url(../img/page/anwalt-verkehrsrecht.png) left top no-repeat;
+    background-size: cover;
+    background-position: 0px 2px;
+}
+
+.similar-services-wrap .gutachten-services .similar-services-content-inner {
+    background: url(../img/page/kfzgutachter-sachverstandiger.png) left top no-repeat;
+    background-size: cover;
+    background-position: 0px 2px;
+}
+
+.similar-services-wrap .ersatzwagen-services .similar-services-content-inner {
+    background: url(../img/page/mietwagen-ersatzwagen.png) left top no-repeat;
+    background-size: cover;
+    background-position: 0px 2px;
+}
+
+.similar-services-wrap .similar-services-content-inner h3 {
+    font-weight: 700;
+}
+
+.similar-services-wrap .similar-services-content-inner a {
+    position: absolute;
+    font-size: 22px;
+    line-height: 1;
+    color: #fff;
+    right: 11.7px;
+    bottom: 17.2px;
+    z-index: 4;
+    display: flex;
+}
+
+.similar-services-wrap .similar-services-content-inner a i {
+    margin-left: 6.6px;
+}
+
+.similar-services-wrap .similar-services-content h2 {
+    margin-bottom: 38px;
+}
+
+
+/*-_-_Index2_CSS_End_-_-*/
+
+
+/*-_-_werkstatt-2_CSS_Start_-_-*/
+
+.werkstatt-banner.index2-banner.banner .banner-content img.banner-desktop-img {
+    width: 40.2%;
+    left: 51%;
+    top: auto !important;
+    transform: unset;
+    bottom: 12px;
+}
+
+.rental-car-wrap2.rental-car-wrap .rental-car-img img {
+    top: 46%;
+}
+
+
+/*-_-_werkstatt-2_CSS_End_-_-*/
+
+
+/*-_-_anwalt-2_CSS_Start_-_-*/
+
+.anwalt-banner.index2-banner.banner .banner-content img.banner-desktop-img {
+    width: 606px;
+    left: 58%;
+    top: auto !important;
+    transform: unset;
+    bottom: 0;
+}
+
+.anwalt-banner.index2-banner.banner .banner-content {
+    width: 52%;
+}
+
+.rental-car-wrap3.rental-car-wrap .rental-car-img img {
+    top: 49.2%;
+}
+
+
+/*-_-_anwalt-2_CSS_End_-_-*/
+
+
+/*-_-_kfz-sachverstandiger-2_CSS_Start_-_-*/
+
+.sachverstandiger-banner.banner .banner-content {
+    width: 52%;
+}
+
+.sachverstandiger-banner.index2-banner.banner .banner-content img.banner-desktop-img {
+    width: 420px;
+    top: auto;
+    bottom: 0;
+    left: 66%;
+}
+
+.rental-car-wrap4.rental-car-wrap .rental-car-img img {
+    top: 48%;
+}
+
+
+/*-_-_kfz-sachverstandiger-2_CSS_End_-_-*/
+
+
+/*-_-_hamburg-2_CSS_Start_-_-*/
+
+.handling-accident-black-before.handling-accident-step-wrap .handling-accident-step-accordian .handling-accident-step-heading::after {
+    color: #1A1A1A;
+}
+
+.hamburg-banner.banner .banner-content img.banner-desktop-img {
+    top: auto;
+    right: 0;
+    width: 39.48%;
+    bottom: 0;
+}
+
+.your-claim-wrap.free-service-wrap {
+    padding: 139.2px 0 63px;
+    background: #fff;
+}
+
+.your-claim-wrap.free-service-wrap .free-service-list {
+    flex-direction: column;
+}
+
+.your-claim-wrap.free-service-wrap .free-service-list img {
+    display: none;
+}
+
+.your-claim-wrap.free-service-wrap .free-service-list h3 {
+    color: #1A1A1A;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+.your-claim-wrap.free-service-wrap .free-service-list p {
+    font-size: 22px;
+    line-height: 1.55;
+}
+
+.insurance-company-wrap.opposing-insurance-wrap {
+    padding: 50px 0 111px;
+}
+
+.accident-reports-wrap {
+    position: relative;
+    background: url(../img/page/de_hamburg-germany.png) center center no-repeat;
+    background-size: cover;
+}
+
+.accident-reports-wrap::before {
+    content: "";
+    background: rgba(255, 157, 51, 0.81);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.accident-reports-wrap .accident-reports-content {
+    position: relative;
+    text-align: center;
+    padding: 167px 0 181px;
+    max-width: 905px;
+    margin: 0 auto;
+}
+
+.accident-reports-wrap .accident-reports-content h2 {
+    font-weight: 700;
+    line-height: 1.38;
+    margin-bottom: 70px;
+}
+
+.accident-reports-wrap .accident-reports-content p {
+    font-size: 51px;
+    line-height: 1.38;
+    color: #fff;
+}
+
+.stadt-wrap {
+    padding: 118px 0 101px;
+}
+
+.stadt-wrap .stadt-content-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.stadt-left-content {
+    width: 462px;
+}
+
+.stadt-left-content-wrap {
+    border: 1px solid #FF7800;
+    border-radius: 20px;
+    margin-bottom: 60.2px;
+    overflow: hidden;
+}
+
+.stadt-left-content-wrap .stadt-left-content-heading {
+    padding: 37px 50px 28px;
+    border-bottom: 1px solid #FF7800;
+    background: #FFA23F;
+}
+
+.stadt-left-content-wrap .stadt-left-content-heading p {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.stadt-left-content-wrap ul {
+    padding: 62px 33px;
+    margin: 0;
+}
+
+.stadt-left-content-wrap ul li {
+    margin-bottom: 35px;
+}
+
+.stadt-left-content-wrap ul li a {
+    font-size: 22px;
+    line-height: 1.6;
+    color: #373737;
+}
+
+.stadt-left-content-wrap ul li:last-child {
+    margin-bottom: 0;
+}
+
+.stadt-left-content-wrap ul li span {
+    width: 40px;
+    display: inline-block;
+}
+
+.stadt-right-content ul li {
+    margin-bottom: 68px;
+    position: relative;
+}
+
+.stadt-right-content ul li:last-child {
+    margin-bottom: 0;
+}
+
+.stadt-right-content ul li h5 {
+    font-size: 25px;
+    line-height: 1.2;
+    color: #FF7800;
+    margin-bottom: 26px;
+}
+
+.stadt-right-content ul li p {
+    font-size: 22px;
+    line-height: 1.46;
+    color: #000;
+    padding-right: 80px;
+}
+
+.stadt-right-content ul li .more-text {
+    display: none;
+}
+
+.stadt-right-content ul li .more-text p {
+    margin-top: 15px;
+}
+
+.stadt-right-content ul li p span {
+    color: #FF7800;
+}
+
+.stadt-right-content ul li a {
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 700;
+    color: #FF7800;
+    border-bottom: 1px solid #FF7800;
+    position: absolute;
+    right: 0;
+    bottom: 6px;
+}
+
+.blitzerker-here {
+    text-align: center;
+}
+
+.blitzerker-here img {
+    width: 68px;
+    margin: 0 auto 31.6px;
+}
+
+.blitzerker-here h3 {
+    color: #FF7800;
+    margin-bottom: 28.2px;
+}
+
+.blitzerker-here p {
+    color: #000000;
+    font-size: 36px;
+    line-height: 1.25;
+}
+
+.stadt-right-content {
+    width: calc(100% - 462px);
+    padding-left: 74px;
+}
+
+.stadt-right-content .stadt-accordion {
+    display: none;
+}
+
+.hamburg-free-accident-handling.free-accident-handling-wrap {
+    display: none;
+}
+
+
+/*-_-_hamburg-2_CSS_End_-_-*/
+
+
+/*-_-_faqs-2_CSS_Start_-_-*/
+
+.faqs-banner.banner .banner-content {
+    padding: 300px 0 460px;
+    z-index: 1;
+    width: 50%;
+}
+
+.faqs-banner.index2-banner.banner .banner-content img.banner-desktop-img {
+    max-width: 902px;
+    width: 47%;
+    left: auto;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    mix-blend-mode: multiply;
+}
+
+.faqs-banner.banner .banner-content h1,
+.faqs-banner.banner .banner-content h2 {
+    margin-bottom: 19px;
+}
+
+.faqs-banner.banner .banner-content p {
+    margin-bottom: 24px;
+}
+
+.faqs-claims-wrap.claims-settlement-wrap {
+    display: none;
+}
+
+.faqs-search-wrap {
+    position: relative;
+    display: inline-block;
+    max-width: 512px;
+    width: 100%;
+}
+
+.faqs-search-wrap input {
+    border: 1px solid rgba(52, 52, 52, 0.55);
+    width: 100%;
+    height: 62px;
+    border-radius: 32px;
+    padding: 0 22px;
+    font-size: 25px;
+    color: #343434;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.11);
+}
+
+.faqs-search-wrap input::placeholder {
+    color: #343434;
+}
+
+.faqs-search-wrap img {
+    position: absolute;
+    right: 27px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.quick-access-option-wrap {
+    background: #F8F8F8;
+}
+
+.quick-access-option-wrap .quick-access-option-content {
+    padding: 105px 0 110px;
+}
+
+.quick-access-option-wrap .quick-access-option-content h2 {
+    margin-bottom: 113.4px;
+    text-align: center;
+    color: #373737;
+    font-weight: 700;
+}
+
+.quick-access-col .quick-access-img {
+    width: 152px;
+    height: 152px;
+    margin: 0 auto 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quick-access-col .quick-access-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.quick-access-col .quick-access-link {
+    font-size: 27px;
+    line-height: 1;
+    padding: 19px 25px 17px;
+    border-radius: 33px;
+    background: #F07D00;
+    display: block;
+    color: #ffffff;
+    max-width: 414px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 3px 3px 8px #858585;
+}
+
+.quick-access-col .quick-access-link:hover {
+    background-color: transparent;
+    border: 2px solid #FF7800;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #000000;
+}
+
+.faq-benefits-wrap {
+    background: #F8F8F8;
+}
+
+.faq-benefits-wrap .faq-benefits-content {
+    padding: 110px 0 87px;
+}
+
+.faq-benefits-wrap .faq-benefits-content h2 {
+    text-align: center;
+    margin-bottom: 87px;
+    color: #373737;
+    font-weight: 700;
+}
+
+.faq-benefits {
+    padding: 82px 37px 56px 46px;
+    background: #fff;
+    position: relative;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.faq-benefits:last-child {
+    margin-bottom: 0;
+}
+
+.faq-benefits h4 {
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 700;
+    color: #343434;
+    margin-bottom: 20px;
+}
+
+.faq-benefits p {
+    font-size: 25px;
+    line-height: 1.35;
+    color: #343434;
+}
+
+.faq-benefits a {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    text-align: center;
+    align-items: center;
+}
+
+.faq-benefits a span {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 700;
+    color: #FF7800;
+    margin-bottom: 5px;
+    display: none;
+}
+
+.faqs-accident-handling.free-accident-handling-wrap {
+    background: #F8F8F8;
+}
+
+.faqs-accident-handling.free-accident-handling-wrap .free-accident-handling-content {
+    padding-bottom: 119px;
+}
+
+.faqs-accident-handling.free-accident-handling-wrap .free-accident-handling-content h3 {
+    color: #F07D00;
+}
+
+.faqs-accident-handling.free-accident-handling-wrap .free-accident-handling-content p {
+    color: #343434;
+}
+
+.faqs-accident-handling.free-accident-handling-wrap .free-accident-handling-btn li a {
+    background: #373737;
+}
+
+
+/*-_-_faqs-2_CSS_End_-_-*/
+
+
+/*-_-_impressum-2_CSS_Start_-_-*/
+
+.impressum-banner.banner .banner-content {
+    padding: 300px 0 405px;
+    z-index: 1;
+    width: 100%;
+}
+
+.impressum-banner.banner h2 {
+    margin-bottom: 0 !important;
+    line-height: 1;
+}
+
+.impressum-wrap {
+    padding: 100.5px 0 185.5px;
+}
+
+.impressum-wrap .impressum-content {
+    max-width: 1105px;
+}
+
+.impressum-wrap .impressum-content h3 {
+    color: #343434;
+    line-height: 1.85;
+    font-weight: 700;
+}
+
+.impressum-wrap .impressum-content p {
+    font-size: 25px;
+    line-height: 1.8;
+    margin-bottom: 45px;
+}
+
+.impressum-wrap .impressum-content ul {
+    margin-bottom: 45px;
+}
+
+.impressum-wrap .impressum-content ul li {
+    font-size: 25px;
+    line-height: 1.8;
+    padding-left: 22px;
+    position: relative;
+}
+
+.impressum-wrap .impressum-content ul li::before {
+    content: "-";
+    left: 0;
+    top: 0;
+    font-size: 25px;
+    line-height: 1.8;
+    position: absolute;
+}
+
+.impressum-wrap .impressum-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/*-_-_impressum-2_CSS_End_-_-*/
+
+
+/*-_-_Responsiveness_-_-*/
+
+@media only screen and (min-width: 1441px) {
+    .container {
+        max-width: 1367px;
+    }
+}
+
+@media only screen and (min-width: 1601px) {
+    .container {
+        max-width: 1560px;
+    }
+}
+
+@media only screen and (min-width: 1711px) {
+    .container {
+        max-width: 1680px;
+    }
+}
+
+@media only screen and (max-width: 1710px) {
+    header .navbar {
+        padding: 20px 0 15px;
+    }
+    header .navbar .navbar-brand img {
+        max-width: 300px;
+    }
+    header .navbar-nav li a {
+        font-size: 22px;
+    }
+    header .navbar-nav li a.dropdown-toggle::after {
+        margin-left: 12px;
+    }
+    header .navbar-nav li {
+        margin-left: 44px;
+    }
+    header .navbar-nav li:last-child {
+        margin-left: 52px;
+    }
+    header .navbar-nav li:last-child a {
+        padding: 0.5px 25px !important;
+    }
+    header .navbar-nav li .dropdown-menu .dropdown-item {
+        padding: 7px 24px 7px 18px !important;
+        font-size: 20px;
+    }
+    .banner .banner-content {
+        padding: 140px 0;
+    }
+    .banner .banner-content h1,
+    .banner .banner-content h2 {
+        font-size: 44px;
+    }
+    .banner .banner-content p {
+        font-size: 32px;
+    }
+    .banner .call-now {
+        height: 50px;
+        width: 218px;
+        background: #000000;
+        border-radius: 2px;
+        font-size: 20px;
+        top: 230px;
+        right: -84px;
+        padding-top: 5px;
+    }
+    .banner .call-now i {
+        margin-right: 8px;
+        font-size: 22px;
+    }
+    .banner .wa-now {
+        height: 50px;
+        width: 218px;
+        background: #34af23;
+        border-radius: 2px;
+        font-size: 20px;
+        top: 230px;
+        right: -84px;
+        padding-top: 5px;
+    }
+    .banner .wa-now i {
+        margin-right: 8px;
+        font-size: 22px;
+    }
+    .banner .banner-content .banner-btn a {
+        font-size: 22.5px;
+        line-height: 1.3;
+        height: 56px;
+        margin-right: 32px;
+        width: 315px;
+    }
+    .banner .banner-content ul li {
+        font-size: 32px;
+        line-height: 1.4;
+        padding-left: 40px;
+    }
+    .banner .banner-content ul li::before {
+        width: 28px;
+        height: 23px;
+        top: 9px;
+    }
+    .banner .banner-content .banner-btn {
+        margin-bottom: 25px;
+    }
+    .banner .banner-content img.banner-desktop-img {
+        top: 30px;
+        right: -11%;
+        width: 95%;
+    }
+    .input-group-append .btn:hover {
+        background: #505150;
+    }
+    .claims-settlement-wrap .claims-settlement-content p {
+        font-size: 23px;
+    }
+    .claims-settlement-wrap .claims-settlement-content ul li {
+        padding: 0 32px;
+    }
+    .claims-settlement-wrap .claims-settlement-content .bild2 {
+        max-width: 105px;
+    }
+    .claims-settlement-wrap .claims-settlement-content .bild3 {
+        max-width: 105px;
+    }
+    .claims-settlement-wrap .claims-settlement-content .bild4 {
+        max-width: 105px;
+    }
+    .claims-settlement-wrap .claims-settlement-content .bild1 {
+        max-width: 135px;
+    }
+    .claims-settlement-wrap .claims-settlement-content {
+        padding: 22px 0 32px;
+    }
+    h2 {
+        font-size: 46px;
+    }
+    .handling-accident-step-wrap .handling-accident-step {
+        padding: 72px 0 130px;
+    }
+    .handling-accident-step-wrap .handling-accident-step h2 {
+        margin-bottom: 120px;
+    }
+    .handling-accident-step-img {
+        width: 150px;
+        height: 142px;
+        margin: 0 auto 70px;
+    }
+    .handling-accident-step-img img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .handling-accident-step-row .handling-accident-step-col {
+        padding: 0 28px;
+    }
+    .handling-accident-step-accordian .handling-accident-step-heading {
+        font-size: 26px;
+        padding: 15px 64.5px 10.4px;
+    }
+    .handling-accident-step-accordian.active .handling-accident-step-heading {
+        border-radius: 26px 26px 0 0;
+    }
+    .handling-accident-step-accordian .handling-accident-step-content {
+        border-radius: 0 0 26px 26px;
+    }
+    .handling-accident-step-accordian .handling-accident-step-heading::after {
+        color: #1A1A1A;
+        font-size: 44px;
+        padding-right: 4px;
+    }
+    .handling-accident-step-accordian .handling-accident-step-heading::after {
+        width: 60px;
+    }
+    .accident-sponsors-wrap .accident-sponsors-content {
+        padding: 56px 0 72px;
+    }
+    h3 {
+        font-size: 32px;
+    }
+    .accident-sponsors-wrap .accident-sponsors-content>h3 {
+        margin-bottom: 88px;
+    }
+    .all-services-wrap .all-services-content {
+        padding: 100px 0 60px;
+    }
+    .all-services-wrap .all-services-content>h2 {
+        margin-bottom: 32px;
+    }
+    .all-services-wrap .all-services-content>h3 {
+        font-size: 30px;
+        margin-bottom: 110px;
+    }
+    .our-services .our-services-img {
+        height: 135px;
+        width: 125px;
+        margin-right: 62px;
+    }
+    .our-services .our-services-content h3 {
+        font-size: 28px;
+        margin-bottom: 18px;
+    }
+    .our-services .our-services-content p {
+        font-size: 20px;
+    }
+    .our-services {
+        padding-left: 80px;
+        margin-bottom: 70px;
+    }
+    .free-accident-handling-wrap .free-accident-handling-content {
+        padding: 52px 0 80px;
+        max-width: 860px;
+    }
+    .free-accident-handling-wrap .free-accident-handling-content p {
+        font-size: 23px;
+        line-height: 1.56;
+        margin-bottom: 35px;
+    }
+    .free-accident-handling-wrap .free-accident-handling-content h3 {
+        margin-bottom: 22px;
+    }
+    .free-accident-handling-btn li {
+        margin-right: 32px;
+    }
+    .free-accident-handling-btn li a {
+        font-size: 22.5px;
+        line-height: 1.3;
+        height: 56px;
+        width: 315px;
+    }
+    .insurance-claim-wrap {
+        padding: 130px 0 95px;
+    }
+    .insurance-claim-wrap .insurance-claim-content img {
+        width: 180px;
+    }
+    .insurance-claim-wrap .insurance-claim-content .insurance-claim-content-inner h3 {
+        margin-bottom: 25px;
+    }
+    .insurance-claim-wrap .insurance-claim-content .insurance-claim-content-inner p {
+        font-size: 20px;
+    }
+    .opposing-insurance-wrap {
+        padding: 90px 0 120px;
+    }
+    .insurance-claim-wrap .insurance-claim-content .insurance-claim-content-inner {
+        padding-left: 60px;
+        width: calc(100% - 180px);
+    }
+    .insurance-claim-wrap .insurance-claim-content {
+        max-width: 880px;
+    }
+    .opposing-insurance-content-inner h6 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    .opposing-insurance-content-inner p {
+        font-size: 20px;
+    }
+    .opposing-insurance-row .opposing-insurance-col {
+        max-width: 440px;
+    }
+    .opposing-insurance-row .opposing-insurance-col.active {
+        max-width: 500px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content>img {
+        max-width: 305px;
+        margin: 0 auto 36px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content ul li img {
+        width: 62px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content ul li .opposing-insurance-content-inner {
+        width: calc(100% - 62px);
+        padding-left: 35px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-col.active ul li {
+        padding-left: 32px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content ul li {
+        border-bottom: 1px solid #B9B9B9;
+        padding: 26px 0 20px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content ul {
+        margin-bottom: 60px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content .opposing-insurance-btn a {
+        font-size: 20px;
+        height: 48px;
+        width: 230px;
+        margin-bottom: 34px;
+        padding-top: 5px;
+    }
+    .customers-say-wrap {
+        padding: 70px 0 100px;
+    }
+    .customers-say-wrap .customers-say-content h2 {
+        margin-bottom: 100px;
+        font-size: 42px;
+    }
+    .customers-say-slider .customers-say-slide .customers-say-slide-content {
+        margin-bottom: 100px;
+    }
+    .customers-say-slide-content .customers-say-slide-img .customers-say-slide-video {
+        height: 40px;
+        font-size: 20px;
+    }
+    .customers-say-slide-content .customers-say-slide-content-inner h3 {
+        font-size: 30px;
+        margin-bottom: 18px;
+    }
+    .customers-say-slide-content .customers-say-slide-content-inner {
+        width: calc(100% - 175px);
+        padding-left: 35px;
+    }
+    .customers-say-slider .customers-say-slide {
+        padding: 0 31px;
+    }
+    .customers-say-slide-img {
+        width: 175px;
+        height: 175px;
+        border: 8px solid #FF7800;
+    }
+    .customers-say-slide-content .customers-say-slide-img .customers-say-slide-video i {
+        font-size: 20px;
+    }
+    .customers-say-slider .slick-dots li,
+    .customers-say-slider .slick-dots li button,
+    .customers-say-slider .slick-dots li button:before {
+        width: 62px;
+        height: 9px;
+    }
+    .customers-say-slider.slick-slider {
+        padding-bottom: 10px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content {
+        padding: 32px 0 40px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content h3 {
+        margin-bottom: 18px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content h6 {
+        font-size: 23px;
+        margin-bottom: 12px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content p {
+        font-size: 23px;
+        margin-bottom: 35px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content form {
+        width: 400px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content form input {
+        padding: 3px 25px 0 25px;
+        font-size: 20px;
+        height: 52px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content form button {
+        font-size: 20px;
+        height: 52px;
+        padding-top: 4px;
+    }
+    footer .footer-content .footer-logo {
+        max-width: 400px;
+        margin: 0 auto 54px;
+    }
+    footer .footer-content {
+        max-width: 915px;
+        padding: 110px 0 115px;
+    }
+    footer .footer-content p {
+        font-size: 23px;
+        margin-bottom: 100px;
+    }
+    .footer-link-wrap .footer-link-content h5 {
+        font-size: 24px;
+        margin-bottom: 35px;
+    }
+    .footer-link-wrap .footer-link-content ul li a {
+        font-size: 22px;
+        line-height: 1.6;
+    }
+    .footer-social-outer-wrap .footer-social-wrap h6 {
+        font-size: 22px;
+        line-height: 1.6;
+        margin-top: 55px;
+    }
+    .footer-social-outer-wrap .footer-social-wrap ul li {
+        margin-right: 38px;
+    }
+    .footer-social-outer-wrap .footer-social-wrap ul li img {
+        width: 45px;
+    }
+    .footer-other-link-wrap li a {
+        font-size: 22px;
+    }
+    .footer-link-wrap,
+    .footer-social-outer-wrap {
+        max-width: 800px;
+    }
+    .footer-social-outer-wrap {
+        margin: 0 auto 100px;
+    }
+    .footer-social-outer-wrap .footer-img-wrap img:first-child {
+        max-width: 320px;
+    }
+    .footer-social-outer-wrap .footer-img-wrap img {
+        margin-left: 18px;
+        max-width: 220px;
+    }
+    /*-_-_Index2_CSS_Start_-_-*/
+    .does-it-work-wrap .does-it-work-list ul li {
+        font-size: 32px;
+        padding-left: 70px;
+    }
+    .does-it-work-wrap .does-it-work-list ul li span {
+        font-size: 32px;
+        width: 55px;
+        height: 55px;
+        top: 2px;
+    }
+    .does-it-work-wrap .does-it-work-content h3 {
+        margin-bottom: 68px;
+    }
+    .does-it-work-wrap h2 {
+        margin-bottom: 90px;
+    }
+    .does-it-work-wrap {
+        padding: 58px 0 120px;
+    }
+    .free-service-list {
+        padding-left: 4%;
+    }
+    .free-service-list ul li {
+        font-size: 32px;
+        line-height: 1.8;
+    }
+    .free-service-list ul li::before {
+        width: 34px;
+        height: 28px;
+        top: 13px;
+    }
+    .free-service-video video {
+        width: 100%;
+        height: 470px;
+    }
+    .free-service-img img {
+        height: 200px;
+        margin: 50px auto;
+        display: block;
+    }
+    .free-service-wrap {
+        padding: 78px 0;
+    }
+    .blitzmerker-wrap {
+        padding: 90px 0 65px;
+    }
+    .blitzmerker-wrap .blitzmerker-content img {
+        margin-bottom: 25px;
+        width: 68px;
+    }
+    .blitzmerker-wrap .blitzmerker-content p {
+        font-size: 32px;
+    }
+    .rental-car-wrap h2 {
+        margin-bottom: 65px;
+    }
+    .rental-car-wrap ul li {
+        padding-left: 27px;
+        font-size: 20px;
+        line-height: 1.65;
+        margin-bottom: 32px;
+    }
+    .rental-car-wrap .rental-car-content a {
+        font-size: 20px;
+        margin-left: 27px;
+    }
+    .rental-car-wrap ul li::before {
+        top: 9px;
+        width: 10px;
+        height: 10px;
+    }
+    .rental-car-wrap {
+        padding: 65px 0 130px;
+    }
+    .compensation-loss-wrap.accident-sponsors-wrap .accident-sponsors-content {
+        padding: 85px 0 95px;
+    }
+    .similar-services-wrap {
+        padding: 80px 0 120px;
+    }
+    .similar-services-wrap .similar-services-content h2 {
+        margin-bottom: 35px;
+    }
+    .similar-services-wrap .similar-services-content-inner a {
+        font-size: 20px;
+    }
+    .similar-services-wrap .similar-services-content-inner {
+        padding: 26px 12px 13px 28px;
+        height: 315px;
+    }
+    /*-_-_Index2_CSS_End_-_-*/
+    /*-_-_anwalt-2_CSS_Start_-_-*/
+    .anwalt-banner.index2-banner.banner .banner-content img.banner-desktop-img {
+        width: 530px;
+        left: 61%;
+    }
+    /*-_-_anwalt-2_CSS_End_-_-*/
+    /*-_-_kfz-sachverstandiger-2_CSS_Start_-_-*/
+    .sachverstandiger-banner.index2-banner.banner .banner-content img.banner-desktop-img {
+        width: 373px;
+        left: 68%;
+    }
+    .rental-car-wrap4.rental-car-wrap .rental-car-img img {
+        top: 47%;
+    }
+    /*-_-_kfz-sachverstandiger-2_CSS_End_-_-*/
+    /*-_-_hamburg-2_CSS_Start_-_-*/
+    .your-claim-wrap.free-service-wrap .free-service-list h3 {
+        margin-bottom: 24px;
+    }
+    .your-claim-wrap.free-service-wrap .free-service-list p {
+        font-size: 21px;
+    }
+    .accident-reports-wrap .accident-reports-content {
+        padding: 150px 0 171px;
+        max-width: 840px;
+    }
+    .accident-reports-wrap .accident-reports-content h2 {
+        line-height: 1.35;
+        margin-bottom: 62px;
+    }
+    .accident-reports-wrap .accident-reports-content p {
+        font-size: 46px;
+        line-height: 1.35;
+    }
+    .your-claim-wrap.free-service-wrap {
+        padding: 128px 0 58px;
+    }
+    .insurance-company-wrap.opposing-insurance-wrap {
+        padding: 50px 0 100px;
+    }
+    .stadt-wrap {
+        padding: 110px 0 100px;
+    }
+    .stadt-left-content-wrap .stadt-left-content-heading p {
+        font-size: 21px;
+    }
+    .stadt-left-content-wrap ul {
+        padding: 55px 32px;
+    }
+    .stadt-left-content-wrap ul li {
+        margin-bottom: 32px;
+    }
+    .stadt-left-content-wrap ul li a {
+        font-size: 21px;
+        line-height: 1.5;
+    }
+    .blitzerker-here img {
+        margin: 0 auto 30px;
+    }
+    .blitzerker-here h3 {
+        margin-bottom: 26px;
+    }
+    .blitzerker-here p {
+        font-size: 32px;
+    }
+    .stadt-right-content {
+        padding-left: 70px;
+    }
+    .stadt-right-content ul li {
+        margin-bottom: 60px;
+    }
+    .stadt-right-content ul li h5 {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    .stadt-right-content ul li p {
+        font-size: 21px;
+        padding-right: 85px;
+    }
+    .stadt-right-content ul li a {
+        font-size: 21px;
+    }
+    /*-_-_hamburg-2_CSS_End_-_-*/
+    /*-_-_faqs-2_CSS_Start_-_-*/
+    .faqs-banner.banner .banner-content {
+        padding: 260px 0 400px;
+    }
+    .faqs-search-wrap input {
+        height: 60px;
+        font-size: 23px;
+    }
+    .quick-access-option-wrap .quick-access-option-content {
+        padding: 100px 0 105px;
+    }
+    .quick-access-col .quick-access-img {
+        width: 144px;
+        height: 144px;
+        margin: 0 auto 52px;
+    }
+    .quick-access-option-wrap .quick-access-option-content h2 {
+        margin-bottom: 110px;
+    }
+    .quick-access-col .quick-access-link {
+        font-size: 25px;
+    }
+    .faq-benefits-wrap .faq-benefits-content {
+        padding: 105px 0 84px;
+    }
+    .faq-benefits-wrap .faq-benefits-content h2 {
+        margin-bottom: 80px;
+    }
+    .faq-benefits {
+        padding: 75px 37px 52px 46px;
+    }
+    .faq-benefits h4 {
+        font-size: 28px;
+    }
+    .faq-benefits p {
+        font-size: 23px;
+    }
+    .faqs-accident-handling.free-accident-handling-wrap .free-accident-handling-content {
+        padding-bottom: 105px;
+    }
+    /*-_-_faqs-2_CSS_End_-_-*/
+    /*-_-_impressum-2_CSS_Start_-_-*/
+    .impressum-banner.banner .banner-content {
+        padding: 280px 0 370px;
+    }
+    .impressum-wrap {
+        padding: 95px 0 165px;
+    }
+    .impressum-wrap .impressum-content h3 {
+        line-height: 1.75;
+    }
+    .impressum-wrap .impressum-content ul li,
+    .impressum-wrap .impressum-content p,
+    .impressum-wrap .impressum-content ul li::before {
+        font-size: 23px;
+        line-height: 1.75;
+    }
+    .impressum-wrap .impressum-content ul,
+    .impressum-wrap .impressum-content p {
+        margin-bottom: 40px;
+    }
+    /*-_-_impressum-2_CSS_End_-_-*/
+}
+
+@media only screen and (max-width: 1600px) {
+    header .navbar-nav li {
+        margin-left: 40px;
+    }
+    header .navbar-nav li:last-child {
+        margin-left: 46px;
+    }
+    header .navbar-nav li a {
+        font-size: 21px;
+    }
+    header .navbar-nav li:last-child a {
+        padding: 0.5px 22px !important;
+    }
+    header .navbar .navbar-brand img {
+        max-width: 275px;
+    }
+    header .navbar {
+        padding: 22px 0 15px;
+    }
+    .banner .banner-content img.banner-desktop-img {
+        top: 30px;
+        right: -10.3%;
+        width: 90%;
+    }
+    .banner .banner-content {
+        padding: 125px 0 110px;
+        width: 52%;
+    }
+    .banner .banner-content h1,
+    .banner .banner-content h2 {
+        font-size: 40px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+    .banner .banner-content p {
+        font-size: 28px;
+        margin-bottom: 18px;
+    }
+    .banner .banner-content .banner-btn {
+        margin-bottom: 24px;
+    }
+    .banner .banner-content .banner-btn a {
+        padding-top: 4px;
+        font-size: 20px;
+        height: 52px;
+        margin-right: 28px;
+        width: 285px;
+    }
+    .banner .banner-content ul li {
+        font-size: 28px;
+        padding-left: 38px;
+    }
+    .banner .banner-content ul li::before {
+        width: 24px;
+        height: 20px;
+        top: 8px;
+    }
+    .banner .call-now {
+        height: 45px;
+        width: 200px;
+        font-size: 18px;
+        top: 210px;
+        right: -78px;
+    }
+    .banner .call-now i {
+        margin-right: 7px;
+        font-size: 25px;
+        color: #F8F8F8;
+    }
+    .banner .wa-now {
+        height: 45px;
+        width: 200px;
+        font-size: 18px;
+        top: 210px;
+        right: -78px;
+    }
+    .banner .wa-now i {
+        margin-right: 7px;
+        font-size: 20px;
+    }
+    .claims-settlement-wrap .claims-settlement-content {
+        padding: 20px 0 28px;
+    }
+    .claims-settlement-wrap .claims-settlement-content p {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    .claims-settlement-wrap .claims-settlement-content ul li {
+        padding: 0 28px;
+    }
+    .claims-settlement-wrap .claims-settlement-content .bild1 {
+        max-width: 120px;
+    }
+    .claims-settlement-wrap .claims-settlement-content .bild2 {
+        max-width: 98px;
+    }
+    .claims-settlement-wrap .claims-settlement-content .bild3 {
+        max-width: 98px;
+    }
+    .claims-settlement-wrap .claims-settlement-content .bild4 {
+        max-width: 98px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    .handling-accident-step-wrap .handling-accident-step {
+        padding: 65px 0 100px;
+    }
+    .handling-accident-step-wrap .handling-accident-step h2 {
+        margin-bottom: 100px;
+    }
+    .handling-accident-step-img {
+        width: 138px;
+        height: 130px;
+        margin: 0 auto 58px;
+    }
+    .handling-accident-step-accordian .handling-accident-step-heading {
+        font-size: 22px;
+        padding: 13px 55px 9.4px;
+    }
+    .handling-accident-step-accordian .handling-accident-step-heading::after {
+        width: 56px;
+        font-size: 38px;
+        padding-top: 3px;
+    }
+    .handling-accident-step-accordian .handling-accident-step-content p {
+        font-size: 17px;
+    }
+    .handling-accident-step-accordian.active .handling-accident-step-heading {
+        border-radius: 24px 24px 0 0;
+    }
+    .handling-accident-step-accordian .handling-accident-step-content {
+        padding: 14px 18px 22px;
+        border-radius: 0 0 24px 24px;
+    }
+    .accident-sponsors-wrap .accident-sponsors-content {
+        padding: 52px 0 66px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    .accident-sponsors-wrap .accident-sponsors-content>h3 {
+        margin-bottom: 75px;
+    }
+    .accident-sponsors-content-inner h3 {
+        margin-bottom: 24px;
+    }
+    .accident-sponsors-content-inner h2 {
+        margin-bottom: 14px;
+    }
+    .all-services-wrap .all-services-content {
+        padding: 85px 0 50px;
+    }
+    .all-services-wrap .all-services-content>h2 {
+        margin-bottom: 28px;
+    }
+    .all-services-wrap .all-services-content>h3 {
+        font-size: 26px;
+        margin-bottom: 90px;
+    }
+    .our-services .our-services-img {
+        height: 125px;
+        width: 115px;
+        margin-right: 50px;
+    }
+    .our-services .our-services-content {
+        max-width: 400px;
+    }
+    .our-services {
+        padding-left: 60px;
+        margin-bottom: 65px;
+    }
+    .free-accident-handling-wrap .free-accident-handling-content {
+        padding: 46px 0 68px;
+        max-width: 770px;
+    }
+    .free-accident-handling-wrap .free-accident-handling-content h3 {
+        margin-bottom: 20px;
+    }
+    .free-accident-handling-wrap .free-accident-handling-content p {
+        font-size: 21px;
+        line-height: 1.56;
+        margin-bottom: 30px;
+    }
+    .insurance-claim-wrap {
+        padding: 105px 0 80px;
+    }
+    .opposing-insurance-wrap {
+        padding: 80px 0 100px;
+    }
+    .insurance-claim-wrap .insurance-claim-content .insurance-claim-content-inner h3 {
+        margin-bottom: 22px;
+    }
+    .insurance-claim-wrap .insurance-claim-content img {
+        width: 160px;
+    }
+    .insurance-claim-wrap .insurance-claim-content .insurance-claim-content-inner {
+        padding-left: 50px;
+        width: calc(100% - 160px);
+    }
+    .insurance-claim-wrap .insurance-claim-content {
+        max-width: 805px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content h5 {
+        font-size: 24px;
+        margin-bottom: 48px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content {
+        padding: 48px 30px 60px 40px;
+    }
+    .opposing-insurance-row .opposing-insurance-col {
+        max-width: 380px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content ul li img {
+        width: 56px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content ul li .opposing-insurance-content-inner {
+        width: calc(100% - 56px);
+        padding-left: 30px;
+    }
+    .opposing-insurance-content-inner h6 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .opposing-insurance-content-inner p {
+        font-size: 18px;
+    }
+    .opposing-insurance-row .opposing-insurance-col.active {
+        max-width: 430px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-col.active ul li {
+        padding-left: 20px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-col.active .opposing-insurance-content {
+        padding: 28px 35px 50px 45px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content ul {
+        margin-bottom: 52px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content .opposing-insurance-btn a {
+        font-size: 18px;
+        height: 46px;
+        width: 210px;
+        margin-bottom: 26px;
+        padding-top: 5px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content .opposing-insurance-btn {
+        padding-left: 8px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content>img {
+        max-width: 270px;
+        margin: 0 auto 30px;
+    }
+    .customers-say-wrap {
+        padding: 60px 0 95px;
+    }
+    .customers-say-wrap .customers-say-content h2 {
+        margin-bottom: 85px;
+        font-size: 36px;
+    }
+    .customers-say-slide-content .customers-say-slide-content-inner p {
+        font-size: 20px;
+    }
+    .customers-say-slide-content .customers-say-slide-content-inner h3 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    .customers-say-slide-content .customers-say-slide-img .customers-say-slide-video {
+        height: 35px;
+        font-size: 18px;
+        padding: 8px 0;
+        margin-top: 10px;
+    }
+    .customers-say-slide-content .customers-say-slide-img .customers-say-slide-video i {
+        font-size: 18px;
+    }
+    .customers-say-slide-img {
+        width: 150px;
+        height: 150px;
+        border: 7px solid #FF7800;
+    }
+    .customers-say-slide-content .customers-say-slide-content-inner {
+        width: calc(100% - 150px);
+        padding-left: 35px;
+    }
+    .customers-say-slider .customers-say-slide .customers-say-slide-content {
+        margin-bottom: 85px;
+    }
+    .customers-say-slider .customers-say-slide {
+        padding: 0 55px;
+    }
+    .customers-say-slider .slick-dots li {
+        margin: 0 5.5px;
+    }
+    .customers-say-slider .slick-dots li,
+    .customers-say-slider .slick-dots li button,
+    .customers-say-slider .slick-dots li button:before {
+        width: 54px;
+        height: 8px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content {
+        padding: 30px 0 36px;
+        max-width: 740px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content h3 {
+        margin-bottom: 16px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content h6 {
+        font-size: 21px;
+        margin-bottom: 11px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content p {
+        font-size: 21px;
+        margin-bottom: 30px;
+    }
+    footer .footer-content {
+        max-width: 880px;
+        padding: 80px 0 85px;
+    }
+    footer .footer-content p {
+        font-size: 21px;
+        margin-bottom: 80px;
+    }
+    .footer-link-wrap .footer-link-content h5 {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+    .footer-link-wrap .footer-link-content ul li a {
+        font-size: 20px;
+    }
+    .footer-link-wrap,
+    .footer-social-outer-wrap {
+        max-width: 740px;
+    }
+    .footer-social-outer-wrap .footer-social-wrap ul li {
+        margin-right: 34px;
+    }
+    .footer-social-outer-wrap .footer-social-wrap ul li img {
+        width: 38px;
+    }
+    .footer-social-outer-wrap .footer-img-wrap img:first-child {
+        max-width: 300px;
+    }
+    .footer-social-outer-wrap .footer-img-wrap img {
+        max-width: 200px;
+    }
+    .footer-social-outer-wrap .footer-social-wrap h6 {
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 22px;
+    }
+    .footer-social-outer-wrap {
+        margin: 0 auto 80px;
+    }
+    .footer-other-link-wrap li a {
+        font-size: 20px;
+    }
+    .footer-other-link-wrap li::before {
+        font-size: 20px;
+    }
+    /*-_-_Index2_CSS_Start_-_-*/
+    .does-it-work-wrap .does-it-work-list ul li {
+        font-size: 28px;
+    }
+    .does-it-work-wrap .does-it-work-list ul li span {
+        font-size: 28px;
+        width: 50px;
+        height: 50px;
+        top: 2px;
+    }
+    .does-it-work-wrap .does-it-work-content h3 {
+        margin-bottom: 60px;
+    }
+    .does-it-work-wrap .does-it-work-content img {
+        max-width: 520px;
+    }
+    .does-it-work-wrap {
+        padding: 54px 0 105px;
+    }
+    .does-it-work-wrap h2 {
+        margin-bottom: 80px;
+    }
+    .free-service-video video {
+        height: 410px;
+    }
+    .free-service-img img {
+        height: 200px;
+        margin: 50px auto;
+        display: block;
+    }
+    .free-service-list ul li {
+        font-size: 28px;
+        padding-left: 50px;
+    }
+    .free-service-list ul li::before {
+        width: 32px;
+        height: 25px;
+        top: 12px;
+    }
+    .free-service-wrap {
+        padding: 72px 0;
+    }
+    .blitzmerker-wrap {
+        padding: 80px 0 58px;
+    }
+    .blitzmerker-wrap .blitzmerker-content p {
+        font-size: 28px;
+    }
+    .blitzmerker-wrap .blitzmerker-content img {
+        margin-bottom: 22px;
+        width: 64px;
+    }
+    .rental-car-wrap ul li {
+        padding-left: 25px;
+        font-size: 18px;
+        margin-bottom: 28px;
+    }
+    .rental-car-wrap .rental-car-content a {
+        font-size: 18px;
+        margin-left: 25px;
+    }
+    .rental-car-wrap h2 {
+        margin-bottom: 55px;
+    }
+    .rental-car-wrap {
+        padding: 60px 0 110px;
+    }
+    .rental-car-wrap ul li::before {
+        top: 8px;
+        width: 9px;
+        height: 9px;
+    }
+    .compensation-loss-wrap.accident-sponsors-wrap .accident-sponsors-content {
+        padding: 70px 0 80px;
+    }
+    .similar-services-wrap {
+        padding: 70px 0 100px;
+    }
+    .similar-services-wrap .similar-services-content h2 {
+        margin-bottom: 32px;
+    }
+    .similar-services-wrap .similar-services-content-inner {
+        padding: 24px 12px 12px 25px;
+        height: 275px;
+    }
+    /*-_-_Index2_CSS_End_-_-*/
+    /*-_-_werkstatt-2_CSS_Start_-_-*/
+    .werkstatt-banner.index2-banner.banner .banner-content img.banner-desktop-img {
+        width: 38%;
+        left: 51%;
+        top: 50%;
+    }
+    .rental-car-wrap2.rental-car-wrap .rental-car-img img {
+        top: 45%;
+    }
+    /*-_-_werkstatt-2_CSS_End_-_-*/
+    /*-_-_anwalt-2_CSS_Start_-_-*/
+    .anwalt-banner.index2-banner.banner .banner-content img.banner-desktop-img {
+        width: 460px;
+        left: 60.4%;
+    }
+    /*-_-_anwalt-2_CSS_End_-_-*/
+    /*-_-_kfz-sachverstandiger-2_CSS_Start_-_-*/
+    .sachverstandiger-banner.index2-banner.banner .banner-content img.banner-desktop-img {
+        width: 323px;
+        left: 65%;
+    }
+    .sachverstandiger-banner.index2-banner.banner .banner-content img.kfz-e {
+        width: 340px;
+        left: 69%;
+        top: -35%;
+    }
+    .rental-car-wrap4.rental-car-wrap .rental-car-img img {
+        top: 48%;
+    }
+    /*-_-_kfz-sachverstandiger-2_CSS_End_-_-*/
+    /*-_-_hamburg-2_CSS_Start_-_-*/
+    .hamburg-banner.banner .banner-content img.banner-desktop-img {
+        width: 37%;
+    }
+    .your-claim-wrap.free-service-wrap {
+        padding: 110px 0 54px;
+    }
+    .insurance-company-wrap.opposing-insurance-wrap {
+        padding: 50px 0 90px;
+    }
+    .your-claim-wrap.free-service-wrap .free-service-list h3 {
+        margin-bottom: 20px;
+    }
+    .your-claim-wrap.free-service-wrap .free-service-list p {
+        font-size: 20px;
+    }
+    .accident-reports-wrap .accident-reports-content h2 {
+        line-height: 1.32;
+        margin-bottom: 54px;
+    }
+    .accident-reports-wrap .accident-reports-content p {
+        font-size: 40px;
+        line-height: 1.32;
+    }
+    .accident-reports-wrap .accident-reports-content {
+        padding: 130px 0 150px;
+        max-width: 710px;
+    }
+    .stadt-wrap {
+        padding: 100px 0 90px;
+    }
+    .blitzerker-here img {
+        width: 60px;
+        margin: 0 auto 25px;
+    }
+    .blitzerker-here h3 {
+        margin-bottom: 22px;
+    }
+    .blitzerker-here p {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+    .stadt-left-content-wrap .stadt-left-content-heading p {
+        font-size: 20px;
+    }
+    .stadt-left-content-wrap ul li {
+        margin-bottom: 28px;
+    }
+    .stadt-left-content-wrap ul li a {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .stadt-left-content-wrap .stadt-left-content-heading {
+        padding: 35px 40px 25px;
+    }
+    .stadt-left-content-wrap ul {
+        padding: 50px 32px;
+    }
+    .stadt-left-content-wrap ul li span {
+        width: 38px;
+    }
+    .stadt-left-content {
+        width: 420px;
+    }
+    .stadt-right-content {
+        width: calc(100% - 420px);
+        padding-left: 60px;
+    }
+    .stadt-right-content ul li {
+        margin-bottom: 54px;
+    }
+    .stadt-right-content ul li h5 {
+        font-size: 23px;
+        margin-bottom: 22px;
+    }
+    .stadt-right-content ul li p {
+        font-size: 20px;
+        padding-right: 80px;
+    }
+    .stadt-right-content ul li a {
+        font-size: 20px;
+        bottom: 4px;
+    }
+    /*-_-_hamburg-2_CSS_End_-_-*/
+    /*-_-_faqs-2_CSS_Start_-_-*/
+    .faqs-banner.banner .banner-content {
+        padding: 240px 0 360px;
+    }
+    .faqs-banner.banner .banner-content h1,
+    .faqs-banner.banner .banner-content h2 {
+        margin-bottom: 16px;
+    }
+    .faqs-banner.banner .banner-content p {
+        margin-bottom: 20px;
+    }
+    .faqs-search-wrap {
+        max-width: 460px;
+    }
+    .faqs-search-wrap input {
+        height: 56px;
+        font-size: 21px;
+    }
+    .quick-access-option-wrap .quick-access-option-content {
+        padding: 90px 0 95px;
+    }
+    .quick-access-col .quick-access-img {
+        width: 134px;
+        height: 134px;
+        margin: 0 auto 50px;
+    }
+    .quick-access-option-wrap .quick-access-option-content h2 {
+        margin-bottom: 100px;
+    }
+    .quick-access-col .quick-access-link {
+        font-size: 22px;
+        max-width: 360px;
+    }
+    .faq-benefits-wrap .faq-benefits-content {
+        padding: 95px 0 75px;
+    }
+    .faq-benefits-wrap .faq-benefits-content h2 {
+        margin-bottom: 75px;
+    }
+    .faq-benefits {
+        padding: 70px 35px 48px 42px;
+    }
+    .faq-benefits h4 {
+        font-size: 26px;
+    }
+    .faq-benefits p {
+        font-size: 21px;
+    }
+    .faqs-accident-handling.free-accident-handling-wrap .free-accident-handling-content {
+        padding-bottom: 90px;
+    }
+    /*-_-_faqs-2_CSS_End_-_-*/
+    /*-_-_impressum-2_CSS_Start_-_-*/
+    .impressum-banner.banner .banner-content {
+        padding: 220px 0 340px;
+    }
+    .impressum-wrap {
+        padding: 85px 0 140px;
+    }
+    .impressum-wrap .impressum-content h3 {
+        line-height: 1.7;
+    }
+    .impressum-wrap .impressum-content ul li,
+    .impressum-wrap .impressum-content p,
+    .impressum-wrap .impressum-content ul li::before {
+        font-size: 21px;
+        line-height: 1.7;
+    }
+    .impressum-wrap .impressum-content ul,
+    .impressum-wrap .impressum-content p {
+        margin-bottom: 42px;
+    }
+    /*-_-_impressum-2_CSS_End_-_-*/
+}
+
+@media only screen and (max-width: 1440px) {
+    header .navbar .navbar-brand img {
+        max-width: 250px;
+    }
+    header .navbar-nav li a {
+        font-size: 19px;
+    }
+    header .navbar-nav li a.dropdown-toggle::after {
+        margin-left: 8px;
+        font-size: 20px;
+    }
+    header .navbar-nav li {
+        margin-left: 36px;
+    }
+    header .navbar-nav li:last-child {
+        margin-left: 40px;
+    }
+    header .navbar-nav li:last-child a {
+        padding: 0px 20px !important;
+    }
+    header .navbar-nav li .dropdown-menu .dropdown-item {
+        padding: 6px 20px 6px 16px !important;
+        font-size: 17px;
+    }
+    .banner .banner-content h1,
+    .banner .banner-content h2 {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+    .banner .banner-content p {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .banner .banner-content .banner-btn {
+        margin-bottom: 22px;
+    }
+    .banner .banner-content .banner-btn a {
+        padding-top: 3px;
+        font-size: 17px;
+        height: 44px;
+        margin-right: 26px;
+        width: 255px;
+    }
+    .banner .banner-content ul {
+        padding-left: 8px;
+    }
+    .banner .banner-content ul li {
+        font-size: 24px;
+        padding-left: 32px;
+    }
+    .banner .banner-content ul li::before {
+        width: 21px;
+        height: 17px;
+        top: 6px;
+    }
+    .banner .call-now {
+        height: 40px;
+        width: 175px;
+        font-size: 16px;
+        top: 185px;
+        right: -68px;
+        padding-top: 4px;
+    }
+    .banner .call-now i {
+        margin-right: 6px;
+        font-size: 18px;
+    }
+    .banner .wa-now {
+        height: 40px;
+        width: 175px;
+        font-size: 16px;
+        top: 185px;
+        right: -68px;
+        padding-top: 4px;
+    }
+    .banner .wa-now i {
+        margin-right: 6px;
+        font-size: 18px;
+    }
+    .banner .banner-content {
+        padding: 110px 0 95px;
+        width: 53%;
+    }
+    .claims-settlement-wrap .claims-settlement-content p {
+        font-size: 18px;
+        margin-bottom: 14px;
+    }
+    .claims-settlement-wrap .claims-settlement-content ul li {
+        padding: 0 22px;
+    }
+    .claims-settlement-wrap .claims-settlement-content .bild1 {
+        max-height: 80px;
+        max-width: 100px;
+    }
+    .claims-settlement-wrap .claims-settlement-content .bild2 {
+        max-width: 82px;
+    }
+    .claims-settlement-wrap .claims-settlement-content .bild3 {
+        max-width: 82px;
+    }
+    .claims-settlement-wrap .claims-settlement-content .bild4 {
+        max-width: 82px;
+    }
+    .claims-settlement-wrap .claims-settlement-content {
+        padding: 16px 0 22px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    .handling-accident-step-wrap .handling-accident-step {
+        padding: 58px 0 80px;
+    }
+    .handling-accident-step-img {
+        width: 112px;
+        height: 108px;
+        margin: 0 auto 50px;
+    }
+    .handling-accident-step-accordian .handling-accident-step-heading {
+        font-size: 18px;
+        padding: 11px 48px 9.4px;
+    }
+    .handling-accident-step-accordian .handling-accident-step-heading::after {
+        width: 50px;
+        font-size: 32px;
+        padding-top: 1px;
+    }
+    .handling-accident-step-accordian.active .handling-accident-step-heading {
+        border-radius: 19px 19px 0 0;
+    }
+    .handling-accident-step-accordian .handling-accident-step-content {
+        padding: 12px 16px 18px;
+        border-radius: 0 0 19px 19px;
+    }
+    .handling-accident-step-accordian .handling-accident-step-content p {
+        font-size: 16px;
+    }
+    .accident-sponsors-content-inner {
+        max-width: 240px;
+        margin: 0 auto;
+    }
+    .accident-sponsors-content-inner h3 {
+        font-size: 22px;
+        margin-bottom: 21px;
+    }
+    .accident-sponsors-content-inner h2 {
+        font-size: 32px;
+    }
+    .accident-sponsors-wrap .accident-sponsors-content>h3 {
+        margin-bottom: 66px;
+    }
+    .accident-sponsors-wrap .accident-sponsors-content {
+        padding: 44px 0 62px;
+    }
+    .all-services-wrap .all-services-content {
+        padding: 75px 0 40px;
+    }
+    .our-services .our-services-content h3 {
+        font-size: 22px;
+        margin-bottom: 14px;
+    }
+    .our-services .our-services-content p {
+        font-size: 17px;
+    }
+    .all-services-wrap .all-services-content>h3 {
+        font-size: 22px;
+        margin-bottom: 70px;
+    }
+    .our-services {
+        padding-left: 20px;
+        margin-bottom: 65px;
+    }
+    .our-services .our-services-img {
+        height: 95px;
+        width: 90px;
+        margin-right: 35px;
+    }
+    .our-services .our-services-content {
+        max-width: calc(100% - 125px);
+    }
+    .free-accident-handling-btn li {
+        margin-right: 26px;
+    }
+    .free-accident-handling-wrap .free-accident-handling-content {
+        padding: 40px 0 55px;
+        max-width: 700px;
+    }
+    .free-accident-handling-wrap .free-accident-handling-content h3 {
+        margin-bottom: 18px;
+    }
+    .free-accident-handling-wrap .free-accident-handling-content p {
+        font-size: 19px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+    .free-accident-handling-btn li a {
+        padding-top: 3px;
+        font-size: 17px;
+        height: 44px;
+        width: 255px;
+    }
+    .insurance-claim-wrap {
+        padding: 85px 0 65px;
+    }
+    .insurance-claim-wrap .insurance-claim-content .insurance-claim-content-inner h3 {
+        margin-bottom: 20px;
+    }
+    .insurance-claim-wrap .insurance-claim-content .insurance-claim-content-inner p {
+        font-size: 17px;
+    }
+    .insurance-claim-wrap .insurance-claim-content .insurance-claim-content-inner {
+        padding-left: 40px;
+        width: calc(100% - 160px);
+    }
+    .insurance-claim-wrap .insurance-claim-content img {
+        width: 140px;
+    }
+    .insurance-claim-wrap .insurance-claim-content {
+        max-width: 710px;
+    }
+    .opposing-insurance-wrap {
+        padding: 70px 0 90px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content ul li img {
+        width: 44px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content {
+        padding: 38px 28px 50px 32px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content h5 {
+        font-size: 20px;
+        margin-bottom: 38px;
+    }
+    .opposing-insurance-content-inner h6 {
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+    .opposing-insurance-content-inner p {
+        font-size: 15px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content ul li .opposing-insurance-content-inner {
+        width: calc(100% - 44px);
+        padding-left: 22px;
+    }
+    .opposing-insurance-row .opposing-insurance-col {
+        max-width: 320px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content>img {
+        max-width: 220px;
+        margin: 0 auto 25px;
+    }
+    .opposing-insurance-row .opposing-insurance-col.active {
+        max-width: 360px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-col.active ul li {
+        padding-left: 15px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content ul li {
+        padding: 18px 0 16px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content .opposing-insurance-btn a {
+        font-size: 15px;
+        height: 40px;
+        width: 190px;
+        margin-bottom: 22px;
+        padding-top: 3px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-col.active .opposing-insurance-content {
+        padding: 26px 30px 40px 35px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content ul {
+        margin-bottom: 44px;
+    }
+    .customers-say-wrap {
+        padding: 50px 0 92px;
+    }
+    .customers-say-slider .customers-say-slide .customers-say-slide-content {
+        margin-bottom: 75px;
+    }
+    .customers-say-slider .slick-dots li,
+    .customers-say-slider .slick-dots li button,
+    .customers-say-slider .slick-dots li button:before {
+        width: 48px;
+        height: 7px;
+    }
+    .customers-say-slide-img {
+        width: 125px;
+        height: 125px;
+        border: 6px solid #FF7800;
+    }
+    .customers-say-slide-content .customers-say-slide-img .customers-say-slide-video {
+        height: 28px;
+        font-size: 14px;
+        padding: 5px 0;
+        margin-top: 5px;
+    }
+    .customers-say-slide-content .customers-say-slide-img .customers-say-slide-video i {
+        font-size: 14px;
+    }
+    .customers-say-slide-content .customers-say-slide-content-inner {
+        width: calc(100% - 125px);
+        padding-left: 24px;
+    }
+    .customers-say-slide-content .customers-say-slide-content-inner h3 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    .customers-say-slide-content .customers-say-slide-content-inner p {
+        font-size: 17px;
+    }
+    .customers-say-slider .customers-say-slide {
+        padding: 0 42px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content h6 {
+        font-size: 19px;
+        margin-bottom: 9px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content p {
+        font-size: 19px;
+        margin-bottom: 25px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content h3 {
+        margin-bottom: 14px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content {
+        padding: 26px 0 30px;
+        max-width: 740px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content form {
+        width: 340px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content form input {
+        padding: 3px 22px 0 22px;
+        font-size: 18px;
+        width: calc(100% - 140px);
+        height: 44px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content form button {
+        font-size: 18px;
+        height: 44px;
+        width: 140px;
+        padding-top: 3px;
+    }
+    footer .footer-content .footer-logo {
+        max-width: 335px;
+        margin: 0px auto 42px;
+    }
+    footer .footer-content p {
+        font-size: 18px;
+        margin-bottom: 70px;
+    }
+    footer .footer-content {
+        max-width: 745px;
+        padding: 55px 0 70px;
+    }
+    .footer-other-link-wrap li a {
+        font-size: 15px;
+    }
+    .footer-other-link-wrap li::before {
+        font-size: 16px;
+        top: 0px;
+    }
+    .footer-link-wrap .footer-link-content h5 {
+        font-size: 18px;
+        margin-bottom: 26px;
+    }
+    .footer-link-wrap .footer-link-content ul li a {
+        font-size: 17px;
+    }
+    .footer-link-wrap,
+    .footer-social-outer-wrap {
+        max-width: 650px;
+    }
+    .footer-social-outer-wrap .footer-social-wrap h6 {
+        font-size: 17px;
+        margin-bottom: 18px;
+    }
+    .footer-link-wrap .footer-link-content:last-child {
+        max-width: 270px;
+    }
+    .footer-link-wrap .footer-link-content ul {
+        margin-right: 60px;
+    }
+    footer .footer-content {
+        max-width: 680px;
+        padding: 48px 0 60px;
+    }
+    .footer-link-wrap,
+    .footer-social-outer-wrap {
+        max-width: 600px;
+        margin: 0 auto 32px;
+    }
+    .footer-social-outer-wrap {
+        margin: 0 auto 72px;
+    }
+    .footer-social-outer-wrap .footer-social-wrap ul li img {
+        width: 32px;
+    }
+    .footer-social-outer-wrap .footer-social-wrap ul li {
+        margin-right: 26px;
+    }
+    .footer-social-outer-wrap .footer-img-wrap img:first-child {
+        max-width: 250px;
+    }
+    .footer-social-outer-wrap .footer-img-wrap img {
+        max-width: 180px;
+    }
+    /*-_-_Index2_CSS_Start_-_-*/
+    .does-it-work-wrap .does-it-work-content img {
+        max-width: 480px;
+    }
+    .does-it-work-wrap h2 {
+        margin-bottom: 65px;
+    }
+    .free-service-video video {
+        height: 340px;
+    }
+    .free-service-img img {
+        height: 200px;
+        margin: 50px auto;
+        display: block;
+    }
+    .does-it-work-wrap .does-it-work-content h3 {
+        margin-bottom: 48px;
+    }
+    .does-it-work-wrap {
+        padding: 50px 0 90px;
+    }
+    .free-service-wrap {
+        padding: 65px 0;
+    }
+    .blitzmerker-wrap {
+        padding: 65px 0 50px;
+    }
+    .rental-car-wrap {
+        padding: 50px 0 90px;
+    }
+    .rental-car-wrap ul li {
+        padding-left: 22px;
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+    .rental-car-wrap .rental-car-content a {
+        font-size: 16px;
+        margin-left: 22px;
+    }
+    .rental-car-wrap ul li::before {
+        top: 7px;
+        width: 8px;
+        height: 8px;
+    }
+    .compensation-loss-wrap.accident-sponsors-wrap .accident-sponsors-content {
+        padding: 60px 0 65px;
+    }
+    .similar-services-wrap {
+        padding: 58px 0 75px;
+    }
+    .similar-services-wrap .similar-services-content h2 {
+        margin-bottom: 28px;
+    }
+    .similar-services-wrap .similar-services-content-inner {
+        padding: 22px 12px 10px 23px;
+        height: 235px;
+    }
+    /*-_-_Index2_CSS_End_-_-*/
+    /*-_-_werkstatt-2_CSS_Start_-_-*/
+    .werkstatt-banner.index2-banner.banner .banner-content img.banner-desktop-img {
+        width: 36%;
+        left: 53%;
+    }
+    .rental-car-wrap2.rental-car-wrap .rental-car-img img {
+        top: 45%;
+    }
+    /*-_-_werkstatt-2_CSS_End_-_-*/
+    /*-_-_anwalt-2_CSS_Start_-_-*/
+    .anwalt-banner.index2-banner.banner .banner-content img.banner-desktop-img {
+        width: 400px;
+        left: 58.4%;
+    }
+    /*-_-_anwalt-2_CSS_End_-_-*/
+    /*-_-_kfz-sachverstandiger-2_CSS_Start_-_-*/
+    .sachverstandiger-banner.index2-banner.banner .banner-content {
+        width: 61%;
+    }
+    .sachverstandiger-banner.index2-banner.banner .banner-content img.banner-desktop-img {
+        width: 280px;
+        left: 66%;
+    }
+    .sachverstandiger-banner.index2-banner.banner .banner-content img.kfz-e {
+        width: 350px;
+        left: 70%;
+        bottom: 15%;
+    }
+    /*-_-_kfz-sachverstandiger-2_CSS_End_-_-*/
+    /*-_-_hamburg-2_CSS_Start_-_-*/
+    .hamburg-banner.banner .banner-content img.banner-desktop-img {
+        width: 35%;
+    }
+    .your-claim-wrap.free-service-wrap {
+        padding: 100px 0 50px;
+    }
+    .your-claim-wrap.free-service-wrap .free-service-list h3 {
+        margin-bottom: 18px;
+    }
+    .your-claim-wrap.free-service-wrap .free-service-list p {
+        font-size: 19px;
+    }
+    .insurance-company-wrap.opposing-insurance-wrap {
+        padding: 50px 0 80px;
+    }
+    .accident-reports-wrap .accident-reports-content h2 {
+        line-height: 1.32;
+        margin-bottom: 42px;
+    }
+    .accident-reports-wrap .accident-reports-content p {
+        font-size: 35px;
+    }
+    .accident-reports-wrap .accident-reports-content {
+        padding: 110px 0 130px;
+    }
+    .stadt-wrap {
+        padding: 85px 0 80px;
+    }
+    .stadt-left-content-wrap .stadt-left-content-heading p {
+        font-size: 19px;
+    }
+    .stadt-left-content-wrap ul li a {
+        font-size: 19px;
+    }
+    .blitzerker-here img {
+        width: 56px;
+        margin: 0 auto 20px;
+    }
+    .blitzerker-here h3 {
+        margin-bottom: 18px;
+    }
+    .stadt-left-content-wrap .stadt-left-content-heading {
+        padding: 34px 35px 24px;
+    }
+    .stadt-left-content-wrap ul {
+        padding: 42px 30px;
+    }
+    .stadt-left-content-wrap ul li span {
+        width: 35px;
+    }
+    .stadt-left-content {
+        width: 390px;
+    }
+    .stadt-right-content ul li h5 {
+        font-size: 22px;
+        margin-bottom: 18px;
+    }
+    .stadt-right-content {
+        width: calc(100% - 390px);
+        padding-left: 45px;
+    }
+    .stadt-right-content ul li {
+        margin-bottom: 48px;
+    }
+    .stadt-right-content ul li p {
+        font-size: 19px;
+    }
+    .stadt-right-content ul li a {
+        font-size: 19px;
+        bottom: 5px;
+    }
+    .blitzerker-here p {
+        font-size: 27px;
+    }
+    /*-_-_hamburg-2_CSS_End_-_-*/
+    /*-_-_faqs-2_CSS_Start_-_-*/
+    .faqs-banner.banner .banner-content {
+        padding: 210px 0 320px;
+    }
+    .faqs-banner.banner .banner-content h1,
+    .faqs-banner.banner .banner-content h2 {
+        margin-bottom: 14px;
+    }
+    .faqs-banner.banner .banner-content p {
+        margin-bottom: 18px;
+    }
+    .faqs-banner.index2-banner.banner .banner-content img.banner-desktop-img {
+        width: 45%;
+    }
+    .faqs-search-wrap {
+        max-width: 400px;
+    }
+    .faqs-search-wrap input {
+        height: 54px;
+        font-size: 19px;
+    }
+    .faqs-search-wrap img {
+        width: 23px;
+    }
+    .quick-access-option-wrap .quick-access-option-content {
+        padding: 80px 0 85px;
+    }
+    .quick-access-col .quick-access-img {
+        width: 115px;
+        height: 115px;
+        margin: 0 auto 48px;
+    }
+    .quick-access-option-wrap .quick-access-option-content h2 {
+        margin-bottom: 85px;
+    }
+    .quick-access-col .quick-access-link {
+        font-size: 20px;
+        max-width: 320px;
+        padding: 18px 25px 16px;
+    }
+    .faq-benefits-wrap .faq-benefits-content {
+        padding: 80px 0 65px;
+    }
+    .faq-benefits-wrap .faq-benefits-content h2 {
+        margin-bottom: 65px;
+    }
+    .faq-benefits {
+        padding: 60px 34px 44px 40px;
+    }
+    .faq-benefits h4 {
+        font-size: 24px;
+    }
+    .faq-benefits p {
+        font-size: 19px;
+        line-height: 1.4;
+    }
+    .faqs-accident-handling.free-accident-handling-wrap .free-accident-handling-content {
+        padding-bottom: 70px;
+    }
+    /*-_-_faqs-2_CSS_End_-_-*/
+    /*-_-_impressum-2_CSS_Start_-_-*/
+    .impressum-banner.banner .banner-content {
+        padding: 180px 0 320px;
+    }
+    .impressum-wrap {
+        padding: 80px 0 120px;
+    }
+    .impressum-wrap .impressum-content h3 {
+        line-height: 1.65;
+    }
+    .impressum-wrap .impressum-content ul li,
+    .impressum-wrap .impressum-content p,
+    .impressum-wrap .impressum-content ul li::before {
+        font-size: 19px;
+        line-height: 1.65;
+    }
+    .impressum-wrap .impressum-content ul li {
+        padding-left: 20px;
+    }
+    .impressum-wrap .impressum-content ul,
+    .impressum-wrap .impressum-content p {
+        margin-bottom: 44px;
+    }
+    /*-_-_impressum-2_CSS_End_-_-*/
+}
+
+@media only screen and (max-width: 1199px) {
+    header .navbar {
+        padding: 24px 0 13px;
+    }
+    header .navbar .navbar-brand img {
+        max-width: 210px;
+    }
+    header .navbar-nav li a {
+        font-size: 18px;
+    }
+    header .navbar-nav li {
+        margin-left: 34px;
+    }
+    header .navbar-nav li a.dropdown-toggle::after {
+        margin-left: 6px;
+        font-size: 18px;
+    }
+    header .navbar-nav li:last-child {
+        margin-left: 37px;
+    }
+    header .navbar-nav li:last-child a {
+        padding: 0px 18px !important;
+    }
+    .banner .banner-content h1,
+    .banner .banner-content h2 {
+        font-size: 28px;
+    }
+    .banner .banner-content p {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    .banner .banner-content .banner-btn {
+        margin-bottom: 20px;
+    }
+    .banner .banner-content .banner-btn a {
+        padding-top: 4px;
+        font-size: 14px;
+        height: 40px;
+        margin-right: 24px;
+        width: 220px;
+    }
+    .banner .banner-content ul li {
+        font-size: 20px;
+        padding-left: 28px;
+    }
+    .banner .banner-content ul li::before {
+        width: 17px;
+        height: 14px;
+        top: 5px;
+    }
+    .banner .banner-content {
+        padding: 80px 0 50px;
+        width: 52%;
+    }
+    .banner .call-now {
+        height: 38px;
+        width: 165px;
+        font-size: 14px;
+        top: 160px;
+        right: -63px;
+    }
+    .claims-settlement-wrap .claims-settlement-content p {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+    .claims-settlement-wrap .claims-settlement-content {
+        padding: 12px 0 20px;
+    }
+    .claims-settlement-wrap .claims-settlement-content ul li {
+        padding: 0 17px;
+    }
+    .claims-settlement-wrap .claims-settlement-content ul li img {
+        max-width: 72px;
+    }
+    .handling-accident-step-wrap .handling-accident-step {
+        padding: 42px 0 58px;
+    }
+    h2 {
+        font-size: 29px;
+    }
+    .handling-accident-step-wrap .handling-accident-step h2 {
+        margin-bottom: 75px;
+    }
+    .handling-accident-step-img {
+        width: 88px;
+        height: 88px;
+        margin: 0 auto 45px;
+    }
+    .handling-accident-step-row .handling-accident-step-col {
+        padding: 0 18px;
+    }
+    .handling-accident-step-accordian .handling-accident-step-heading {
+        font-size: 15px;
+        padding: 10px 45px 7.4px;
+    }
+    .handling-accident-step-row {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .handling-accident-step-accordian .handling-accident-step-heading::after {
+        width: 44px;
+        font-size: 26px;
+        padding-top: 1px;
+    }
+    .accident-sponsors-wrap .accident-sponsors-content>h3 {
+        margin-bottom: 56px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    .accident-sponsors-content-inner h3 {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+    .accident-sponsors-content-inner h2 {
+        font-size: 26px;
+        margin-bottom: 12px;
+    }
+    .accident-sponsors-content-inner {
+        max-width: 180px;
+    }
+    .accident-sponsors-wrap .accident-sponsors-content {
+        padding: 34px 0 52px;
+    }
+    .all-services-wrap .all-services-content {
+        padding: 60px 0 30px;
+    }
+    .all-services-wrap .all-services-content>h2 {
+        margin-bottom: 23px;
+    }
+    .all-services-wrap .all-services-content>h3 {
+        font-size: 18px;
+        margin-bottom: 48px;
+    }
+    .our-services .our-services-content h3 {
+        font-size: 18px;
+        margin-bottom: 11px;
+    }
+    .our-services .our-services-content p {
+        font-size: 14px;
+    }
+    .our-services .our-services-img {
+        height: 84px;
+        width: 70px;
+        margin-right: 32px;
+    }
+    .our-services {
+        padding-left: 32px;
+        margin-bottom: 50px;
+    }
+    .free-accident-handling-wrap .free-accident-handling-content h3 {
+        margin-bottom: 15px;
+    }
+    .free-accident-handling-wrap .free-accident-handling-content p {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    .free-accident-handling-wrap .free-accident-handling-content {
+        padding: 33px 0 46px;
+        max-width: 560px;
+    }
+    .free-accident-handling-btn li {
+        margin-right: 22px;
+    }
+    .free-accident-handling-btn li a {
+        padding-top: 4px;
+        font-size: 14px;
+        height: 40px;
+        width: 220px;
+    }
+    .insurance-claim-wrap {
+        padding: 70px 0 58px;
+    }
+    .insurance-claim-wrap .insurance-claim-content .insurance-claim-content-inner h3 {
+        margin-bottom: 18px;
+    }
+    .insurance-claim-wrap .insurance-claim-content .insurance-claim-content-inner p {
+        font-size: 15px;
+    }
+    .insurance-claim-wrap .insurance-claim-content img {
+        width: 125px;
+    }
+    .insurance-claim-wrap .insurance-claim-content .insurance-claim-content-inner {
+        padding-left: 34px;
+        width: calc(100% - 125px);
+    }
+    .insurance-claim-wrap .insurance-claim-content {
+        max-width: 610px;
+    }
+    .opposing-insurance-wrap {
+        padding: 60px 0 80px;
+    }
+    .opposing-insurance-row .opposing-insurance-col {
+        max-width: 270px;
+    }
+    .opposing-insurance-row .opposing-insurance-col.active {
+        max-width: 300px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content h5 {
+        font-size: 16px;
+        margin-bottom: 28px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content {
+        padding: 30px 26px 40px 23px;
+    }
+    .opposing-insurance-content-inner h6 {
+        font-size: 13px;
+    }
+    .opposing-insurance-content-inner p {
+        font-size: 12px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content ul li img {
+        width: 38px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content ul li .opposing-insurance-content-inner {
+        width: calc(100% - 38px);
+        padding-left: 18px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content>img {
+        max-width: 175px;
+        margin: 0 auto 21px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-col.active .opposing-insurance-content {
+        padding: 18px 26px 32px 28px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content ul {
+        margin-bottom: 36px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content .opposing-insurance-btn a {
+        font-size: 12px;
+        height: 30px;
+        width: 150px;
+        margin-bottom: 19px;
+        padding-top: 1px;
+    }
+    .customers-say-wrap .customers-say-content h2 {
+        margin-bottom: 68px;
+        font-size: 28px;
+    }
+    .customers-say-wrap {
+        padding: 41px 0 89px;
+    }
+    .customers-say-slider .customers-say-slide .customers-say-slide-content {
+        margin-bottom: 65px;
+    }
+    .customers-say-slide-img {
+        width: 100px;
+        height: 100px;
+        border: 5px solid #FF7800;
+    }
+    .customers-say-slide-content .customers-say-slide-img .customers-say-slide-video {
+        height: 22px;
+        font-size: 11px;
+        padding: 4px 0;
+        margin-top: 4px;
+    }
+    .customers-say-slide-content .customers-say-slide-img .customers-say-slide-video i {
+        font-size: 11px;
+    }
+    .customers-say-slide-content .customers-say-slide-content-inner {
+        width: calc(100% - 100px);
+        padding-left: 18px;
+    }
+    .customers-say-slide-content .customers-say-slide-content-inner h3 {
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+    .customers-say-slide-content .customers-say-slide-content-inner p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .customers-say-slider .slick-dots li {
+        margin: 0 5px;
+    }
+    .customers-say-slider .slick-dots li,
+    .customers-say-slider .slick-dots li button,
+    .customers-say-slider .slick-dots li button:before {
+        width: 44px;
+        height: 6px;
+    }
+    .customers-say-slider .slick-dots li {
+        margin: 0 5px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content h6 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content p {
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content {
+        padding: 20px 0 22px;
+        max-width: 560px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content form button {
+        font-size: 15px;
+        height: 34px;
+        width: 110px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content form input {
+        padding: 3px 18px 0px 18px;
+        font-size: 15px;
+        width: calc(100% - 110px);
+        height: 34px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content form {
+        width: 270px;
+    }
+    .handling-accident-step-accordian .handling-accident-step-content p {
+        font-size: 13px;
+    }
+    .handling-accident-step-accordian.active .handling-accident-step-heading {
+        border-radius: 16px 16px 0 0;
+    }
+    .handling-accident-step-accordian .handling-accident-step-content {
+        padding: 10px 14px 16px;
+        border-radius: 0 0 16px 16px;
+    }
+    footer .footer-content .footer-logo {
+        max-width: 275px;
+        margin: 0px auto 34px;
+    }
+    footer .footer-content p {
+        font-size: 15px;
+        margin-bottom: 75px;
+    }
+    .footer-link-wrap .footer-link-content h5 {
+        font-size: 15px;
+        margin-bottom: 23px;
+    }
+    .footer-link-wrap .footer-link-content ul li a {
+        font-size: 15px;
+    }
+    .footer-link-wrap,
+    .footer-social-outer-wrap {
+        max-width: 540px;
+        margin: 0 auto 31px;
+    }
+    .footer-social-outer-wrap {
+        margin: 0 auto 67px;
+    }
+    .footer-link-wrap .footer-link-content:last-child {
+        max-width: 200px;
+    }
+    .footer-link-wrap .footer-link-content ul {
+        margin-right: 40px;
+    }
+    .footer-social-outer-wrap .footer-social-wrap h6 {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .footer-social-outer-wrap .footer-social-wrap ul li img {
+        width: 26px;
+    }
+    .footer-social-outer-wrap .footer-social-wrap ul li {
+        margin-right: 21px;
+    }
+    .footer-social-outer-wrap .footer-img-wrap img:first-child {
+        max-width: 210px;
+    }
+    .footer-social-outer-wrap .footer-img-wrap img {
+        max-width: 160px;
+    }
+    .footer-social-outer-wrap .footer-social-wrap {
+        padding-bottom: 5px;
+    }
+    .footer-social-outer-wrap .footer-img-wrap img:last-child {
+        margin-bottom: 6px;
+    }
+    .footer-other-link-wrap li {
+        padding: 0 7px;
+        line-height: 1;
+    }
+    .footer-other-link-wrap li a {
+        font-size: 12px;
+    }
+    .footer-other-link-wrap li::before {
+        font-size: 12px;
+        top: 1.8px;
+    }
+    footer .footer-content {
+        max-width: 620px;
+        padding: 42px 0 58px;
+    }
+    /*-_-_Index2_CSS_Start_-_-*/
+    .does-it-work-wrap {
+        padding: 40px 0 70px;
+    }
+    .does-it-work-wrap .does-it-work-content h3 {
+        margin-bottom: 38px;
+    }
+    .does-it-work-wrap .does-it-work-list ul li {
+        font-size: 22px;
+        padding-left: 58px;
+    }
+    .does-it-work-wrap .does-it-work-content img {
+        max-width: 400px;
+    }
+    .does-it-work-wrap .does-it-work-list ul li span {
+        font-size: 22px;
+        width: 42px;
+        height: 42px;
+        top: 0;
+    }
+    .does-it-work-wrap h2 {
+        margin-bottom: 50px;
+    }
+    .free-service-list ul li {
+        font-size: 22px;
+        line-height: 1.7;
+        padding-left: 40px;
+        margin-bottom: 5px;
+    }
+    .free-service-list ul li::before {
+        width: 26px;
+        height: 20px;
+        top: 7px;
+    }
+    .free-service-list {
+        padding-left: 0;
+    }
+    .free-service-video video {
+        height: 282px;
+    }
+    .free-service-img img {
+        height: 180px;
+        margin: 50px auto;
+        display: block;
+    }
+    .free-service-wrap {
+        padding: 52px 0;
+    }
+    .blitzmerker-wrap .blitzmerker-content p {
+        font-size: 22px;
+    }
+    .blitzmerker-wrap .blitzmerker-content img {
+        margin-bottom: 18px;
+        width: 58px;
+    }
+    .blitzmerker-wrap .blitzmerker-content h3 {
+        margin-bottom: 15px;
+    }
+    .blitzmerker-wrap {
+        padding: 50px 0 42px;
+    }
+    .rental-car-wrap {
+        padding: 42px 0 75px;
+    }
+    .rental-car-wrap h2 {
+        margin-bottom: 42px;
+    }
+    .rental-car-wrap ul li {
+        padding-left: 20px;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .rental-car-wrap .rental-car-content a {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+    .rental-car-wrap ul li::before {
+        top: 6px;
+        width: 7px;
+        height: 7px;
+    }
+    .compensation-loss-wrap.accident-sponsors-wrap .accident-sponsors-content {
+        padding: 50px 0;
+    }
+    .similar-services-wrap {
+        padding: 48px 0 60px;
+    }
+    .similar-services-wrap .similar-services-content h2 {
+        margin-bottom: 24px;
+    }
+    .similar-services-wrap .similar-services-content-inner {
+        padding: 20px 10px 10px 20px;
+        height: 190px;
+    }
+    .similar-services-wrap .similar-services-content-inner a {
+        font-size: 16px;
+        bottom: 12px;
+    }
+    .index2-banner.banner .banner-content img.banner-desktop-img {
+        top: 100px;
+    }
+    /*-_-_Index2_CSS_End_-_-*/
+    /*-_-_werkstatt-2_CSS_Start_-_-*/
+    .werkstatt-banner.index2-banner.banner .banner-content img.banner-desktop-img {
+        width: 32%;
+        left: 55%;
+    }
+    .rental-car-wrap2.rental-car-wrap .rental-car-img img {
+        top: 43%;
+    }
+    /*-_-_werkstatt-2_CSS_End_-_-*/
+    /*-_-_anwalt-2_CSS_Start_-_-*/
+    .anwalt-banner.index2-banner.banner .banner-content img.banner-desktop-img {
+        width: 310px;
+        left: 60%;
+    }
+    /*-_-_anwalt-2_CSS_End_-_-*/
+    /*-_-_kfz-sachverstandiger-2_CSS_Start_-_-*/
+    .sachverstandiger-banner.index2-banner.banner .banner-content img.banner-desktop-img {
+        width: 210px;
+        left: 65%;
+    }
+    .rental-car-wrap4.rental-car-wrap .rental-car-img img {
+        top: 45%;
+    }
+    .sachverstandiger-banner.index2-banner.banner .banner-content {
+        width: 68%;
+    }
+    /*-_-_kfz-sachverstandiger-2_CSS_End_-_-*/
+    /*-_-_hamburg-2_CSS_Start_-_-*/
+    .hamburg-banner.banner .banner-content img.banner-desktop-img {
+        width: 32.8%;
+    }
+    .your-claim-wrap.free-service-wrap .free-service-list h3 {
+        margin-bottom: 16px;
+    }
+    .your-claim-wrap.free-service-wrap .free-service-list p {
+        font-size: 16px;
+    }
+    .your-claim-wrap.free-service-wrap {
+        padding: 94px 0 50px;
+    }
+    .insurance-company-wrap.opposing-insurance-wrap {
+        padding: 50px 0 70px;
+    }
+    .accident-reports-wrap .accident-reports-content {
+        padding: 81px 0 110px;
+        max-width: 515px
+    }
+    .accident-reports-wrap .accident-reports-content h2 {
+        line-height: 1.32;
+        margin-bottom: 38px;
+    }
+    .accident-reports-wrap .accident-reports-content p {
+        font-size: 29px;
+    }
+    .stadt-wrap {
+        padding: 68px 0 70px;
+    }
+    .stadt-left-content-wrap .stadt-left-content-heading p {
+        font-size: 18px;
+    }
+    .stadt-left-content-wrap ul li {
+        margin-bottom: 26px;
+    }
+    .stadt-left-content-wrap ul li a {
+        font-size: 18px;
+    }
+    .stadt-left-content-wrap ul li span {
+        width: 30px;
+    }
+    .stadt-left-content-wrap ul {
+        padding: 40px 25px;
+    }
+    .stadt-left-content {
+        width: 350px;
+    }
+    .blitzerker-here img {
+        width: 50px;
+        margin: 0 auto 16px;
+    }
+    .blitzerker-here h3 {
+        margin-bottom: 14px;
+    }
+    .blitzerker-here p {
+        font-size: 22px;
+    }
+    .stadt-left-content-wrap {
+        border-radius: 18px;
+        margin-bottom: 55px;
+    }
+    .stadt-right-content {
+        width: calc(100% - 350px);
+        padding-left: 35px;
+    }
+    .stadt-right-content ul li {
+        margin-bottom: 40px;
+    }
+    .stadt-right-content ul li h5 {
+        font-size: 21px;
+        margin-bottom: 15px;
+    }
+    .stadt-right-content ul li p {
+        font-size: 18px;
+    }
+    .stadt-right-content ul li a {
+        font-size: 18px;
+    }
+    /*-_-_hamburg-2_CSS_End_-_-*/
+    /*-_-_faqs-2_CSS_Start_-_-*/
+    .faqs-banner.banner .banner-content {
+        padding: 165px 0 265px;
+    }
+    .faqs-banner.banner .banner-content h1,
+    .faqs-banner.banner .banner-content h2 {
+        margin-bottom: 12px;
+    }
+    .faqs-banner.index2-banner.banner .banner-content img.banner-desktop-img {
+        width: 44%;
+    }
+    .faqs-search-wrap {
+        max-width: 300px;
+    }
+    .faqs-search-wrap input {
+        height: 45px;
+        font-size: 16px;
+    }
+    .faqs-search-wrap img {
+        width: 18px;
+    }
+    .quick-access-option-wrap .quick-access-option-content {
+        padding: 70px 0 65px;
+    }
+    .quick-access-col .quick-access-img {
+        width: 90px;
+        height: 90px;
+        margin: 0 auto 38px;
+    }
+    .quick-access-option-wrap .quick-access-option-content h2 {
+        margin-bottom: 55px;
+    }
+    .quick-access-col .quick-access-link {
+        font-size: 17.5px;
+        max-width: 260px;
+        padding: 13px 20px 10px;
+    }
+    .faq-benefits-wrap .faq-benefits-content {
+        padding: 65px 0 55px;
+    }
+    .faq-benefits-wrap .faq-benefits-content h2 {
+        margin-bottom: 48px;
+    }
+    .faq-benefits {
+        padding: 40px 30px 48px 34px;
+        margin-bottom: 23px;
+    }
+    .faq-benefits h4 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    .faq-benefits p {
+        font-size: 17px;
+        line-height: 1.4;
+    }
+    .faqs-accident-handling.free-accident-handling-wrap .free-accident-handling-content {
+        padding-bottom: 65px;
+    }
+    /*-_-_faqs-2_CSS_End_-_-*/
+    /*-_-_impressum-2_CSS_Start_-_-*/
+    .impressum-banner.banner .banner-content {
+        padding: 140px 0 300px;
+    }
+    .impressum-wrap .impressum-content h3 {
+        font-size: 26px;
+    }
+    .impressum-wrap {
+        padding: 65px 0 95px;
+    }
+    .impressum-wrap .impressum-content ul li,
+    .impressum-wrap .impressum-content p,
+    .impressum-wrap .impressum-content ul li::before {
+        font-size: 18px;
+    }
+    .impressum-wrap .impressum-content ul li {
+        padding-left: 20px;
+    }
+    /*-_-_impressum-2_CSS_End_-_-*/
+}
+
+@media only screen and (max-width: 991px) {
+    header .navbar .navbar-brand img {
+        max-width: 155px;
+    }
+    header .navbar-nav li a {
+        font-size: 17px;
+    }
+    header .navbar-nav li {
+        margin-left: 32px;
+    }
+    header .navbar-nav li:last-child {
+        margin-left: 34px;
+    }
+    header .navbar-nav li .dropdown-menu .dropdown-item {
+        padding: 5px 16px 5px 14px !important;
+        font-size: 15px;
+    }
+    header .navbar-nav li a.dropdown-toggle::after {
+        margin-left: 4px;
+        font-size: 18px;
+    }
+    header .navbar {
+        padding: 26px 0 12px;
+    }
+    .banner .call-now {
+        height: 37px;
+        width: 144px;
+        font-size: 13px;
+        top: 140px;
+        right: -54px;
+    }
+    .banner .call-now i {
+        font-size: 15px;
+    }
+    .banner .wa-now {
+        height: 37px;
+        width: 144px;
+        font-size: 13px;
+        top: 140px;
+        right: -54px;
+    }
+    .banner .wa-now i {
+        font-size: 15px;
+    }
+    .banner .banner-content {
+        padding: 48px 0 33px;
+        width: 62%;
+    }
+    .banner .banner-content h1,
+    .banner .banner-content h2 {
+        font-size: 24px;
+    }
+    .banner .banner-content p {
+        font-size: 17px;
+    }
+    .banner .banner-content .banner-btn a {
+        padding-top: 2px;
+        font-size: 12px;
+        height: 36px;
+        margin-right: 24px;
+        width: 195px;
+    }
+    .banner .banner-content ul li {
+        font-size: 17px;
+        padding-left: 24px;
+    }
+    .banner .banner-content ul {
+        padding-left: 0;
+    }
+    .banner .banner-content ul li::before {
+        width: 14px;
+        height: 11px;
+        top: 4px;
+    }
+    .banner .banner-content img.banner-desktop-img {
+        top: 25px;
+        right: -21%;
+        width: 90%;
+    }
+    .claims-settlement-wrap .claims-settlement-content {
+        padding: 8px 0 14px;
+    }
+    .claims-settlement-wrap .claims-settlement-content p {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    .claims-settlement-wrap .claims-settlement-content ul li {
+        padding: 0 14.5px;
+    }
+    /*
+	.claims-settlement-wrap .claims-settlement-content ul li img {
+		max-width: 57px;
+	}*/
+    .claims-settlement-wrap .claims-settlement-content .bild1 {
+        max-width: 70px;
+        max-height: 57px;
+    }
+    .claims-settlement-wrap .claims-settlement-content .bild2 {
+        max-width: 57px;
+    }
+    .claims-settlement-wrap .claims-settlement-content .bild3 {
+        max-width: 57px;
+    }
+    .claims-settlement-wrap .claims-settlement-content .bild4 {
+        max-width: 57px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .handling-accident-step-wrap .handling-accident-step {
+        padding: 28px 0 34px;
+    }
+    .handling-accident-step-wrap .handling-accident-step h2 {
+        margin-bottom: 50px;
+    }
+    .handling-accident-step-img {
+        width: 74px;
+        height: 74px;
+        margin: 0 auto 31px;
+    }
+    .handling-accident-step-row .handling-accident-step-col {
+        padding: 0 12px;
+    }
+    .handling-accident-step-accordian .handling-accident-step-heading {
+        font-size: 12px;
+        padding: 7.5px 30px 6px;
+    }
+    .handling-accident-step-accordian .handling-accident-step-heading::after {
+        width: 30px;
+        font-size: 22px;
+        padding-top: 0px;
+        padding-right: 2px;
+    }
+    .handling-accident-step-accordian .handling-accident-step-content p {
+        font-size: 10px;
+    }
+    .handling-accident-step-accordian.active .handling-accident-step-heading {
+        border-radius: 13px 13px 0 0;
+    }
+    .handling-accident-step-accordian .handling-accident-step-content {
+        padding: 10px 12px 12px;
+        border-radius: 0 0 13px 13px;
+    }
+    .accident-sponsors-wrap .accident-sponsors-content {
+        padding: 25.3px 0 44px;
+    }
+    .accident-sponsors-wrap .accident-sponsors-content>h3 {
+        margin-bottom: 50.5px;
+    }
+    h3 {
+        font-size: 17px;
+    }
+    .accident-sponsors-content-inner h3 {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    .accident-sponsors-content-inner h2 {
+        font-size: 21px;
+        margin-bottom: 11px;
+    }
+    .accident-sponsors-content-inner {
+        max-width: 130px;
+    }
+    .all-services-wrap .all-services-content {
+        padding: 49.5px 0 20px;
+    }
+    .all-services-wrap .all-services-content>h2 {
+        margin-bottom: 18.5px;
+    }
+    .all-services-wrap .all-services-content>h3 {
+        font-size: 12px;
+        margin-bottom: 28px;
+    }
+    .our-services .our-services-img {
+        height: 73px;
+        width: 67px;
+        margin-right: 28px;
+    }
+    .our-services .our-services-content h3 {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    .our-services .our-services-content p {
+        font-size: 12px;
+    }
+    .our-services .our-services-content {
+        max-width: calc(100% - 95px);
+    }
+    .our-services {
+        padding-left: 14px;
+        margin-bottom: 36px;
+    }
+    .free-accident-handling-wrap .free-accident-handling-content {
+        padding: 23.4px 0 41.8px;
+        max-width: 500px;
+    }
+    .free-accident-handling-wrap .free-accident-handling-content h3 {
+        margin-bottom: 11px;
+    }
+    .free-accident-handling-wrap .free-accident-handling-content p {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 16.5px;
+    }
+    .free-accident-handling-btn li {
+        margin-right: 17px;
+    }
+    .free-accident-handling-btn li a {
+        padding-top: 1px;
+        font-size: 12px;
+        height: 29px;
+        width: 156px;
+    }
+    .free-service-img img {
+        height: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+    .insurance-claim-wrap {
+        padding: 57px 0 52px;
+    }
+    .insurance-claim-wrap .insurance-claim-content .insurance-claim-content-inner p {
+        font-size: 12px;
+        line-height: 2;
+    }
+    .insurance-claim-wrap .insurance-claim-content img {
+        width: 115px;
+    }
+    .insurance-claim-wrap .insurance-claim-content .insurance-claim-content-inner {
+        padding-left: 29px;
+        width: calc(100% - 115px);
+    }
+    .insurance-claim-wrap .insurance-claim-content {
+        max-width: 500px;
+    }
+    .opposing-insurance-wrap {
+        padding: 51.7px 0 69px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content h5 {
+        font-size: 12px;
+        margin-bottom: 22px;
+        margin-left: -6px;
+        width: calc(100% + 14px);
+    }
+    .opposing-insurance-row .opposing-insurance-col {
+        max-width: 187px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content ul li img {
+        width: 26px;
+    }
+    .opposing-insurance-content-inner h6 {
+        font-size: 9px;
+        margin-bottom: 6px;
+    }
+    .opposing-insurance-content-inner p {
+        font-size: 8px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content ul li .opposing-insurance-content-inner {
+        width: calc(100% - 26px);
+        padding-left: 16px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content ul li {
+        padding: 12.5px 0 11.3px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content {
+        padding: 23px 23.5px 29px 20px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content>img {
+        max-width: 135px;
+        margin: 0 auto 17px;
+    }
+    .opposing-insurance-row .opposing-insurance-col.active {
+        max-width: 212px;
+    }
+    .opposing-insurance-row {
+        max-width: 670px;
+        margin: 0 auto;
+    }
+    .opposing-insurance-wrap .opposing-insurance-col.active .opposing-insurance-content {
+        padding: 14px 23.7px 23px 21.5px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content ul {
+        margin-bottom: 29px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content .opposing-insurance-btn {
+        padding-left: 0;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content .opposing-insurance-btn a {
+        font-size: 8px;
+        height: 21px;
+        width: 104px;
+        margin-bottom: 17px;
+        padding-top: 1px;
+    }
+    .customers-say-wrap {
+        padding: 31px 0 89px;
+    }
+    .customers-say-wrap .customers-say-content h2 {
+        margin-bottom: 50px;
+        font-size: 22px;
+    }
+    .customers-say-slide-content .customers-say-slide-content-inner h3 {
+        font-size: 17px;
+        margin-bottom: 8px;
+        padding: 0;
+    }
+    .customers-say-slide-content .customers-say-slide-content-inner p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+    .customers-say-slide-img {
+        width: 77px;
+        height: 77px;
+        border: 5px solid #FF7800;
+    }
+    .customers-say-slide-content .customers-say-slide-img .customers-say-slide-video {
+        height: 16px;
+        font-size: 8px;
+        padding: 2px 0;
+        margin-top: 2px;
+    }
+    .customers-say-slide-content .customers-say-slide-img .customers-say-slide-video i {
+        font-size: 8px;
+    }
+    .customers-say-slide-content .customers-say-slide-content-inner {
+        width: calc(100% - 77px);
+        padding-left: 13px;
+    }
+    .customers-say-slider .customers-say-slide {
+        padding: 0 17px;
+    }
+    .customers-say-slider .slick-dots li,
+    .customers-say-slider .slick-dots li button,
+    .customers-say-slider .slick-dots li button:before {
+        width: 42px;
+        height: 5px;
+        padding: 0;
+    }
+    .customers-say-slider .slick-dots li {
+        margin: 0 4px;
+    }
+    .customers-say-slider.slick-slider {
+        padding-bottom: 0px;
+    }
+    .customers-say-slider.slick-slider.customers-say-slider-desktop {
+        display: none !important;
+    }
+    .customers-say-slider.slick-slider.customers-say-slider-mobile {
+        display: block !important;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content h3 {
+        margin-bottom: 9.2px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content h6 {
+        font-size: 12px;
+        margin-bottom: 7.7px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content p {
+        font-size: 12px;
+        margin-bottom: 9.6px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content {
+        padding: 13px 0 19.8px;
+        max-width: 425px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content form button {
+        font-size: 12px;
+        height: 25px;
+        width: 79px;
+        padding-top: 1px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content form input {
+        padding: 4px 13px 0px 13px;
+        font-size: 12px;
+        width: calc(100% - 79px);
+        height: 25px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content form {
+        width: 186px;
+    }
+    footer .footer-content .footer-logo {
+        max-width: 199px;
+        margin: 0px auto 29px;
+    }
+    footer .footer-content p {
+        font-size: 12px;
+        margin-bottom: 41px;
+    }
+    footer .footer-content {
+        max-width: 450px;
+        padding: 36px 0 39px;
+    }
+    .footer-link-wrap .footer-link-content h5 {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .footer-link-wrap .footer-link-content ul li a {
+        font-size: 12px;
+    }
+    .footer-link-wrap .footer-link-content ul {
+        margin-right: 24px;
+    }
+    .footer-link-wrap .footer-link-content:last-child {
+        max-width: 155px;
+    }
+    .footer-link-wrap,
+    .footer-social-outer-wrap {
+        max-width: 360px;
+    }
+    .footer-social-outer-wrap .footer-social-wrap h6 {
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+    .footer-social-outer-wrap .footer-social-wrap ul li img {
+        width: 22px;
+    }
+    .footer-social-outer-wrap .footer-social-wrap ul li {
+        margin-right: 17.3px;
+    }
+    .footer-social-outer-wrap .footer-img-wrap img:first-child {
+        max-width: 143px;
+    }
+    .footer-social-outer-wrap .footer-img-wrap img {
+        max-width: 96px;
+    }
+    .footer-social-outer-wrap .footer-img-wrap img:last-child {
+        margin-bottom: 4px;
+    }
+    .footer-other-link-wrap li a {
+        font-size: 8px;
+    }
+    .footer-other-link-wrap li::before {
+        font-size: 8px;
+        top: 0;
+        right: -2px;
+    }
+    .footer-other-link-wrap li {
+        padding: 0 6px;
+        line-height: 1;
+        display: flex;
+    }
+    /*-_-_Index2_CSS_Start_-_-*/
+    .index2-banner.banner .banner-content img.banner-desktop-img {
+        width: 68%;
+        right: -14%;
+        top: 79px;
+    }
+    .does-it-work-wrap {
+        padding: 25px 0 61px;
+    }
+    .does-it-work-wrap h2 {
+        margin-bottom: 55px;
+    }
+    .does-it-work-wrap .does-it-work-content h3 {
+        margin-bottom: 15px;
+    }
+    .does-it-work-wrap .does-it-work-content img {
+        max-width: 242px;
+    }
+    .does-it-work-wrap .does-it-work-list ul li {
+        font-size: 17px;
+        line-height: 1.5;
+        padding-left: 36px;
+    }
+    .does-it-work-wrap .does-it-work-list ul li span {
+        font-size: 17px;
+        width: 25px;
+        height: 25px;
+        top: -1px;
+    }
+    .free-service-wrap {
+        padding: 26.5px 0;
+    }
+    .free-service-list ul li {
+        font-size: 17px;
+        line-height: 1.8;
+        padding-left: 32px;
+        margin-bottom: 0;
+    }
+    .free-service-list ul li::before {
+        width: 23px;
+        height: 17px;
+        top: 5px;
+    }
+    .free-service-video video {
+        height: 206px;
+    }
+    .free-service-img img {
+        height: 160px;
+        margin: 50px auto;
+        display: block;
+    }
+    .free-service-list {
+        padding-left: 2%;
+    }
+    .blitzmerker-wrap {
+        padding: 18px 0 24px;
+    }
+    .rental-car-wrap {
+        padding: 52px 0 70px;
+    }
+    .rental-car-wrap ul li {
+        padding-left: 15px;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .rental-car-wrap .rental-car-content a {
+        font-size: 12px;
+        margin-left: 15px;
+    }
+    .rental-car-wrap h2 {
+        margin-bottom: 35px;
+    }
+    .rental-car-wrap ul li::before {
+        top: 6px;
+        width: 5.5px;
+        height: 5.5px;
+    }
+    .blitzmerker-wrap .blitzmerker-content .blitzmerker-content-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 13.7px;
+    }
+    .blitzmerker-wrap .blitzmerker-content img {
+        margin-bottom: 0;
+        width: 32px;
+        margin-right: 7.5px;
+    }
+    .blitzmerker-wrap .blitzmerker-content h3 {
+        margin-bottom: 0;
+    }
+    .blitzmerker-wrap .blitzmerker-content p {
+        font-size: 17px;
+        line-height: 1.35;
+    }
+    .compensation-loss-wrap.accident-sponsors-wrap .accident-sponsors-content {
+        padding: 38px 0 57px;
+    }
+    .similar-services-wrap {
+        padding: 24px 0 47px;
+    }
+    .similar-services-wrap .similar-services-content-inner {
+        padding: 11px 8px 8px 11px;
+        height: 138px;
+    }
+    .similar-services-wrap .similar-services-content h2 {
+        margin-bottom: 18.7px;
+    }
+    .similar-services-wrap .similar-services-content-inner a {
+        font-size: 12px;
+        bottom: 9px;
+        right: 8px;
+    }
+    /*-_-_Index2_CSS_End_-_-*/
+    /*-_-_werkstatt-2_CSS_Start_-_-*/
+    .werkstatt-banner.index2-banner.banner .banner-content img.banner-desktop-img {
+        width: 33%;
+        left: 62%;
+    }
+    .rental-car-wrap2.rental-car-wrap .rental-car-img img {
+        top: 42%;
+    }
+    /*-_-_werkstatt-2_CSS_End_-_-*/
+    /*-_-_anwalt-2_CSS_Start_-_-*/
+    .anwalt-banner.index2-banner.banner .banner-content img.banner-desktop-img {
+        width: 240px;
+        left: 65.5%;
+    }
+    .anwalt-banner.index2-banner.banner .banner-content {
+        width: 62%;
+    }
+    /*-_-_anwalt-2_CSS_End_-_-*/
+    /*-_-_kfz-sachverstandiger-2_CSS_Start_-_-*/
+    .sachverstandiger-banner.index2-banner.banner .banner-content {
+        width: 61%;
+    }
+    .sachverstandiger-banner.index2-banner.banner .banner-content img.banner-desktop-img {
+        width: 168px;
+        left: 70%;
+    }
+    .rental-car-wrap4.rental-car-wrap .rental-car-img img {
+        top: 42%;
+    }
+    /*-_-_kfz-sachverstandiger-2_CSS_End_-_-*/
+    /*-_-_hamburg-2_CSS_Start_-_-*/
+    .hamburg-banner.banner .banner-content img.banner-desktop-img {
+        width: 30.8%;
+    }
+    .your-claim-wrap.free-service-wrap .free-service-list {
+        flex-direction: unset;
+        align-items: self-start;
+        padding: 0;
+    }
+    .your-claim-wrap.free-service-wrap .free-service-list img {
+        display: block;
+        width: 39.5px;
+        margin-right: 10.5px;
+    }
+    .your-claim-wrap.free-service-wrap .free-service-list h3 {
+        margin-bottom: 8px;
+    }
+    .your-claim-wrap.free-service-wrap .free-service-list p {
+        font-size: 12px;
+    }
+    .your-claim-wrap.free-service-wrap {
+        padding: 89px 0 47.5px;
+    }
+    .insurance-company-wrap.opposing-insurance-wrap {
+        padding: 47.5px 0 61px;
+    }
+    .accident-reports-wrap .accident-reports-content {
+        padding: 62px 0 90px;
+        max-width: 425px;
+    }
+    .accident-reports-wrap .accident-reports-content h2 {
+        line-height: 1.22;
+        margin-bottom: 29px;
+    }
+    .accident-reports-wrap .accident-reports-content p {
+        font-size: 24px;
+        line-height: 1.22;
+    }
+    .stadt-left-content {
+        width: 100%;
+    }
+    .stadt-left-content-wrap {
+        display: none;
+    }
+    .stadt-right-content ul {
+        display: none;
+    }
+    .stadt-wrap {
+        padding: 56px 0 64px;
+    }
+    .blitzerker-here {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .blitzerker-here img {
+        width: 39px;
+        margin: 0 auto 12.2px;
+    }
+    .blitzerker-here h3 {
+        margin-bottom: 12.2px;
+        font-weight: 700;
+    }
+    .blitzerker-here p {
+        font-size: 17px;
+    }
+    .stadt-wrap .stadt-content-wrap {
+        flex-direction: column-reverse;
+    }
+    .stadt-right-content .stadt-accordion {
+        display: block;
+        margin-bottom: 39px;
+    }
+    .stadt-right-content {
+        width: 100%;
+        padding: 0;
+    }
+    .stadt-accordion .card {
+        border: 0;
+        border-radius: 0;
+        border-bottom: 1px dashed #F07D00 !important;
+        padding: 30px 0 32px;
+    }
+    .stadt-accordion .card:first-child {
+        border-top: 1px dashed #F07D00 !important;
+    }
+    .stadt-accordion .card .card-header {
+        padding: 0;
+        background: #ffffff;
+        border: 0;
+        margin: 0;
+    }
+    .stadt-accordion .card .card-header .btn-link {
+        font-size: 25px;
+        line-height: 1;
+        color: rgba(255, 120, 0, 0.78);
+        border: 0;
+        width: 100%;
+        text-align: left;
+        background: #fff;
+        outline: unset !important;
+        text-decoration: unset;
+        position: relative;
+        padding-right: 45px;
+    }
+    .stadt-accordion .card .card-header .btn-link::after {
+        content: "";
+        background: url(../img/page/mines.png) center center no-repeat;
+        background-size: cover;
+        width: 33px;
+        height: 33px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        pointer-events: none;
+    }
+    .stadt-accordion .card .card-header .btn-link.collapsed::after {
+        background: url(../img/page/plus.png) center center no-repeat;
+        background-size: cover;
+    }
+    .stadt-accordion .card .card-body {
+        padding: 0;
+        margin-top: 26px;
+    }
+    .stadt-accordion .card .card-body p {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+    .stadt-accordion .card .card-body p span {
+        color: #FF7800;
+    }
+    .hamburg-free-accident-handling.free-accident-handling-wrap {
+        display: block;
+    }
+    /*-_-_hamburg-2_CSS_End_-_-*/
+    /*-_-_faqs-2_CSS_Start_-_-*/
+    .faqs-banner.banner .banner-content {
+        width: 55%;
+        padding: 120px 0 200px;
+    }
+    .faqs-banner.banner .banner-content h1,
+    .faqs-banner.banner .banner-content h2 {
+        margin-bottom: 6px;
+    }
+    .faqs-banner.banner .banner-content p {
+        margin-bottom: 24px;
+    }
+    .faqs-banner.index2-banner.banner .banner-content img.banner-desktop-img {
+        width: 44%;
+    }
+    .faqs-claims-wrap.claims-settlement-wrap {
+        display: block;
+    }
+    .faqs-search-wrap {
+        max-width: 200px;
+    }
+    .faqs-search-wrap input {
+        height: 36px;
+        font-size: 12px;
+    }
+    .faqs-search-wrap img {
+        width: 16px;
+        right: 15px;
+    }
+    .quick-access-option-wrap .quick-access-option-content {
+        padding: 60px 0 42px;
+    }
+    .quick-access-col .quick-access-img {
+        width: 82px;
+        height: 78px;
+        margin: 0 auto 31px;
+    }
+    .quick-access-option-wrap .quick-access-option-content h2 {
+        margin-bottom: 42px;
+    }
+    .quick-access-col .quick-access-link {
+        font-size: 15px;
+        max-width: 260px;
+        padding: 10px 20px 8px;
+    }
+    .faq-benefits-wrap .faq-benefits-content {
+        padding: 40px 0 53px;
+    }
+    .faq-benefits-wrap .faq-benefits-content h2 {
+        margin-bottom: 34px;
+    }
+    .faq-benefits {
+        padding: 24px 25px 53px 26px;
+        margin-bottom: 21px;
+    }
+    .faq-benefits h4 {
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+    .faq-benefits p {
+        font-size: 15px;
+        line-height: 1.25;
+    }
+    .faqs-accident-handling.free-accident-handling-wrap .free-accident-handling-content {
+        padding-bottom: 62px;
+    }
+    /*-_-_faqs-2_CSS_End_-_-*/
+    /*-_-_impressum-2_CSS_Start_-_-*/
+    .impressum-banner.banner .banner-content {
+        padding: 84px 0 291px;
+    }
+    .impressum-wrap {
+        padding: 50px 0 77px;
+    }
+    .impressum-wrap .impressum-content h3 {
+        font-size: 24px;
+        line-height: 1.85;
+    }
+    .impressum-wrap .impressum-content ul li,
+    .impressum-wrap .impressum-content p,
+    .impressum-wrap .impressum-content ul li::before {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+    .impressum-wrap .impressum-content ul,
+    .impressum-wrap .impressum-content p {
+        margin-bottom: 46px;
+    }
+    .impressum-wrap .impressum-content ul li {
+        padding-left: 18px;
+    }
+    /*-_-_impressum-2_CSS_End_-_-*/
+}
+
+@media only screen and (max-width: 767px) {
+    header.mobile-sticky {
+        position: sticky;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 50;
+        background: #fff;
+        /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); */
+    }
+    header.mobile-sticky.index2-header {
+        background: #FF9D33;
+    }
+    header .navbar {
+        padding: 26.6px 0 12px;
+    }
+    header .navbar .navbar-brand img {
+        max-width: 146px;
+    }
+    header .navbar-toggler {
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        outline: unset;
+    }
+    header .navbar-toggler .navbar-toggler-icon {
+        width: auto;
+        height: auto;
+    }
+    .user-dropdown {
+        display: block;
+    }
+    .user-dropdown button {
+        background: unset;
+        border: 0;
+        outline: unset;
+    }
+    .user-dropdown button::after {
+        display: none;
+    }
+    .dropdown-menu {
+        left: auto;
+        right: 0;
+        min-width: 8rem;
+        font-size: 14px;
+        padding: 5px 0;
+    }
+    .dropdown-item {
+        display: block;
+        width: 100%;
+        padding: 4px 10px;
+        clear: both;
+        font-weight: 400;
+        color: #212529;
+        text-align: inherit;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0;
+        font-size: 12px;
+    }
+    header .navbar .navbar-brand {
+        padding: 0;
+        margin: 0;
+    }
+    header .navbar-collapse {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        z-index: 5;
+    }
+    header .navbar-nav {
+        align-items: flex-start;
+        text-align: center;
+        background: #fff;
+        padding: 5px 0;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    }
+    header .navbar-nav li {
+        margin-left: 0;
+        width: 100%;
+    }
+    header .navbar-nav li a {
+        font-size: 16px;
+        padding: 5px 12px !important;
+        width: 100%;
+        position: relative;
+    }
+    header .navbar-nav li a.dropdown-toggle::after {
+        position: absolute;
+        right: 12px;
+        top: 6px;
+    }
+    header .navbar-nav li:last-child {
+        display: none;
+    }
+    header .navbar-nav li:last-child a {
+        width: auto;
+    }
+    header .navbar-nav li .dropdown-menu .dropdown-item {
+        padding: 5px 15px 5px 15px !important;
+        font-size: 14px;
+    }
+    .navbar-nav .dropdown-menu {
+        border: 0;
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .banner .banner-content {
+        text-align: center;
+    }
+    .banner .banner-content h1,
+    .banner .banner-content h2 {
+        margin-bottom: 11.3px;
+    }
+    .banner .banner-content p {
+        font-size: 24px;
+        line-height: 1.1;
+        margin-bottom: 17.2px;
+    }
+    .banner .banner-content ul {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner .banner-content ul li {
+        display: inline-block;
+        padding-left: 20px;
+        line-height: 22px;
+    }
+    .banner .banner-content h1,
+    .banner .banner-content h2 {
+        font-size: 36px;
+        margin-bottom: 11.3px;
+        min-height: 86.4px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .banner .banner-content {
+        padding: 24px 0 10px;
+        width: 100%;
+    }
+    .banner .banner-content .banner-btn {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 27px;
+    }
+    .banner .banner-content .banner-btn a {
+        padding-top: 2px;
+        font-size: 20px;
+        height: 55px;
+        width: 100%;
+        max-width: 302px;
+        margin-right: 0;
+        margin-bottom: 23.2px;
+    }
+    .banner .banner-content .banner-btn a:last-child {
+        margin-bottom: 0;
+    }
+    .banner .banner-content img.banner-desktop-img {
+        display: none;
+    }
+    .banner .banner-content img.banner-mobile-img {
+        display: block;
+        max-width: 100%;
+        margin: 35px auto -48px;
+    }
+    .banner .call-now {
+        top: auto;
+        bottom: 100px;
+    }
+    .banner .wa-now {
+        top: auto;
+        bottom: 100px;
+    }
+    .claims-settlement-wrap .claims-settlement-content p {
+        font-size: 20px;
+        margin-bottom: 9px;
+    }
+    /*
+	.claims-settlement-wrap .claims-settlement-content ul li img {
+		max-width: 70px;
+		width: 100%;
+	}
+
+	.claims-settlement-wrap .claims-settlement-content ul li:nth-child(2) img {
+		max-width: 79px;
+	}*/
+    .claims-settlement-wrap .claims-settlement-content .bild1 {
+        max-width: 100px;
+        max-height: 65px;
+        width: 100%;
+    }
+    .claims-settlement-wrap .claims-settlement-content .bild2 {
+        max-width: 70px;
+        width: 100%;
+    }
+    .claims-settlement-wrap .claims-settlement-content .bild3 {
+        max-width: 70px;
+        width: 100%;
+    }
+    .claims-settlement-wrap .claims-settlement-content .bild4 {
+        max-width: 70px;
+        width: 100%;
+    }
+    .claims-settlement-wrap .claims-settlement-content ul li {
+        padding: 0 22px;
+    }
+    .claims-settlement-wrap .claims-settlement-content {
+        padding: 14px 0 10px;
+    }
+    .handling-accident-step-wrap .handling-accident-step {
+        padding: 33px 0 63px;
+    }
+    .handling-accident-step-wrap .handling-accident-step h2 {
+        margin: 0 auto 45px;
+        max-width: 260px;
+        line-height: 1.34;
+    }
+    .handling-accident-step-img {
+        width: 105px;
+        height: 105px;
+        margin: 0 auto 33px;
+    }
+    .handling-accident-step-row .handling-accident-step-col {
+        margin-bottom: 65.2px;
+    }
+    .handling-accident-step-row .handling-accident-step-col:last-child {
+        margin-bottom: 0;
+    }
+    .handling-accident-step-accordian .handling-accident-step-heading {
+        font-size: 20px;
+        padding: 9.5px 30px 6px;
+        max-width: 302px;
+        margin: 0 auto;
+    }
+    .handling-accident-step-row {
+        margin: 0 -15px;
+    }
+    .handling-accident-step-accordian .handling-accident-step-content {
+        max-width: 302px;
+        margin: 0 auto;
+        padding: 12px 15px 15px;
+        border-radius: 0 0 18px 18px;
+    }
+    .handling-accident-step-accordian .handling-accident-step-content p {
+        font-size: 14px;
+    }
+    .handling-accident-step-accordian .handling-accident-step-heading::after {
+        width: 38.4px;
+        font-size: 28px;
+        padding-top: 2px;
+        padding-right: 2px;
+    }
+    .handling-accident-step-accordian.active .handling-accident-step-heading {
+        border-radius: 18px 18px 0 0;
+    }
+    .accident-sponsors-content-inner {
+        max-width: 100%;
+        text-align: left;
+        margin-bottom: 61px;
+    }
+    .accident-sponsors-wrap .accident-sponsors-content {
+        padding: 75px 0 0;
+        margin-bottom: -13.5px;
+    }
+    .accident-sponsors-wrap .accident-sponsors-content>h3 {
+        font-size: 24px;
+        margin-bottom: 59px;
+        line-height: 1.4;
+    }
+    .accident-sponsors-content-inner h3 {
+        font-size: 14px;
+        margin-bottom: 19px;
+        font-weight: 400;
+    }
+    .accident-sponsors-content-inner h2 {
+        font-size: 31px;
+        margin-bottom: 20px;
+    }
+    .accident-sponsors-content-inner h3:last-child {
+        margin-bottom: 0;
+        line-height: 1.34;
+    }
+    .all-services-wrap .all-services-content {
+        padding: 56px 0 16px;
+    }
+    .all-services-wrap .all-services-content>h2 {
+        margin-bottom: 19.6px;
+    }
+    .all-services-wrap .all-services-content>h3 {
+        font-size: 20px;
+        margin-bottom: 62.6px;
+    }
+    .all-services-wrap .all-services-content>h3 {
+        font-size: 20px;
+        line-height: 27.8px;
+        margin-bottom: 57.6px;
+        padding: 0 15px;
+    }
+    .our-services {
+        align-items: flex-start;
+    }
+    .our-services .our-services-img {
+        height: 58px;
+        width: 53px;
+        margin-right: 15px;
+    }
+    .our-services .our-services-content h3 {
+        font-size: 20px;
+        margin-bottom: 11px;
+    }
+    .our-services {
+        padding: 0 15px;
+        margin-bottom: 31px;
+    }
+    .our-services .our-services-content {
+        max-width: calc(100% - 68px);
+    }
+    .free-accident-handling-wrap .free-accident-handling-content {
+        padding: 41px 0 50px;
+        max-width: 500px;
+    }
+    .free-accident-handling-wrap .free-accident-handling-content h3 {
+        margin-bottom: 20px;
+        line-height: 1.5;
+        font-size: 20px;
+    }
+    .free-accident-handling-wrap .free-accident-handling-content p {
+        font-size: 14px;
+        margin-bottom: 35px;
+    }
+    .free-accident-handling-btn {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .free-accident-handling-btn li {
+        margin-right: 0;
+        margin-bottom: 26px;
+    }
+    .free-accident-handling-btn li:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .free-accident-handling-btn li a {
+        padding-top: 2px;
+        font-size: 14px;
+        height: 40px;
+        width: 191px;
+    }
+    .insurance-claim-wrap {
+        padding: 28.4px 0 36px;
+    }
+    .insurance-claim-wrap .insurance-claim-content img {
+        width: 92px;
+        margin-bottom: 24.2px;
+    }
+    .insurance-claim-wrap .insurance-claim-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 15px;
+    }
+    .insurance-claim-wrap .insurance-claim-content .insurance-claim-content-inner {
+        padding-left: 0;
+        width: 100%;
+    }
+    .insurance-claim-wrap .insurance-claim-content .insurance-claim-content-inner h3 {
+        margin-bottom: 20px;
+        font-size: 22px;
+        text-align: center;
+    }
+    .insurance-claim-wrap .insurance-claim-content .insurance-claim-content-inner p {
+        font-size: 14px;
+        line-height: 1.4;
+        text-align: center;
+    }
+    .opposing-insurance-wrap {
+        padding: 36px 0 70px;
+    }
+    .opposing-insurance-row .opposing-insurance-col {
+        max-width: 265px;
+        margin: 0 auto 19px;
+    }
+    .opposing-insurance-row .opposing-insurance-col:nth-child(2) {
+        margin-bottom: 0;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content {
+        padding: 40px 13.5px 49px 20.5px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content h5 {
+        font-size: 18px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content ul li {
+        padding: 15.5px 0 12.5px 19.5px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content ul li img {
+        width: 39px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content ul li .opposing-insurance-content-inner {
+        width: calc(100% - 39px);
+        padding-left: 24px;
+    }
+    .opposing-insurance-content-inner h6 {
+        font-size: 14px;
+        margin-bottom: 9px;
+    }
+    .opposing-insurance-content-inner p {
+        font-size: 12px;
+    }
+    .opposing-insurance-row .opposing-insurance-col.active .opposing-insurance-content {
+        padding: 23px 26px 30px 30.5px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content>img {
+        max-width: 187px;
+        margin: 0 auto 23px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content ul {
+        margin-bottom: 33px;
+    }
+    .opposing-insurance-row .opposing-insurance-col.active {
+        max-width: 293px;
+    }
+    .opposing-insurance-wrap .opposing-insurance-content .opposing-insurance-btn a {
+        font-size: 14px;
+        height: 34px;
+        width: 143px;
+        margin-bottom: 20px;
+        padding-top: 3px;
+    }
+    .customers-say-wrap {
+        padding: 22px 0 65.5px;
+    }
+    .customers-say-wrap .customers-say-content h2 {
+        margin-bottom: 34px;
+        font-size: 20px;
+    }
+    .customers-say-slider .customers-say-slide .customers-say-slide-content {
+        margin-bottom: 76.5px;
+    }
+    .customers-say-slide-img {
+        width: 145px;
+        height: 145px;
+        border: 10px solid #FF7800;
+        margin: 0 auto 36px;
+        display: block;
+    }
+    .customers-say-slide-content .customers-say-slide-img .customers-say-slide-video {
+        height: 32px;
+        font-size: 14px;
+        padding: 9px 0;
+        margin-top: 0;
+    }
+    .customers-say-slide-content .customers-say-slide-img .customers-say-slide-video i {
+        font-size: 14px;
+    }
+    .customers-say-slide-content .customers-say-slide-content-inner {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+    .customers-say-slide-content .customers-say-slide-content-inner h3 {
+        font-size: 22px;
+        margin-bottom: 16px;
+        padding: 0;
+    }
+    .customers-say-slide-content .customers-say-slide-content-inner p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .customers-say-slider .slick-dots li,
+    .customers-say-slider .slick-dots li button,
+    .customers-say-slider .slick-dots li button:before {
+        width: 50px;
+        height: 8px;
+        padding: 0;
+    }
+    .customers-say-slider .slick-prev,
+    .customers-say-slider .slick-next {
+        width: auto;
+        height: auto;
+        top: 72px;
+        z-index: 40;
+    }
+    .customers-say-slider .slick-prev {
+        left: 25px;
+    }
+    .customers-say-slider .slick-next {
+        right: 25px;
+    }
+    .customers-say-slider .slick-prev:before,
+    .customers-say-slider .slick-next:before {
+        display: none;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content {
+        padding: 30px 0 39px;
+        max-width: 425px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content h3 {
+        margin-bottom: 12px;
+        font-size: 20px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content h6 {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content form {
+        width: 286px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content form input {
+        padding: 2px 17px 0px 17px;
+        font-size: 15px;
+        width: calc(100% - 111px);
+        height: 38px;
+    }
+    .stay-in-touch-wrap .stay-in-touch-content form button {
+        font-size: 15px;
+        height: 38px;
+        width: 111px;
+        padding-top: 3px;
+    }
+    footer .footer-content .footer-logo {
+        max-width: 186px;
+        margin: 0px auto 24px;
+    }
+    footer .footer-content {
+        padding: 26px 0 30px;
+    }
+    footer .footer-content p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .footer-link-wrap .footer-link-content h5 {
+        font-size: 15px;
+        margin-bottom: 26px;
+    }
+    .footer-link-wrap .footer-link-content ul li a {
+        font-size: 14px;
+    }
+    .footer-link-wrap .footer-link-content ul {
+        margin-right: 21px;
+    }
+    .footer-link-wrap .footer-link-content {
+        width: 50%;
+    }
+    .footer-link-wrap .footer-link-content:last-child {
+        max-width: 50%;
+    }
+    .footer-link-wrap {
+        margin: 0 auto 37px;
+    }
+    .footer-social-outer-wrap {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 34.3px;
+    }
+    .footer-social-outer-wrap .footer-img-wrap {
+        width: 100%;
+        margin-bottom: 3px;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .footer-social-outer-wrap .footer-social-wrap h6 {
+        font-size: 15px;
+        margin-bottom: 14.5px;
+    }
+    .footer-social-outer-wrap .footer-social-wrap ul li {
+        margin-right: 19px;
+    }
+    .footer-social-outer-wrap .footer-social-wrap ul li:last-child {
+        margin-right: 0;
+    }
+    .footer-social-outer-wrap .footer-social-wrap ul li img {
+        width: 35px;
+    }
+    .footer-other-link-wrap li a {
+        font-size: 15px;
+    }
+    .footer-other-link-wrap li::before {
+        font-size: 15px;
+    }
+    /*-_-_Index2_CSS_Start_-_-*/
+    header.index2-header .navbar-nav li a {
+        color: #373737;
+    }
+    header.index2-header .navbar-nav li:last-child a {
+        border-color: #373737;
+    }
+    header.index2-header .navbar-nav li a.dropdown-toggle::after {
+        color: #373737;
+    }
+    .does-it-work-wrap {
+        padding: 53px 0 110px;
+    }
+    .does-it-work-wrap h2 {
+        margin-bottom: 66px;
+    }
+    .does-it-work-wrap .does-it-work-content h3 {
+        font-size: 20px;
+    }
+    .does-it-work-wrap .does-it-work-content {
+        margin-bottom: 75.6px;
+        height: auto;
+    }
+    .does-it-work-wrap .does-it-work-list {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .does-it-work-wrap .does-it-work-list ul li span {
+        font-size: 20px;
+        width: 29px;
+        height: 29px;
+        top: -1px;
+    }
+    .does-it-work-wrap .does-it-work-list ul li {
+        font-size: 20px;
+        line-height: 1.4;
+        padding-left: 42px;
+        margin-bottom: 28px;
+    }
+    .free-service-wrap {
+        padding: 54.5px 0 40px;
+    }
+    .free-service-video {
+        margin-bottom: 40.6px;
+    }
+    .free-service-img img {
+        height: 160px;
+        margin: 50px auto;
+        display: block;
+    }
+    .free-service-video video {
+        height: 320px;
+    }
+    .free-service-img img {
+        height: 140px;
+        margin: 50px auto;
+        display: block;
+    }
+    .free-service-list ul li {
+        font-size: 20px;
+        padding: 0;
+        width: 100%;
+        padding-top: 45px;
+        margin-bottom: 13px;
+        text-align: center;
+        color: #424242;
+    }
+    .free-service-list ul li::before {
+        width: 43px;
+        height: 32px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+    }
+    .blitzmerker-wrap {
+        padding: 33.4px 0 37.6px;
+    }
+    .rental-car-wrap {
+        padding: 0px;
+    }
+    .rental-car-wrap h2 {
+        display: none;
+    }
+    .rental-car-wrap .rental-car-content h2 {
+        display: block;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 41px;
+    }
+    .rental-car-wrap .rental-car-content a {
+        display: inline-block;
+        max-width: 67px;
+        font-size: 12px;
+        font-weight: 700;
+        color: #FF7800;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        text-transform: unset;
+        text-decoration: unset;
+    }
+    .rental-car-wrap .rental-car-content a img {
+        display: inline-block;
+        margin-top: 5px;
+    }
+    .rental-car-wrap ul {
+        margin-bottom: 0px;
+    }
+    .rental-car-wrap ul li {
+        padding-left: 15px;
+        font-size: 12px;
+        margin-bottom: 17px;
+    }
+    .rental-car-wrap .rental-car-img img {
+        position: static;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        transform: unset;
+    }
+    .rental-car-wrap .rental-car-row {
+        flex-direction: column-reverse;
+    }
+    .rental-car-wrap .rental-car-img {
+        margin-bottom: 33px;
+    }
+    .compensation-loss-wrap.accident-sponsors-wrap .accident-sponsors-content {
+        padding: 61px 0 71px;
+    }
+    .compensation-loss-wrap.accident-sponsors-wrap .accident-sponsors-content>h3 {
+        margin-bottom: 72px;
+    }
+    .compensation-loss-wrap.accident-sponsors-wrap .accident-sponsors-content-inner {
+        margin-bottom: 60px;
+        max-width: 136px;
+        text-align: center;
+    }
+    .compensation-loss-wrap.accident-sponsors-wrap .accident-sponsors-col:last-child .accident-sponsors-content-inner {
+        margin-bottom: 0;
+    }
+    .compensation-loss-wrap.accident-sponsors-wrap .accident-sponsors-content-inner h3 {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    .compensation-loss-wrap.accident-sponsors-wrap .accident-sponsors-content-inner h2 {
+        font-size: 30px;
+        margin-bottom: 9px;
+    }
+    .compensation-loss-wrap.accident-sponsors-wrap .accident-sponsors-content-inner h3:last-child {
+        margin-bottom: 0;
+    }
+    .similar-services-wrap .similar-services-content-inner h3 {
+        font-size: 20px;
+    }
+    .similar-services-wrap .similar-services-content-inner {
+        padding: 17px 8px 8px 18px;
+        height: 200px;
+        width: 320px;
+        margin: 0 auto 14px;
+    }
+    .similar-services-wrap {
+        padding: 29.2px 0 40px;
+    }
+    .similar-services-wrap .similar-services-content h2 {
+        font-weight: 700;
+        margin-bottom: 28px;
+    }
+    .compensation-loss-wrap.accident-sponsors-wrap .accident-sponsors-content>h3 {
+        font-size: 20px;
+    }
+    .index2-banner.banner .banner-content img.banner-mobile-img {
+        display: block;
+        width: 130px;
+        margin: 55px auto -10px;
+    }
+    /*-_-_Index2_CSS_End_-_-*/
+    /*-_-_werkstatt-2_CSS_Start_-_-*/
+    .werkstatt-banner.index2-banner.banner .banner-content img.banner-mobile-img {
+        margin: 21px auto -4px;
+    }
+    .rental-car-wrap2.rental-car-wrap .rental-car-img {
+        margin-bottom: 75px;
+    }
+    /*-_-_werkstatt-2_CSS_End_-_-*/
+    /*-_-_anwalt-2_CSS_Start_-_-*/
+    .anwalt-banner.index2-banner.banner .banner-content img.banner-desktop-img {
+        width: 240px;
+        left: 58.5%;
+    }
+    .anwalt-banner.index2-banner.banner .banner-content {
+        width: 100%;
+    }
+    .anwalt-banner.index2-banner.banner .banner-content img.banner-mobile-img {
+        margin: 13px auto -10px;
+    }
+    .rental-car-wrap3.rental-car-wrap .rental-car-img {
+        margin-bottom: 10px;
+    }
+    /*-_-_anwalt-2_CSS_End_-_-*/
+    /*-_-_kfz-sachverstandiger-2_CSS_Start_-_-*/
+    .sachverstandiger-banner.index2-banner.banner .banner-content img.banner-mobile-img {
+        margin: 20px auto -10px;
+    }
+    .sachverstandiger-banner.index2-banner.banner .banner-content {
+        width: 100%;
+    }
+    .rental-car-wrap4.rental-car-wrap .rental-car-img {
+        margin-bottom: 45px;
+    }
+    /*-_-_kfz-sachverstandiger-2_CSS_End_-_-*/
+    /*-_-_hamburg-2_CSS_Start_-_-*/
+    .hamburg-banner.banner .banner-content img.banner-mobile-img {
+        margin: 35px auto -24px;
+    }
+    .accident-reports-wrap .accident-reports-content {
+        padding: 111px 0 110px;
+        max-width: 300px;
+    }
+    .accident-reports-wrap .accident-reports-content h2 {
+        line-height: 1.52;
+        margin-bottom: 36px;
+    }
+    .accident-reports-wrap .accident-reports-content p {
+        font-size: 14px;
+        line-height: 36px;
+    }
+    .stadt-accordion .card .card-header .btn-link {
+        font-size: 14px;
+        padding-right: 26px;
+    }
+    .stadt-accordion .card .card-header .btn-link::after {
+        width: 18px;
+        height: 18px;
+    }
+    .stadt-accordion .card {
+        border-color: #1A1A1A !important;
+        padding: 30px 0 27.2px;
+    }
+    .stadt-accordion .card:first-child {
+        border-color: #1A1A1A !important;
+    }
+    .stadt-wrap {
+        padding: 47px 0 62px;
+    }
+    .blitzerker-here {
+        display: none;
+    }
+    .stadt-right-content .stadt-accordion {
+        margin-bottom: 0;
+    }
+    .your-claim-wrap.free-service-wrap {
+        padding: 69px 0 25.5px;
+    }
+    .your-claim-wrap.free-service-wrap .free-service-video {
+        margin-bottom: 71.7px;
+    }
+    .your-claim-wrap.free-service-wrap .free-service-list {
+        flex-direction: column;
+    }
+    .your-claim-wrap.free-service-wrap .free-service-list img {
+        margin: 0 auto 24.2px;
+        width: 92.4px;
+    }
+    .your-claim-wrap.free-service-wrap .free-service-list .free-service-content {
+        text-align: center;
+    }
+    .your-claim-wrap.free-service-wrap .free-service-list h3 {
+        font-size: 22px;
+        line-height: 28px;
+        margin-bottom: 21px;
+    }
+    .your-claim-wrap.free-service-wrap .free-service-list p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    /*-_-_hamburg-2_CSS_End_-_-*/
+    /*-_-_faqs-2_CSS_Start_-_-*/
+    .faqs-banner.banner .banner-content {
+        width: 100%;
+        padding: 24px 0 0px;
+    }
+    .faqs-banner.banner .banner-content h1,
+    .faqs-banner.banner .banner-content h2 {
+        margin-bottom: 6px;
+    }
+    .faqs-banner.banner .banner-content p {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    .faqs-banner.index2-banner.banner .banner-content img.banner-mobile-img {
+        width: auto;
+        mix-blend-mode: multiply;
+        margin: 5px auto 0px;
+    }
+    .faqs-search-wrap {
+        max-width: 301px;
+    }
+    .faqs-search-wrap input {
+        height: 54px;
+        font-size: 20px;
+        padding: 0 55px 0 30px;
+    }
+    .faqs-search-wrap img {
+        width: 23.8px;
+        right: 20.8px;
+    }
+    .quick-access-option-wrap .quick-access-option-content {
+        padding: 30px 0 75px;
+    }
+    .quick-access-col {
+        margin-bottom: 70px;
+    }
+    .quick-access-col:last-child {
+        margin-bottom: 0px;
+    }
+    .quick-access-col .quick-access-img {
+        width: 105px;
+        height: 105px;
+        margin: 0 auto 40px;
+    }
+    .quick-access-option-wrap .quick-access-option-content h2 {
+        margin-bottom: 49.5px;
+        line-height: 1.2;
+    }
+    .quick-access-col .quick-access-link {
+        font-size: 20px;
+        max-width: 302px;
+        padding: 14px 20px 12px;
+    }
+    .faq-benefits-wrap .faq-benefits-content {
+        padding: 75px 0 28px;
+    }
+    .faq-benefits-wrap .faq-benefits-content h2 {
+        margin-bottom: 41px;
+        line-height: 1.2;
+    }
+    .faq-benefits {
+        padding: 20px 16px 0;
+    }
+    .faq-benefits h4 {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 24px;
+    }
+    .faq-benefits p {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 27px;
+    }
+    .faq-benefits a {
+        width: 67px;
+        position: static;
+        margin: 0 auto;
+        display: block;
+    }
+    .faq-benefits a span {
+        display: inline-block;
+    }
+    .faqs-accident-handling.free-accident-handling-wrap .free-accident-handling-content {
+        padding-bottom: 48px;
+    }
+    /*-_-_faqs-2_CSS_End_-_-*/
+    /*-_-_impressum-2_CSS_Start_-_-*/
+    .impressum-banner.banner .banner-content {
+        padding: 240px 0 466px;
+    }
+    .impressum-banner.banner .banner-content h1,
+    .impressum-banner.banner .banner-content h2 {
+        min-height: unset;
+        line-height: 1;
+    }
+    .impressum-wrap {
+        padding: 40px 0 56px;
+    }
+    .impressum-wrap .impressum-content h3 {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .impressum-wrap .impressum-content ul li,
+    .impressum-wrap .impressum-content p,
+    .impressum-wrap .impressum-content ul li::before {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    .impressum-wrap .impressum-content ul,
+    .impressum-wrap .impressum-content p {
+        margin-bottom: 17px;
+    }
+    .impressum-wrap .impressum-content ul li {
+        padding-left: 17px;
+    }
+    /*-_-_impressum-2_CSS_End_-_-*/
+}
+
+@media only screen and (max-width: 640px) {}
+
+@media only screen and (max-width: 575px) {
+    .free-service-video video {
+        height: 283px;
+        width: 450px;
+        margin: 0 auto;
+        display: block;
+    }
+    .free-service-img img {
+        height: 140px;
+        margin: 50px auto;
+        display: block;
+    }
+    .container {
+        padding: 0 20px;
+    }
+    .rental-car-wrap .rental-car-img img {
+        width: calc(100% + 30px);
+        margin-left: -10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .index2-banner.banner {
+        height: 610px;
+    }
+    .banner .banner-content .banner-btn a {
+        height: 50px;
+    }
+    .free-service-video video {
+        height: 216px;
+        width: 344px;
+    }
+    .free-service-img img {
+        height: 140px;
+        margin: 50px auto;
+        display: block;
+    }
+    .similar-services-wrap .similar-services-content-inner {
+        padding: 17px 8px 8px 18px;
+        height: 183px;
+        width: 280px;
+        margin: 0 auto 14px;
+    }
+    .index2-banner.banner .banner-content img.banner-mobile-img {
+        display: inline-block;
+        width: 130px;
+        margin: 55px -30px -10px;
+        bottom: 11px;
+        position: relative;
+    }
+    .index2-banner.banner .banner-content img.anwa {
+        display: inline-block;
+        width: 160px;
+        margin: 55px -30px -10px;
+        bottom: 6px;
+        position: relative;
+    }
+    .index2-banner.banner .banner-content img.ersatz {
+        display: inline-block;
+        width: 350px;
+        margin: 55px -30px -10px;
+        bottom: 30px;
+        position: relative;
+    }
+    .index2-banner.banner .banner-content img.werks {
+        display: inline-block;
+        width: 190px;
+        margin: 55px -30px -10px;
+        bottom: 2px;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .banner .banner-content h1,
+    .banner .banner-content h2 {
+        font-size: 34px;
+    }
+    .banner .banner-content p {
+        font-size: 22px;
+    }
+    .free-service-video video {
+        height: 182px;
+        width: 290px;
+    }
+    .free-service-img img {
+        height: 140px;
+        margin: 50px auto;
+        display: block;
+    }
+    .compensation-loss-wrap.accident-sponsors-wrap .accident-sponsors-content>h3 {
+        word-break: break-all;
+    }
+    .index2-banner.banner .banner-content img.banner-mobile-img {
+        display: inline-block;
+        width: 110px;
+        /* bottom: -10px; */
+        margin: 55px 0px -10px;
+    }
+}
+
+@media screen and (min-width:1710px) {
+    .claims-settlement-wrap .claims-settlement-content .bild1 {
+        max-width: 135px;
+        width: 100%;
+    }
+    .claims-settlement-wrap .claims-settlement-content .bild2 {
+        max-width: 105px;
+        width: 100%;
+    }
+    .claims-settlement-wrap .claims-settlement-content .bild3 {
+        max-width: 105px;
+        width: 100%;
+    }
+    .claims-settlement-wrap .claims-settlement-content .bild4 {
+        max-width: 105px;
+        width: 100%;
+    }
+}
+
+.copyright {
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 40px;
+    position: relative;
+    bottom: 50px;
+}
+
+@media screen and (max-width: 980px) {
+    .copyright {
+        bottom: 10px;
+    }
+}
+
+.bildver {
+    height: 95%;
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    .sachverstandiger-banner.index2-banner.banner .banner-content img.kfz-e {
+        width: 250px;
+        left: 67%;
+        top: -22%;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1000px) {
+    .sachverstandiger-banner.index2-banner.banner .banner-content img.kfz-e {
+        width: 250px;
+        left: 70%;
+        top: -17%;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .sachverstandiger-banner.index2-banner.banner .banner-content img.kfz-e {
+        width: 300px;
+        left: 70%;
+        top: -27%;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1439px) {
+    .sachverstandiger-banner.index2-banner.banner .banner-content img.kfz-e {
+        width: 380px;
+        left: 68%;
+        top: -25%;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+    .sachverstandiger-banner.index2-banner.banner .banner-content img.kfz-e {
+        width: 450px;
+        left: 67%;
+        top: -30%;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 2000px) {
+    .sachverstandiger-banner.index2-banner.banner .banner-content img.kfz-e {
+        width: 460px;
+        left: 67%;
+        top: -24%;
+    }
+}
+
+@media (min-width: 2000px) and (max-width: 4000px) {
+    .sachverstandiger-banner.index2-banner.banner .banner-content img.kfz-e {
+        width: 550px;
+        left: 67%;
+        top: -24%;
+    }
+}
+
+
+/* .wrapperr ul {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    list-style: none;
+}
+
+.wrapperr ul li {
+    margin: 15px 0;
+
+}
+
+
+.wrapperr ul li a {
+    color: rgb(180, 11, 11);
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px 50px;
+} */
+
+.langimg {
+    position: relative;
+    margin-left: 24px;
+    padding: 3px 2px 0px;
+}
+
+@media (min-width: 0px) and (max-width: 766px) {
+    .langimg,
+    .lang {
+        display: none;
+    }
+}
+
+.lang {
+    color: #343434;
+    font-size: 10px;
+    font-weight: normal;
+    margin-right: 3px;
+    margin-left: 3px;
+    font-family: 'Axiforma';
+    font-style: normal;
+}
+
+@media screen and (max-width: 750px) {
+    .bu {
+        display: none;
+    }
+}
+
+
+/* .buu {
+    background-color: #FF9D33;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 30px;
+    padding: 3px 2px 0px;
+    align-items: center;
+    opacity: 90%;
+    font-size: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    box-shadow: 1px 1px 5px rgb(183, 178, 178);
+    text-decoration: none;
+
+} */
+
+.buu:hover {
+    color: #fff;
+}
+
+@media screen and (min-width: 750px) {
+    .buu {
+        display: none;
+    }
+}
+
+@media(min-height: 200px) and (max-height: 750px) {
+    header.navtop {
+        height: 60px;
+    }
+    header.navtop nav a img {
+        width: 100%;
+        /* top: 4px; */
+    }
+    header.navtop .buu {
+        bottom: 34.5px !important;
+    }
+}
+
+@media(min-height: 751px) and (max-height: 4000px) {
+    header.navtop nav a img {
+        width: 100%;
+        /* top: 4px; */
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .buu {
+        margin-left: 100px !important;
+        position: relative !important;
+        bottom: 37px !important;
+        right: -69% !important;
+        top: -37px !important;
+    }
+}
+
+@media (min-width:320px) and (max-width: 480px) {
+    .buu {
+        margin-left: 100px !important;
+        position: relative !important;
+        bottom: 37px !important;
+        right: -59% !;
+    }
+}
+
+.tes {
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    .tes {
+        display: block !important;
+    }
+}
+
+.test {
+    display: block !important;
+}
+
+@media (min-width:150px) and (max-width: 700px) {
+    .buu {
+        bottom: 26px !important;
+        position: relative !important;
+    }
+}

@@ -1,0 +1,492 @@
+body, html {
+    font-family: 'Axiforma', sans-serif;
+    line-height: 1.5;
+}
+.fa-angle-down:before {
+    content: "\2193";
+}
+.fa-angle-up:before {
+    content: "\f106";
+}
+
+.nav-bar {
+    position: fixed;
+    background: none;
+    z-index: 9999;
+}
+
+.login-button {
+    width: 142px;
+    height: 34px;
+    background: #f39732;
+    position: relative;
+    padding: 8px;
+    border-radius: 24px;
+    top: 35px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+.nav-login-button {
+    width: 142px;
+    height: 34px;
+    background: #f39732;
+    position: relative;
+    padding: 8px;
+    border-radius: 24px;
+    top: 7px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.nav-login-button:hover {
+    color: #000000;
+}
+.login-button:hover {
+    background: #faa245;
+    border: none;
+    color: white !important;
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#overlay p {
+    font-family: 'Axiforma-Bold', serif;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    height: 50px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.overlay {
+    z-index: 99999 !important;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    opacity: 96%;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+
+
+.overlay a:hover, .overlay a:focus {
+    color: #f39732;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+.war {
+    font-size: 23px;
+}
+.color {
+    color: #fff;
+}
+
+.imgobenlinks {
+    display: none;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+
+    .nav-bar {
+        font-size: 23px;
+        color: black;
+        float: right;
+        padding: 8px;
+        position: absolute;
+        top: 16px;
+        /* width: 100%; */
+    }
+
+    .nav-bar a {
+        color: black;
+        float: right;
+    }
+    .nav-logo-mobile {
+        display: block;
+        float: left;
+    }
+
+    .nav-logo-mobile img {
+        height: 28px;
+    }
+    .nav-logo-overlay {
+        float: none;
+    }
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 65px;
+        top: -25px;
+        right: -4px;
+    }
+    .login-button {
+        width: 142px;
+        height: 46px;
+        background: #f39732;
+        position: relative;
+        padding: 6px;
+        border-radius: 24px;
+        top: 0px;
+        margin: auto;
+    }
+
+}    
+
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+
+    .nav-bar {
+        font-size: 30px;
+        color: black;
+        float: right;
+        padding: 8px;
+        width: 100%;
+    }
+
+    .nav-bar a {
+        color: black;
+        float: right;
+    }
+    .nav-logo-mobile {
+        display: block;
+        float: left;
+    }
+
+    .nav-logo-mobile img {
+        height: 28px;
+    }
+    .nav-logo-overlay {
+        float: none;
+    }
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 65px;
+        top: -25px;
+        right: -4px;
+    }
+    .login-button {
+        width: 142px;
+        height: 44px;
+        background: #f39732;
+        position: relative;
+        margin: 0 auto;
+        padding: 12px;
+        border-radius: 24px;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .nav-bar {
+        font-size: 30px;
+        color: black;
+        float: right;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .nav-bar a {
+        color: black;
+        float: right;
+    }
+
+    .nav-logo-mobile {
+        display: block;
+        float: left;
+    }
+
+    .nav-logo-mobile img {
+        height: 41px;
+    }
+    .nav-logo-overlay {
+        float: none;
+    }
+
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    .login-button {
+        width: 142px;
+        height: 46px;
+        background: #f39732;
+        position: relative;
+        padding: 6px;
+        border-radius: 24px;
+        top: 0;
+        margin: auto;
+    }
+
+}    
+
+.er {
+
+    display: none;
+            
+}
+
+@media (min-width: 20px) and (max-width: 766px) {
+
+    .er {
+
+        display: block;
+                
+    }
+    
+}
+
+/*ab hier wird die neue version von der Datei Schaden-melden bearbeitet*/
+html {
+    scroll-behavior: smooth;
+
+}
+.coool {
+    font-weight: bolder !important;
+    text-align: center;
+    margin-top: 30px;
+}
+.col h1 {
+    margin-top: 15px;
+    font-size: 36px;
+    text-align: center;
+}
+ .h1 {
+    margin-top: 130px;
+    font-size: 36px;
+    text-align: center;
+    font-weight: 400;
+
+}
+.content p {
+    text-align: center;
+}
+
+.text-center button {
+    margin-bottom: 50px;
+}
+.pb-5 h1 {
+
+    margin-top: 140px;
+    font-size: 33px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.col {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+.new {
+    margin-top: -20px !important;
+}
+
+.description2 {
+    margin-top: -10px !important;
+    margin-bottom: 30px !important;
+}
+.neww {
+
+    padding-left: 16px !important;
+padding-right: 16px !important;
+
+}
+/* .colo, .colo2 {
+    color: rgb(243, 151, 50);
+}
+
+.colo:hover {
+    color: #fff !important;
+} */
+
+ .colo2 {
+    color: rgb(243, 151, 50);
+}
+
+.schwa {
+    color: #ffffff;
+    background: #373737;
+    border: 1px solid;
+}
+.schwa:hover {
+    color: #ffffff;
+    background: rgb(243, 151, 50);
+    border: 1px solid;
+    transition: 0.4s;
+}
+
+.new-ab {
+    color: #ffffff;
+    background: rgb(243, 151, 50);
+    border: 1px solid;
+
+}
+
+.report-new .form-control-new {
+    
+    border-radius: 5px;
+    margin-bottom: 25px;
+    border: 1px solid #ffffff;
+    border-radius: 22px;
+
+}
+.pt-5 {
+    margin-bottom: 15px;
+
+}
+.test-pla ::placeholder {
+    font-size: 16.1px !important;
+}
+.new-button {
+    width: 120px !important;
+    font-family:'Axiforma' !important ;
+    border-radius: 20px !important;
+    border: 3px solid rgb(243, 151, 50) !important;
+    padding: 0.5px 30px !important;
+    display: inline-block !important;
+    background-color: #f8f8f8;
+    color: #343434 !important;
+    text-align: center !important;
+    padding-top: 3px !important;
+    font-size: 19px !important;
+    font-weight: 400 !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.new-button:hover {
+    background: #f8f8f8;
+    border: none;
+    color: #343434 !important;
+}
+
+.new-home {
+
+    font-family:'Axiforma' !important ;
+    color: #343434 !important;
+    text-align: center !important;
+    font-size: 19px !important;
+    font-weight: 400 !important;
+    padding-right: 4px !important;
+
+}
+
+.nav-bar {
+    position: inherit;
+}
+.new-logo-schaden {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    position: relative;
+    left: 5.4px;
+    align-items: center;
+    text-align: center; 
+    float: none;
+
+}
+
+
+.new-logo-schaden-mobile {
+    display: none;
+}
+
+
+
+@media (max-width: 980px) {
+
+    .new-logo-schaden {
+        display: none;
+    
+    }
+
+    .new-logo-schaden-mobile {
+        display: block;
+    }
+    
+    
+}
+
+
+@media (max-width: 980px) {
+    .box {
+
+        display: grid;
+        margin-top: 25px;
+        margin-bottom: 25px;
+
+    }
+    .box a {
+
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+    }
+    
+}
+
+.abschicken-logo {
+
+    margin-top: 8px;
+    /* margin-bottom: 5px; */
+    
+    text-align: center;
+    align-items: center;
+    position: relative;
+    
+}
