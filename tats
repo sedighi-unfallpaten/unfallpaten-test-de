@@ -1,0 +1,87 @@
+warning: LF will be replaced by CRLF in assets/js/schaden-melden/post-advice.js.
+The file will have its original line endings in your working directory.
+[1mdiff --git a/assets/js/schaden-melden/post-advice.js b/assets/js/schaden-melden/post-advice.js[m
+[1mindex a4d6c6c..43a73b8 100644[m
+[1m--- a/assets/js/schaden-melden/post-advice.js[m
+[1m+++ b/assets/js/schaden-melden/post-advice.js[m
+[36m@@ -129,11 +129,8 @@[m [mfunction postOpponentAjaxRequest() {[m
+                 data: formData,[m
+                 complete: function (xhr, status) {[m
+                     if (xhr.readyState === 4 && xhr.status === 200) {[m
+[31m-                        overlay.hide();[m
+[31m-                        $('#success-next-opponent').click();[m
+[32m+[m[32m                        location.replace("https://www.unfallpaten.de/erfolg.html");[m
+                     } else {[m
+[31m-                        $('#submit-opponent').prop("disabled", true);[m
+[31m-                        $('#previous-opponent').prop("disabled", true);[m
+                         location.replace("https://www.unfallpaten.de/fehler.html");[m
+                     }[m
+                 },[m
+[1mdiff --git a/schaden-melden.html b/schaden-melden.html[m
+[1mindex eb49b02..3adb4db 100644[m
+[1m--- a/schaden-melden.html[m
+[1m+++ b/schaden-melden.html[m
+[36m@@ -365,7 +365,7 @@[m
+                             </div>[m
+                         </div>[m
+ [m
+[31m-                        <div id="test-l-3" class="content">[m
+[32m+[m[32m<!--                        <div id="test-l-3" class="content">[m
+                             <div class="pt-5 pb-5">[m
+                                 <div class="pb-5 text-center"><i class="fa fa-check"></i></div>[m
+                                 <h1>Deine Anfrage ist erfolgreich bei uns<br>eingegangen</h1>[m
+[36m@@ -380,7 +380,7 @@[m
+                                     </div>[m
+                                 </div>[m
+                             </div>[m
+[31m-                        </div>[m
+[32m+[m[32m                        </div>-->[m
+                     </div>[m
+                 </div>[m
+             </div>[m
+[1mdiff --git a/sitemap.xml b/sitemap.xml[m
+[1mindex fe43cfa..04869c9 100644[m
+[1m--- a/sitemap.xml[m
+[1m+++ b/sitemap.xml[m
+[36m@@ -118,19 +118,35 @@[m
+ 	</url>[m
+         <url>[m
+ 		<loc>https://www.unfallpaten.de/blog/was-muss-ich-bei-einem-vollkaskoschaden-machen/</loc>[m
+[31m-		<lastmod>2020-04-12</lastmod>[m
+[32m+[m		[32m<lastmod>2020-04-11</lastmod>[m
+ 	</url>[m
+ 	 <url>[m
+ 		<loc>https://www.unfallpaten.de/blog/unfall-melden-von-der-unfallaufnahme-bis-zur-abwicklung/</loc>[m
+[31m-		<lastmod>2020-04-12</lastmod>[m
+[32m+[m		[32m<lastmod>2020-04-11</lastmod>[m
+ 	</url>[m
+ 	 <url>[m
+ 		<loc>https://www.unfallpaten.de/blog/wie-kann-ich-den-kfz-halter-ermitteln/</loc>[m
+[31m-		<lastmod>2020-04-12</lastmod>[m
+[32m+[m		[32m<lastmod>2020-04-11</lastmod>[m
+ 	</url>	[m
+ 	<url>[m
+ 		<loc>https://www.unfallpaten.de/blog/was-sind-bagatellschaeden-und-wie-muss-ich-mich-verhalten/</loc>[m
+[31m-		<lastmod>2020-04-26</lastmod>[m
+[32m+[m		[32m<lastmod>2020-04-11</lastmod>[m
+[32m+[m	[32m</url>[m[41m	[m
+[32m+[m	[32m<url>[m
+[32m+[m		[32m<loc>https://www.unfallpaten.de/blog/wie-mache-ich-bei-der-huk-coburg-eine-schadensmeldung/</loc>[m
+[32m+[m		[32m<lastmod>2020-04-11</lastmod>[m
+[32m+[m	[32m</url>[m[41m	[m
+[32m+[m	[32m<url>[m
+[32m+[m		[32m<loc>https://www.unfallpaten.de/blog/oh-weh-ein-parkrempler-was-kann-ich-tun-als-geschaedigter/</loc>[m
+[32m+[m		[32m<lastmod>2020-04-11</lastmod>[m
+[32m+[m	[32m</url>[m[41m	[m
+[32m+[m	[32m<url>[m
+[32m+[m		[32m<loc>https://www.unfallpaten.de/blog/wie-mache-ich-bei-der-devk-eine-schadensmeldung/</loc>[m
+[32m+[m		[32m<lastmod>2020-04-11</lastmod>[m
+[32m+[m	[32m</url>[m[41m	[m
+[32m+[m	[32m<url>[m
+[32m+[m		[32m<loc>https://www.unfallpaten.de/blog/wie-mache-ich-bei-der-axa-kfz-versicherung-eine-schadensmeldung/</loc>[m
+[32m+[m		[32m<lastmod>2020-04-11</lastmod>[m
+ 	</url>	[m
+ 	<url>[m
+ 		<loc>https://www.unfallpaten.de/impressum.html</loc>[m
+warning: LF will be replaced by CRLF in sitemap.xml.
+The file will have its original line endings in your working directory.

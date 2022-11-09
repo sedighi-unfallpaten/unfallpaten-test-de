@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Disallow: /backup/
+Disallow: /backup-alt/
+Disallow: /tecpert/
+Disallow: /unfallpaten/
+Sitemap: https://www.unfallpaten.de/sitemap.xml

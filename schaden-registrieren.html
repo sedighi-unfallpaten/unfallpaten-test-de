@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Kfz-Gutachter, Rechtsanwalt f&uuml;r Verkehrsrecht, Werkst&auml;tten bis Mietwagen bekommst du auf einer Plattform, kostenlos! Hamburg, Berlin, K&ouml;ln bis M&uuml;nchen">
+    <meta name="keywords"
+          content="Kfz-Gutachten, Fahrzeug, Versicherung, Service, Kfz Gutachter, Kfz Sachverst&auml;ndiger, Begutachtung Auto, Autounfall was tun, Fachanwalt f&uuml;r Verkehrsrecht, Schaden der Versicherung melden">
+    <meta name="author" content="unfallpaten.de">
+    <meta name="robots" content="noindex, follow">
+    
+    <title>Unfallpaten - Schaden digital melden</title>
+
+    <link rel="shortcut icon" href="assets/img/icons/favicon.png">
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/libs/font-awesome/dist/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/libs/bs-stepper/css/bs-stepper.css">
+    <link rel="stylesheet" href="assets/css/selfservice-style.css">
+    <link rel="stylesheet" href="assets/libs/pace/pace.css">
+    <link rel="stylesheet" href="assets/css/loader-default.css">
+    <link rel="stylesheet" href="assets/libs/pace/pace.css">
+    <link rel="stylesheet" href="assets/css/loader-default.css">
+    <script type="text/javascript" src="assets/libs/pace/pace.min.js"></script>
+
+    <!-- Google Tag Manager -->
+    <!--suppress EqualityComparisonWithCoercionJS -->
+ <!--   <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TTR6L3Q');</script>-->
+    <!-- End Google Tag Manager -->
+
+    <link rel="stylesheet" href="assets/libs/blueimp/gallery/css/blueimp-gallery.min.css"/>
+    <link rel="stylesheet" href="assets/libs/blueimp/jquery-fileupload/css/jquery.fileupload.css"/>
+    <link rel="stylesheet" href="assets/libs/blueimp/jquery-fileupload/css/jquery.fileupload-ui.css"/>
+    <link rel="stylesheet" href="assets/libs/signature/css/signature-pad.css">
+
+
+    <noscript>
+        <link rel="stylesheet" href="assets/libs/blueimp/jquery-fileupload/css/jquery.fileupload-noscript.css"/>
+        <link rel="stylesheet" href="assets/libs/blueimp/jquery-fileupload/css/jquery.fileupload-ui-noscript.css"/>
+    </noscript>
+</head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TTR6L3Q"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="overlay">
+    <div class="loader loader-default is-active" data-text="&Uuml;bermittle Daten..."></div>
+</div>
+
+<div id="preflight-overlay">
+    <div class="loader loader-default is-active" data-text="Bereite Daten vor..."></div>
+</div>
+
+<header class="report-header">
+
+    <div class="mobile-menu">
+        <div class="nav-bar">
+            <div class="nav-logo-mobile">
+                <a href="index.html" class="nav-logo-mobile"><img src="assets/img/logo/unfallpaten-black.png"
+                                                                  alt="unfallpaten mobile logo"></a>
+            </div>
+            <a href="#"><span onclick="openNav()"><i class="fa fa-bars"></i></span></a>
+        </div>
+    </div>
+
+    <div id="pagenav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a class="login-button" href="https://www.unfallpaten.de/portal/">Login</a>
+        </div>
+    </div>
+
+    <div id="upload-info-fahrzeugscheinvorne" class="overlay">
+        <div class="container">
+            <div id="card-fahrzeugscheinvorne">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/damagereport/fahrzeugscheinvorne.jpg"
+                         alt="Fahrzeugschein vorne" style="width:100%">
+                    <div class="card-body bg-light">
+                        <p class="card-text text-center">Lege dein Fahrzeugschein flach einen Tisch und nehme eine
+                            Aufnahme von der Vorderseite.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeUploadInfo('fahrzeugscheinvorne')">&times;</a>
+    </div>
+
+    <div id="upload-info-fahrzeugscheinhinten" class="overlay">
+        <div class="container">
+            <div id="card-fahrzeugscheinhinten">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/damagereport/fahrzeugscheinhinten.jpg"
+                         alt="Fahrzeugschein hinten" style="width:100%">
+                    <div class="card-body bg-light">
+                        <p class="card-text text-center">Lege dein Fahrzeugschein flach einen Tisch und nehme eine
+                            Aufnahme von der Hinterseite.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeUploadInfo('fahrzeugscheinhinten')">&times;</a>
+    </div>
+
+    <div id="upload-info-kilometerstand" class="overlay">
+        <div class="container">
+            <div id="card-kilometerstand">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/damagereport/kilometerstand.jpg" alt="Kilometerstand"
+                         style="width:100%">
+                    <div class="card-body bg-light">
+                        <p class="card-text text-center">Nimm das Tacho von deinem Fahrzeug mit dem aktuellen
+                            Kilometerstand auf.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeUploadInfo('kilometerstand')">&times;</a>
+    </div>
+
+    <div id="upload-info-unfallbericht" class="overlay">
+        <div class="container">
+            <div id="card-unfallbericht">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/damagereport/unfallbericht.jpg" alt="Unfallbericht"
+                         style="width:100%">
+                    <div class="card-body bg-light">
+                        <p class="card-text text-center">Falls ein Unfallbericht jeglicher Art (Polizei, ADAC , unter
+                            euch etc.) vorliegt, kannst du diesen hier abfotografieren.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeUploadInfo('unfallbericht')">&times;</a>
+    </div>
+
+    <div id="upload-info-vornelinksquer" class="overlay">
+        <div class="container">
+            <div id="card-vornelinksquer">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/damagereport/quervornelinks.jpg"
+                         alt="Fahrzeug vorne links quer" style="width:100%">
+                    <div class="card-body bg-light">
+                        <p class="card-text text-center">Nehme &Uuml;bersichtsfotos von deinem Fahrzeug auf. Beachte das dein
+                            Fahrzeug rundum frei stehen sollte. Au&szlig;erdem nicht zu viel Sonnenschein oder Dunkelheit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeUploadInfo('vornelinksquer')">&times;</a>
+    </div>
+
+    <div id="upload-info-vornerechtsquer" class="overlay">
+        <div class="container">
+            <div id="card-vornerechtsquer">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/damagereport/quervornerechts.jpg"
+                         alt="Fahrzeug vorne rechts quer" style="width:100%">
+                    <div class="card-body bg-light">
+                        <p class="card-text text-center">Dieses mal eine Queraufnahme von Fahrzeug vorne rechts. Folge
+                            dem Beispielfoto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeUploadInfo('vornerechtsquer')">&times;</a>
+    </div>
+
+    <div id="upload-info-hintenlinksquer" class="overlay">
+        <div class="container">
+            <div id="card-hintenlinksquer">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/damagereport/querhintenlinks.jpg"
+                         alt="Fahrzeug hinten links quer" style="width:100%">
+                    <div class="card-body bg-light">
+                        <p class="card-text text-center">Dieses mal eine Queraufnahme von Fahrzeug hinten links. Folge
+                            dem Beispielfoto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeUploadInfo('hintenlinksquer')">&times;</a>
+    </div>
+
+    <div id="upload-info-hintenrechtsquer" class="overlay">
+        <div class="container">
+            <div id="card-hintenrechtsquer">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/damagereport/querhintenrechts.jpg"
+                         alt="Fahrzeug hinten rechts quer" style="width:100%">
+                    <div class="card-body bg-light">
+                        <p class="card-text text-center">Dieses mal eine Queraufnahme von Fahrzeug hinten rechts. Folge
+                            dem Beispielfoto.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeUploadInfo('hintenrechtsquer')">&times;</a>
+    </div>
+
+    <div id="upload-info-unfallseite" class="overlay">
+        <div class="container">
+            <div id="card-unfallseite">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/damagereport/unfallseite.jpg" alt="Unfallseite"
+                         style="width:100%">
+                    <div class="card-body bg-light">
+                        <p class="card-text text-center">Fotografiere den Schadenbereich, sodass es im Zusammenhang des
+                            Fahrzeuges deutlich wird.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeUploadInfo('unfallseite')">&times;</a>
+    </div>
+
+    <div id="upload-info-nahaufnahme1" class="overlay">
+        <div class="container">
+            <div id="card-nahaufnahme1">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/damagereport/nah1.jpg" alt="Nahaufnahme 1"
+                         style="width:100%">
+                    <div class="card-body bg-light">
+                        <p class="card-text text-center">Fertige Nahaufnahmen vom Schadenbereich an. Wenn du die
+                            Aufnahme im Winkel machst, kann man die Besch&auml;digung oftmals besser erkennen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeUploadInfo('nahaufnahme1')">&times;</a>
+    </div>
+
+    <div id="upload-info-nahaufnahme2" class="overlay">
+        <div class="container">
+            <div id="card-nahaufnahme2">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/damagereport/nah2.jpg" alt="Nahaufnahme 2"
+                         style="width:100%">
+                    <div class="card-body bg-light">
+                        <p class="card-text text-center">Fertige Nahaufnahmen vom Schadenbereich an. Wenn du die
+                            Aufnahme im Winkel machst, kann man die Besch&auml;digung oftmals besser erkennen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeUploadInfo('nahaufnahme2')">&times;</a>
+    </div>
+
+    <div id="upload-info-nahaufnahme3" class="overlay">
+        <div class="container">
+            <div id="card-nahaufnahme3">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/damagereport/nah3.jpg" alt="Nahaufnahme 3"
+                         style="width:100%">
+                    <div class="card-body bg-light">
+                        <p class="card-text text-center">Fertige Nahaufnahmen vom Schadenbereich an. Wenn du die
+                            Aufnahme im Winkel machst, kann man die Besch&auml;digung oftmals besser erkennen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeUploadInfo('nahaufnahme2')">&times;</a>
+    </div>
+
+    <div id="upload-info-sonstiges1" class="overlay">
+        <div class="container">
+            <div id="card-sonstiges1">
+                <div class="card mt-5">
+                    <div class="card-body bg-light">
+                        <p class="card-text text-center">Du kannst gerne weitere Bilder, Dokumente etc. hochladen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeUploadInfo('sonstiges1')">&times;</a>
+    </div>
+
+    <div id="upload-info-sonstiges2" class="overlay">
+        <div class="container">
+            <div id="card-sonstiges2">
+                <div class="card mt-5">
+                    <div class="card-body bg-light">
+                        <p class="card-text text-center">Du kannst gerne weitere Bilder, Dokumente etc. hochladen.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeUploadInfo('sonstiges2')">&times;</a>
+    </div>
+
+
+    <div id="upload-info-fahrzeugscheinhinten000" class="overlay">
+        <p>hinten</p>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeUploadInfo('fahrzeugscheinhinten')">&times;</a>
+    </div>
+
+    <div class="report-menu topnav">
+        <a class="login-button report-accident-login" href="https://www.unfallpaten.de/portal/">Login</a>
+        <a class="topnav-links " href="index.html">Home</a>
+        <a href="index.html" class="nav-logo">
+            <img src="assets/img/logo/unfallpaten-black.png" alt="logo small corner">
+        </a>
+    </div>
+
+</header>
+
+
+<main class="report-main">
+    <div class="container">
+        <div class="row">
+            <div id="stepper-container" class="col-md-12 mt-5 mb-5">
+
+                <div id="schaden-registrieren-stepper" class="bs-stepper linear">
+                    <div class="bs-stepper-header" role="tablist">
+                        <div id="step-1" class="step active" data-target="#test-l-1">
+                            <button type="button" class="step-trigger" role="tab" id="stepper1trigger1"
+                                    aria-controls="test-l-1" aria-selected="true">
+                                <span class="bs-stepper-circle">1</span>
+                                <span class="bs-stepper-label">Kontaktdaten</span>
+                            </button>
+                        </div>
+                        <div class="bs-stepper-line"></div>
+                        <div id="step-2" class="step" data-target="#test-l-2">
+                            <button type="button" class="step-trigger" role="tab" id="stepper1trigger2"
+                                    aria-controls="test-l-2" aria-selected="false" disabled="disabled">
+                                <span class="bs-stepper-circle">2</span>
+                                <span class="bs-stepper-label">Adressdaten</span>
+                            </button>
+                        </div>
+                        <div class="bs-stepper-line"></div>
+                        <div id="step-3" class="step" data-target="#test-l-3">
+                            <button type="button" class="step-trigger" role="tab" id="stepper1trigger3"
+                                    aria-controls="test-l-3" aria-selected="false" disabled="disabled">
+                                <span class="bs-stepper-circle">3</span>
+                                <span class="bs-stepper-label">Unfalldaten</span>
+                            </button>
+                        </div>
+                        <div class="bs-stepper-line"></div>
+                        <div id="step-4" class="step" data-target="#test-l-4">
+                            <button type="button" class="step-trigger" role="tab" id="stepper1trigger4"
+                                    aria-controls="test-l-4" aria-selected="false" disabled="disabled">
+                                <span class="bs-stepper-circle">4</span>
+                                <span class="bs-stepper-label">Unfallgegner</span>
+                            </button>
+                        </div>
+                        <div class="bs-stepper-line"></div>
+                        <div id="step-5" class="step" data-target="#test-l-5">
+                            <button type="button" class="step-trigger" role="tab" id="stepper1trigger5"
+                                    aria-controls="test-l-5" aria-selected="false" disabled="disabled">
+                                <span class="bs-stepper-circle">5</span>
+                                <span class="bs-stepper-label">Polizeiliche Dokumentation</span>
+                            </button>
+                        </div>
+                        <div id="hide-steps">
+                        <div class="bs-stepper-line"></div>
+                        <div class="step" data-target="#test-l-6">
+                            <button type="button" class="step-trigger" role="tab" id="stepper1trigger6"
+                                    aria-controls="test-l-6" aria-selected="false" disabled="disabled">
+                                <span class="bs-stepper-circle">6</span>
+                                <span class="bs-stepper-label">Fotoupload</span>
+                            </button>
+                        </div>
+                        <div class="bs-stepper-line"></div>
+                        <div class="step" data-target="#test-l-7">
+                            <button type="button" class="step-trigger" role="tab" id="stepper1trigger7"
+                                    aria-controls="test-l-7" aria-selected="false" disabled="disabled">
+                                <span class="bs-stepper-circle">7</span>
+                                <span class="bs-stepper-label">Fotoupload 2</span>
+                            </button>
+                        </div>
+                        <div class="bs-stepper-line"></div>
+                        <div class="step" data-target="#test-l-8">
+                        <button type="button" class="step-trigger" role="tab" id="stepper1trigger8"
+                                aria-controls="test-l-8" aria-selected="false" disabled="disabled">
+                            <span class="bs-stepper-circle">8</span>
+                            <span class="bs-stepper-label">Sonstiges</span>
+                        </button>
+                    </div>
+                        <div class="bs-stepper-line"></div>
+                        <div class="step" data-target="#test-l-9">
+                            <button type="button" class="step-trigger" role="tab" id="stepper1trigger9"
+                                    aria-controls="test-l-9" aria-selected="false" disabled="disabled">
+                                <span class="bs-stepper-circle">9</span>
+                                <span class="bs-stepper-label">Signatur</span>
+                            </button>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="bs-stepper-content mt-5 mb-5">
+                        <div class="report-form">
+                            <div id="test-l-1" role="tabpanel" class="bs-stepper-pane active dstepper-block content"
+                                 aria-labelledby="stepper1trigger1">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col pb-5 text-center">
+                                            <h1>Kontaktdaten</h1>
+                                            <h6>Bitte trage hier die Kontaktdaten des Anspruchstellers bzw. Auftraggebers ein.</h6>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="salutation">Anrede<br></label>
+                                            <div class="btn-group btn-group-toggle appointment"
+                                                 data-toggle="buttons">
+                                                <select class="form-control" id="salutation"
+                                                        name="salutation">
+                                                    <option>Bitte w&auml;hlen</option>
+                                                    <option value="Herr">Herr</option>
+                                                    <option value="Frau">Frau</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="firstname-selfservice">Vorname*</label>
+                                            <input type="text" class="form-control" placeholder="Vorname"
+                                                   id="firstname-selfservice" name="firstnameSelfservice" required>
+                                        </div>
+                                        <div class="col">
+                                            <label for="lastname-selfservice">Nachname*</label>
+                                            <input type="text" class="form-control" placeholder="Nachname"
+                                                   id="lastname-selfservice" name="lastnameSelfservice" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="email-selfservice">E-Mail*</label>
+                                            <input type="email" class="form-control" placeholder="name@email.com"
+                                                   id="email-selfservice" name="emailSelfservice" required>
+                                        </div>
+                                        <div class="col">
+                                            <label for="phone-selfservice">Telefonnummer*</label>
+                                            <input type="text" class="form-control" placeholder="0171 123 123 12"
+                                                   id="phone-selfservice" name="phoneSelfservice" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-left">* Pflichtfeld</div>
+                                <div class="text-center">
+                                    <button id="stepper-next-kundendaten" class="btn-bg-orange"
+                                            onclick="nextStepperWithEvaluation();" disabled>Weiter
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="test-l-2" role="tabpanel" class="bs-stepper-pane content"
+                                 aria-labelledby="stepper1trigger2">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col pb-5 text-center">
+                                            <h1>Anschrift</h1>
+                                            <h6>Bitte trage hier deine Anschrift ein.</h6>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="streetname">Adresse*</label>
+                                            <input type="text" class="form-control" placeholder="Adresse"
+                                                   id="streetname" name="streetname" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="plz">PLZ*</label>
+                                            <input type="text" class="form-control" placeholder="PLZ"
+                                                   id="plz" name="plz" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="city">Ort*</label>
+                                            <input type="text" class="form-control" placeholder="Ort"
+                                                   id="city" name="city" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-left">* Pflichtfeld</div>
+                                <div class="text-center">
+                                    <button class="btn-bg-orange" onclick="previousStepperWithEvaluation();">Zur&uuml;ck</button>
+                                    <button id="stepper-next-address" class="btn-bg-orange"
+                                            onclick="nextStepperWithEvaluation();">Weiter
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="test-l-3" role="tabpanel" class="bs-stepper-pane content"
+                                 aria-labelledby="stepper1trigger3">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col pb-5 text-center">
+                                            <h1>Unfalldaten</h1>
+                                            <h6>Hier kannst du Angaben zum Unfall machen, soweit sie dir vorliegen.</h6>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="date-of-accident">Unfalldatum*</label>
+                                            <input type="date" class="form-control" placeholder="DD.MM.YYYY"
+                                                   id="date-of-accident" name="DateOfAccident">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="time-of-accident">Unfallzeit</label>
+                                            <input type="time" class="form-control" placeholder="hh:mm"
+                                                   id="time-of-accident" name="timeOfAccident" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="place-of-accident">Unfallort</label>
+                                            <input type="text" class="form-control" placeholder="Unfallort"
+                                                   id="place-of-accident" name="placeOfAccident" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="detailed-damage-description">Detaillierte Unfallbeschreibung*</label>
+                                            <textarea class="form-control" placeholder="Beschreibe hier möglichst detailliert den Unfallhergang"
+                                                      id="detailed-damage-description" name="detailedDamageDescription"
+                                                      rows="10" cols="50" maxlength="3500" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-left">* Pflichtfeld</div>
+                                <div class="text-center">
+                                    <button class="btn-bg-orange" onclick="previousStepperWithEvaluation();">Zur&uuml;ck</button>
+                                    <button id="stepper-next-accident-details" class="btn-bg-orange"
+                                            onclick="nextStepperWithEvaluation();">Weiter
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="test-l-4" role="tabpanel" class="bs-stepper-pane content"
+                                 aria-labelledby="stepper1trigger4">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col pb-5 text-center">
+                                            <h1>Details zum Unfallgegner</h1>
+                                            <h6>Hier kannst du Angaben zum Unfallgegner machen. Trage die jeweiligen Daten ein, die dir vorliegen.</h6>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="license-plate">Kennzeichen Unfallgegner</label>
+                                            <input type="text" class="form-control" placeholder="XX YY 123"
+                                                   id="license-plate" name="licensePlate">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="details-of-opponent">Sind weitere Angaben zum Unfallgegner
+                                                bekannt?
+                                                <br>
+                                            </label>
+
+                                            <div class="btn-group btn-group-toggle appointment"
+                                                 data-toggle="buttons">
+                                                <select onChange="detailsOfOpponentSelect()" class="form-control"
+                                                        id="details-of-opponent"
+                                                        name="detailsOfOpponent">
+                                                    <option value="false">Nein</option>
+                                                    <option value="true">Ja</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="details-of-opponent-true">
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label for="first-name-of-opponent">Vorname des Unfallgegners</label>
+                                                <input type="text" class="form-control"
+                                                       placeholder="Vorname des Unfallgegners"
+                                                       id="first-name-of-opponent" name="firstNameOfOpponent"
+                                                       required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label for="last-name-of-opponent">Nachname des Unfallgegners</label>
+                                                <input type="text" class="form-control"
+                                                       placeholder="Nachname des Unfallgegners"
+                                                       id="last-name-of-opponent" name="lastNameOfOpponent"
+                                                       required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label for="street-of-opponent">Stra&szlig;e/Hausnummer des Unfallgegners</label>
+                                                <input type="text" class="form-control"
+                                                       placeholder="Straße des Unfallgegners"
+                                                       id="street-of-opponent" name="streetOfOpponent"
+                                                       required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label for="postal-code-of-opponent">PLZ des Unfallgegners</label>
+                                                <input type="text" class="form-control"
+                                                       placeholder="PLZ des Unfallgegners"
+                                                       id="postal-code-of-opponent" name="postalCodeOfOpponent"
+                                                       required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label for="city-of-opponent">Stadt des Unfallgegners</label>
+                                                <input type="text" class="form-control"
+                                                       placeholder="Stadt des Unfallgegners"
+                                                       id="city-of-opponent" name="cityOfOpponent"
+                                                       required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label for="insurance-of-opponent">Versicherung</label>
+                                                <input type="text" class="form-control"
+                                                       placeholder="Versicherung des Unfallgegners"
+                                                       id="insurance-of-opponent" name="insuranceOfOpponent"
+                                                       required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label for="ticket-number-opponent">Schadennummer</label>
+                                                <input type="text" class="form-control"
+                                                       placeholder="Schadennummer"
+                                                       id="ticket-number-opponent" name="ticketNumberOpponent"
+                                                       required>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label for="insurance-number-of-opponent">Versicherungsscheinnummer</label>
+                                                <input type="text" class="form-control"
+                                                       placeholder="Versicherungsscheinnummer des Unfallgegners"
+                                                       id="insurance-number-of-opponent"
+                                                       name="insuranceNumberOfOpponent"
+                                                       required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn-bg-orange" onclick="previousStepperWithEvaluation();">Zur&uuml;ck</button>
+                                    <button id="stepper-next-police-details" class="btn-bg-orange" onclick="nextStepperWithEvaluation();">Weiter
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="test-l-5" role="tabpanel" class="bs-stepper-pane content"
+                                 aria-labelledby="stepper1trigger5">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col pb-5">
+                                            <h1>Polizeiliche Aufnahme</h1>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="documented-by-police">Wurde der Schaden polizeilich
+                                                aufgenommen?
+                                                <br>
+                                            </label>
+                                            <div class="btn-group btn-group-toggle appointment"
+                                                 data-toggle="buttons">
+                                                <select onchange="documentedByPoliceSelect()" class="form-control"
+                                                        id="documented-by-police"
+                                                        name="documentedByPolice">
+                                                    <option value="false">Nein</option>
+                                                    <option value="true">Ja</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="documented-by-police-true">
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label for="file-number">Aktenzeichen</label>
+                                                <input type="text" class="form-control" placeholder="Aktenzeichen"
+                                                       id="file-number" name="fileNumber">
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label for="police-department">Welches Polizeikommisariat?</label>
+                                                <input type="text" class="form-control"
+                                                       placeholder="Polizeikommisariat"
+                                                       id="police-department" name="policeDepartment">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn-bg-orange" onclick="previousStepperWithEvaluation();">Zur&uuml;ck</button>
+                                    <button id="stepper-next-fotoupload-1" class="btn-bg-orange" onclick="nextStepperWithEvaluation();">Weiter
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="test-l-6" role="tabpanel" class="bs-stepper-pane content"
+                                 aria-labelledby="stepper1trigger6">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col pb-5 text-center">
+                                            <h1>Fotoupload Fahrzeug</h1>
+                                            <h6>Hier werden wir Fotos vom Schaden hochladen. Du kannst die Fotos auf dem Handy auch live aufnehmen. Hilfestellung bekommst du &uuml;
+                                                ber die i-Symbole.</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="fotoupload-fahrzeug">
+                                    <div class="fileupload-buttonbar">
+                                        <div class="form-row">
+
+                                            <div id="fahrzeugscheinvorne" class="col text-center">
+
+                                                <span id="fahrzeugscheinvorne-button" class="btn fileinput-button">
+                                                        <span id="fahrzeugscheinvorne-icon"></span>
+                                                        <input id="fahrzeugscheinvorne-input" type="file" accept="image/*"
+                                                               name="fahrzeugscheinvorne[]"/>
+                                                    </span>
+                                                <a class="upload-info-button" href="#">
+                                                    <span onclick="openUploadInfo('fahrzeugscheinvorne')">
+                                                    <i class="fa fa-info-circle"></i>
+                                                    </span>
+                                                </a>
+                                                <p id="fahrzeugscheinvorne-title" class="pt-3">Fahrzeugschein vorne*</p>
+                                                <span class="fileupload-process"></span>
+                                                <div class="fileupload-progress fade">
+                                                    <div class="progress progress-striped active" role="progressbar"
+                                                         aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar progress-bar-success"
+                                                             style="width: 0;"></div>
+                                                    </div>
+                                                    <div class="progress-extended">&nbsp;</div>
+                                                </div>
+                                            </div>
+
+                                            <div id="fahrzeugscheinhinten" class="col text-center">
+                                                    <span id="fahrzeugscheinhinten-button" class="btn fileinput-button">
+                                                        <span id="fahrzeugscheinhinten-icon"></span>
+                                                        <input id="fahrzeugscheinhinten-input" type="file" accept="image/*"
+                                                               name="fahrzeugscheinhinten[]"/>
+                                                    </span>
+                                                <a class="upload-info-button" href="#">
+                                                    <span onclick="openUploadInfo('fahrzeugscheinhinten')">
+                                                    <i class="fa fa-info-circle"></i>
+                                                    </span>
+                                                </a>
+                                                <p id="fahrzeugscheinhinten-title" class="pt-3">Fahrzeugschein
+                                                    hinten</p>
+                                                <span class="fileupload-process"></span>
+                                                <div class="fileupload-progress fade">
+                                                    <div class="progress progress-striped active" role="progressbar"
+                                                         aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar progress-bar-success"
+                                                             style="width: 0;"></div>
+                                                    </div>
+                                                    <div class="progress-extended">&nbsp;</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div id="kilometerstand" class="col text-center">
+                                                    <span id="kilometerstand-button" class="btn fileinput-button">
+                                                        <span id="kilometerstand-icon"></span>
+                                                        <input id="kilometerstand-input" type="file" accept="image/*"
+                                                               name="kilometerstand[]"/>
+                                                    </span>
+                                                <a class="upload-info-button" href="#">
+                                                    <span onclick="openUploadInfo('kilometerstand')">
+                                                    <i class="fa fa-info-circle"></i>
+                                                    </span>
+                                                </a>
+                                                <p id="kilometerstand-title" class="pt-3">Kilometerstand</p>
+                                                <span class="fileupload-process"></span>
+                                                <div class="fileupload-progress fade">
+                                                    <div class="progress progress-striped active" role="progressbar"
+                                                         aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar progress-bar-success"
+                                                             style="width: 0;"></div>
+                                                    </div>
+                                                    <div class="progress-extended">&nbsp;</div>
+                                                </div>
+                                            </div>
+
+                                            <div id="unfallbericht" class="col text-center">
+                                                    <span id="unfallbericht-button" class="btn fileinput-button">
+                                                        <span id="unfallbericht-icon"></span>
+                                                        <input id="unfallbericht-input" type="file" accept="image/*"
+                                                               name="unfallbericht[]"/>
+                                                    </span>
+                                                <a class="upload-info-button" href="#">
+                                                    <span onclick="openUploadInfo('unfallbericht')">
+                                                    <i class="fa fa-info-circle"></i>
+                                                    </span>
+                                                </a>
+                                                <p id="unfallbericht-title" class="pt-3">Unfallbericht</p>
+                                                <span class="fileupload-process"></span>
+                                                <div class="fileupload-progress fade">
+                                                    <div class="progress progress-striped active" role="progressbar"
+                                                         aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar progress-bar-success"
+                                                             style="width: 0;"></div>
+                                                    </div>
+                                                    <div class="progress-extended">&nbsp;</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div id="vornelinksquer" class="col text-center">
+                                                    <span id="vornelinksquer-button" class="btn fileinput-button">
+                                                        <span id="vornelinksquer-icon"></span>
+                                                        <input id="vornelinksquer-input" type="file" accept="image/*"
+                                                               name="vornelinksquer[]"/>
+                                                    </span>
+                                                <a class="upload-info-button" href="#">
+                                                    <span onclick="openUploadInfo('vornelinksquer')">
+                                                    <i class="fa fa-info-circle"></i>
+                                                    </span>
+                                                </a>
+                                                <p id="vornelinksquer-title" class="pt-3">Fahrzeug vorne links quer</p>
+                                                <span class="fileupload-process"></span>
+                                                <div class="fileupload-progress fade">
+                                                    <div class="progress progress-striped active" role="progressbar"
+                                                         aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar progress-bar-success"
+                                                             style="width: 0;"></div>
+                                                    </div>
+                                                    <div class="progress-extended">&nbsp;</div>
+                                                </div>
+                                            </div>
+
+                                            <div id="vornerechtsquer" class="col text-center">
+                                                    <span id="vornerechtsquer-button" class="btn fileinput-button">
+                                                        <span id="vornerechtsquer-icon"></span>
+                                                        <input id="vornerechtsquer-input" type="file" accept="image/*"
+                                                               name="vornerechtsquer[]"/>
+                                                    </span>
+                                                <a class="upload-info-button" href="#">
+                                                    <span onclick="openUploadInfo('vornerechtsquer')">
+                                                    <i class="fa fa-info-circle"></i>
+                                                    </span>
+                                                </a>
+                                                <p id="vornerechtsquer-title" class="pt-3">Fahrzeug vorne rechts
+                                                    quer</p>
+                                                <span class="fileupload-process"></span>
+                                                <div class="fileupload-progress fade">
+                                                    <div class="progress progress-striped active" role="progressbar"
+                                                         aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar progress-bar-success"
+                                                             style="width: 0;"></div>
+                                                    </div>
+                                                    <div class="progress-extended">&nbsp;</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-row">
+                                            <div id="hintenlinksquer" class="col text-center">
+                                                    <span id="hintenlinksquer-button" class="btn fileinput-button">
+                                                        <span id="hintenlinksquer-icon"></span>
+                                                        <input id="hintenlinksquer-input" type="file" accept="image/*"
+                                                               name="hintenlinksquer[]"/>
+                                                    </span>
+                                                <a class="upload-info-button" href="#">
+                                                    <span onclick="openUploadInfo('hintenlinksquer')">
+                                                    <i class="fa fa-info-circle"></i>
+                                                    </span>
+                                                </a>
+                                                <p id="hintenlinksquer-title" class="pt-3">Fahrzeug hinten links
+                                                    quer</p>
+                                                <span class="fileupload-process"></span>
+                                                <div class="fileupload-progress fade">
+                                                    <div class="progress progress-striped active" role="progressbar"
+                                                         aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar progress-bar-success"
+                                                             style="width: 0;"></div>
+                                                    </div>
+                                                    <div class="progress-extended">&nbsp;</div>
+                                                </div>
+                                            </div>
+
+                                            <div id="hintenrechtsquer" class="col text-center">
+                                                    <span id="hintenrechtsquer-button" class="btn fileinput-button">
+                                                        <span id="hintenrechtsquer-icon"></span>
+                                                        <input id="hintenrechtsquer-input" type="file" accept="image/*"
+                                                               name="hintenrechtsquer[]"/>
+                                                    </span>
+                                                <a class="upload-info-button" href="#">
+                                                    <span onclick="openUploadInfo('hintenrechtsquer')">
+                                                    <i class="fa fa-info-circle"></i>
+                                                    </span>
+                                                </a>
+                                                <p id="hintenrechtsquer-title" class="pt-3">Fahrzeug hinten rechts
+                                                    quer</p>
+                                                <span class="fileupload-process"></span>
+                                                <div class="fileupload-progress fade">
+                                                    <div class="progress progress-striped active" role="progressbar"
+                                                         aria-valuemin="0" aria-valuemax="100">
+                                                        <div class="progress-bar progress-bar-success"
+                                                             style="width: 0;"></div>
+                                                    </div>
+                                                    <div class="progress-extended">&nbsp;</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-left">* Pflichtfeld</div>
+                                        <div class="text-center">
+                                            <button class="btn-bg-orange"
+                                                    onclick="previousStepperWithEvaluation();">Zur&uuml;ck
+                                            </button>
+                                            <button id="stepper-next-fotoupload" class="btn-bg-orange"
+                                                    onclick="nextStepperWithEvaluation();">Weiter
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!--                                    <table role="presentation" class="table table-striped">
+                                                                            <tbody class="files"></tbody>
+                                                                        </table>-->
+                                </div>
+                            </div>
+                            <div id="test-l-7" role="tabpanel" class="bs-stepper-pane content"
+                                 aria-labelledby="stepper1trigger7">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col pb-5 text-center">
+                                            <h1>Fotoupload Besch&auml;digungs-<br/>bereich</h1>
+                                        </div>
+                                    </div>
+                                    <div id="fotoupload-beschaedigungsbereich">
+                                        <div class="fileupload-buttonbar">
+
+                                            <div class="form-row">
+                                                <div id="unfallseite" class="col text-center">
+                                                    <span id="unfallseite-button" class="btn fileinput-button">
+                                                        <span id="unfallseite-icon"></span>
+                                                        <input id="unfallseite-input" type="file" accept="image/*"
+                                                               name="unfallseite[]"/>
+                                                    </span>
+                                                    <a class="upload-info-button" href="#">
+                                                        <span onclick="openUploadInfo('unfallseite')">
+                                                        <i class="fa fa-info-circle"></i>
+                                                        </span>
+                                                    </a>
+                                                    <p id="unfallseite-title" class="pt-3">Unfallseite</p>
+                                                    <span class="fileupload-process"></span>
+                                                    <div class="fileupload-progress fade">
+                                                        <div class="progress progress-striped active" role="progressbar"
+                                                             aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar progress-bar-success"
+                                                                 style="width: 0;"></div>
+                                                        </div>
+                                                        <div class="progress-extended">&nbsp;</div>
+                                                    </div>
+                                                </div>
+
+                                                <div id="nahaufnahme1" class="col text-center">
+                                                    <span id="nahaufnahme1-button" class="btn fileinput-button">
+                                                        <span id="nahaufnahme1-icon"></span>
+                                                        <input id="nahaufnahme1-input" type="file" accept="image/*"
+                                                               name="nahaufnahme1[]"/>
+                                                    </span>
+                                                    <a class="upload-info-button" href="#">
+                                                        <span onclick="openUploadInfo('nahaufnahme1')">
+                                                        <i class="fa fa-info-circle"></i>
+                                                        </span>
+                                                    </a>
+                                                    <p id="nahaufnahme1-title" class="pt-3">Nahaufnahme 1</p>
+                                                    <span class="fileupload-process"></span>
+                                                    <div class="fileupload-progress fade">
+                                                        <div class="progress progress-striped active" role="progressbar"
+                                                             aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar progress-bar-success"
+                                                                 style="width: 0;"></div>
+                                                        </div>
+                                                        <div class="progress-extended">&nbsp;</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div id="nahaufnahme2" class="col text-center">
+                                                    <span id="nahaufnahme2-button" class="btn fileinput-button">
+                                                        <span id="nahaufnahme2-icon"></span>
+                                                        <input id="nahaufnahme2-input" type="file" accept="image/*"
+                                                               name="nahaufnahme2[]"/>
+                                                    </span>
+                                                    <a class="upload-info-button" href="#">
+                                                        <span onclick="openUploadInfo('nahaufnahme2')">
+                                                        <i class="fa fa-info-circle"></i>
+                                                        </span>
+                                                    </a>
+                                                    <p id="nahaufnahme2-title" class="pt-3">Nahaufnahme 2</p>
+                                                    <span class="fileupload-process"></span>
+                                                    <div class="fileupload-progress fade">
+                                                        <div class="progress progress-striped active" role="progressbar"
+                                                             aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar progress-bar-success"
+                                                                 style="width: 0;"></div>
+                                                        </div>
+                                                        <div class="progress-extended">&nbsp;</div>
+                                                    </div>
+                                                </div>
+
+                                                <div id="nahaufnahme3" class="col text-center">
+                                                    <span id="nahaufnahme3-button" class="btn fileinput-button">
+                                                        <span id="nahaufnahme3-icon"></span>
+                                                        <input id="nahaufnahme3-input" type="file" accept="image/*"
+                                                               name="nahaufnahme3[]"/>
+                                                    </span>
+                                                    <a class="upload-info-button" href="#">
+                                                        <span onclick="openUploadInfo('nahaufnahme3')">
+                                                        <i class="fa fa-info-circle"></i>
+                                                        </span>
+                                                    </a>
+                                                    <p id="nahaufnahme3-title" class="pt-3">Nahaufnahme 3</p>
+                                                    <span class="fileupload-process"></span>
+                                                    <div class="fileupload-progress fade">
+                                                        <div class="progress progress-striped active" role="progressbar"
+                                                             aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar progress-bar-success"
+                                                                 style="width: 0;"></div>
+                                                        </div>
+                                                        <div class="progress-extended">&nbsp;</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div id="sonstiges1" class="col text-center">
+                                                    <span id="sonstiges1-button" class="btn fileinput-button">
+                                                        <span id="sonstiges1-icon"></span>
+                                                        <input id="sonstiges1-input" type="file" accept="image/*"
+                                                               name="sonstiges1[]"/>
+                                                    </span>
+                                                    <a class="upload-info-button" href="#">
+                                                        <span onclick="openUploadInfo('sonstiges1')">
+                                                        <i class="fa fa-info-circle"></i>
+                                                        </span>
+                                                    </a>
+                                                    <p id="sonstiges1-title" class="pt-3">Sonstiges 1</p>
+                                                    <span class="fileupload-process"></span>
+                                                    <div class="fileupload-progress fade">
+                                                        <div class="progress progress-striped active" role="progressbar"
+                                                             aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar progress-bar-success"
+                                                                 style="width: 0;"></div>
+                                                        </div>
+                                                        <div class="progress-extended">&nbsp;</div>
+                                                    </div>
+                                                </div>
+
+                                                <div id="sonstiges2" class="col text-center">
+                                                    <span id="sonstiges2-button" class="btn fileinput-button">
+                                                        <span id="sonstiges2-icon"></span>
+                                                        <input id="sonstiges2-input" type="file" accept="image/*"
+                                                               name="sonstiges2[]"/>
+                                                    </span>
+                                                    <a class="upload-info-button" href="#">
+                                                        <span onclick="openUploadInfo('sonstiges2')">
+                                                        <i class="fa fa-info-circle"></i>
+                                                        </span>
+                                                    </a>
+                                                    <p id="sonstiges2-title" class="pt-3">Sonstiges 2</p>
+                                                    <span class="fileupload-process"></span>
+                                                    <div class="fileupload-progress fade">
+                                                        <div class="progress progress-striped active" role="progressbar"
+                                                             aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar progress-bar-success"
+                                                                 style="width: 0;"></div>
+                                                        </div>
+                                                        <div class="progress-extended">&nbsp;</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- <table role="presentation" class="table table-striped">
+                                                 <tbody class="files"></tbody>
+                                             </table>-->
+                                    </div>
+
+                                </div>
+
+                                <div class="text-center">
+                                    <button class="btn-bg-orange" onclick="previousStepperWithEvaluation();">Zur&uuml;ck</button>
+                                    <button id="stepper-next-sonstiges" class="btn-bg-orange"
+                                            onclick="nextStepperWithEvaluation();">Weiter
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="test-l-8" role="tabpanel" class="bs-stepper-pane content"
+                                 aria-labelledby="stepper1trigger8">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col pb-5 text-center">
+                                            <h1>Sonstiges</h1>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="replacement-vehicle">Ben&ouml;tigst du einen Eratzfahrzeug?
+                                                <br>
+                                            </label>
+
+                                            <div class="btn-group btn-group-toggle appointment"
+                                                 data-toggle="buttons">
+                                                <select onChange="replacementVehicle()" class="form-control"
+                                                        id="replacement-vehicle"
+                                                        name="replacementVehicle">
+                                                    <option value="false">Nein</option>
+                                                    <option value="true">Ja</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="compensation">Abrechnungsart
+                                                <br>
+                                            </label>
+
+                                            <div class="btn-group btn-group-toggle appointment"
+                                                 data-toggle="buttons">
+                                                <select onChange="compensation()" class="form-control"
+                                                        id="compensation"
+                                                        name="compensation">
+                                                    <option value="Reparatur">Reparatur</option>
+                                                    <option value="Auszahlung">Auszahlung</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="compensation-payment-true">
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <label for="iban">Bitte gebe deine IBAN ein</label>
+                                                <input type="text" class="form-control"
+                                                       placeholder="DE12 3456 7890 1234 5678 90"
+                                                       id="iban" name="iban">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="comments">Kommentar</label>
+                                            <textarea class="form-control" placeholder="Sonstiges"
+                                                      id="comments" name="comments"
+                                                      rows="4" cols="30" maxlength="3500"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-check">
+                                                <div class="custom-control custom-checkbox checkbox-lg">
+                                                    <input type="checkbox" class="custom-control-input" id="lawyer-usage" checked="">
+                                                    <label class="custom-control-label" for="lawyer-usage">Kostenlose Rechtsbetreuung</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="text-left">* Pflichtfeld</div>
+                                <div class="text-center">
+                                    <button class="btn-bg-orange" onclick="previousStepperWithEvaluation();">Zur&uuml;ck</button>
+                                    <button id="last-next-button" class="btn-bg-orange"
+                                            onclick="nextStepperWithEvaluation();">Weiter
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="test-l-9" role="tabpanel" class="bs-stepper-pane content"
+                                 aria-labelledby="stepper1trigger9">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col pb-5 text-center">
+                                            <h1>Signatur</h1>
+                                            <h6>Hiermit best&auml;tige ich die angegebenen Daten mit meiner Unterschrift.</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="signature-pad-wrapper">
+                                <div id="signature-pad" class="signature-pad">
+                                    <div class="signature-pad--body">
+                                        <canvas id="signature-pad-canvas"></canvas>
+                                    </div>
+                                    <div class="signature-pad--footer">
+                                        <div class="description">Unterschrift</div>
+                                        <button id="signature-pad-clear" type="button" class="button clear"
+                                                data-action="clear">
+                                            L&ouml;schen
+                                        </button>
+                                        <div class="signature-pad--actions">
+                                            <div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn-bg-orange" id="last-previous-button"
+                                            onclick="previousStepperWithEvaluation();">Zur&uuml;ck
+                                    </button>
+                                    <button id="stepper-submit-fotoupload" class="btn-bg-orange">Absenden
+                                    </button>
+                                </div>
+                                <div class="description text-center">
+                                    <label>Mit der Anfrage erkl&auml;re ich mich mit der Geltung der
+                                        Datenschutzerkl&auml;rung sowie den <a href="#agb-modal-fotoupload"
+                                                                               id="agb-btn-fotoupload">AGBs</a>
+                                        einverstanden.
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- The blueimp Gallery widget-->
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-filter=":even">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">&lsaquo;</a>
+        <a class="next">&rsaquo;</a>
+        <a class="close">&times;</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
+
+
+    <div id="agb-modal-fotoupload" class="modal">
+
+        <div class="modal-content">
+            <span id="close" class="close">&times;</span><br>
+            <h3>Allgemeine Gesch&auml;ftsbedingungen
+                der tecpert GmbH, Hudtwalckerstra&szlig;e 12, 22299 Hamburg
+            </h3>
+            <p>Die nachstehenden Allgemeinen Gesch&auml;ftsbedingungen gelten ausschlie&szlig;lich f&uuml;r s&auml;mtliche
+                dem/der Nutzer/in
+                von der tecpert GmbH GmbH unter der gesch&uuml;tzten Wortmarke &#8222;Unfallpaten&#8221; zur Verf&uuml;gung
+                gestellten
+                Dienstleistungen.
+                <br>
+                <br>
+            </p>
+            <ul>
+                <li>
+                    <h3>1.) Leistungen der tecpert GmbH</h3>
+                    <p>Die tecpert GmbH versteht sich als Fulfillment-L&ouml;sung f&uuml;r Unfallgesch&auml;digte und
+                        bietet die
+                        kostenlose Vermittlung von im Zusammenhang mit dem gemeldeten Schadenfall stehenden
+                        Dienstleistungen unterschiedlicher Art an. Die Leistungen der tecpert GmbH umfassen keine
+                        Rechts- oder Steuerberatung.
+                        <br>
+                        <br> Die tecpert GmbH nimmt online oder offline ausschlie&szlig;lich f&uuml;r private Nutzer
+                        oder
+                        Unternehmern zu Zwecken des unternehmerischen Eigenbedarfs (zusammen nachfolgend &#8222;Nutzer/in&#8221;
+                        genannt) unentgeltlich und unverbindlich einen von dem/der Nutzer/Nutzerin mitgeteilten
+                        Schadenfall entgegen und vermittelt auf der Grundlage der online oder offline nutzerseitig
+                        abgegebenen Daten Dienste an die jeweiligen mit tecpert GmbH kooperierenden Dienstleister.
+                        <br>
+                        <br> Durch die Inanspruchnahme der vermittelten Dienstleistungen von tecpert GmbH
+                        (beispielsweise Gutachtenerstellung, anwaltliche Vertretung, Werkstattauftrag, Stellung eines
+                        Mietwagens, Abschluss einer Rechtsschutzversicherung, etc.) sowie durch die &Uuml;bermittlung
+                        der
+                        Kontaktdaten des/der Nutzers/Nutzerin an tecpert GmbH kommt ein Maklervertrag zwischen dem/der
+                        Nutzer/in und tecpert GmbH zustande.
+                        <br>
+                        <br> Gegenstand des Maklervertrages ist jedoch nur die nutzerseitig angegebene Dienstleistung,
+                        die Gegenstand der nutzerseitigen Anfrage ist.
+                        <br>
+                        <br> Soweit der/die Nutzer/in nicht ausdr&uuml;cklich einen dar&uuml;ber hinausgehenden Bedarf
+                        angibt,
+                        entstehen keine Verpflichtungen tecpert GmbH in Bezug auf die Vermittlung anderer
+                        Dienstleistungen.
+                        <br>
+                        <br> Der Vertrag (Dienstleistung, Werkvertrag, Mietvertrag, etc.) kommt nur zwischen dem/der
+                        Nutzer/in und dem/den von ihm ausgew&auml;hlten Dienstleister(n) zustande. Die tecpert GmbH hat
+                        auf
+                        das Zustandekommen bzw. Nichtzustandekommen eines Vertragsverh&auml;ltnisses keinen Einfluss. Ob
+                        ein
+                        Vertrag mit dem/den Dienstleister(n) zustande kommt, ist abh&auml;ngig von den entsprechenden
+                        Bedingungen des jeweiligen Dienstleisters und obliegt ausschlie&szlig;lich dem jeweiligen
+                        Dienstleister. Die tecpert GmbH hat hierauf keinen Einfluss.
+                        <br>
+                        <br>
+                    </p>
+                </li>
+                <li>
+                    <h3>2.) Gew&auml;hrleistung und Haftungsbegrenzung</h3>
+                    <p>Die tecpert GmbH haftet f&uuml;r Vorsatz und grobe Fahrl&auml;ssigkeit sowie unabh&auml;ngig vom
+                        Verschuldensgrad f&uuml;r Sch&auml;den aus der Verletzung des Lebens, des K&ouml;rpers oder der
+                        Gesundheit, die
+                        auf einer Pflichtverletzung eines gesetzlichen Vertreters oder Erf&uuml;llungsgehilfen von
+                        tecpert
+                        GmbH beruhen.
+                        <br>
+                        <br> Die Haftung f&uuml;r die leichtfahrl&auml;ssige Verletzung von vertragswesentlichen
+                        Pflichten - das
+                        sind Verpflichtungen, deren Erf&uuml;llung die ordnungsgem&auml;&szlig;e Durchf&uuml;hrung des
+                        Vertrages &uuml;berhaupt
+                        erst erm&ouml;glichen und auf deren Einhaltung der Vertragspartner regelm&auml;&szlig;ig
+                        vertraut und vertrauen
+                        darf - ist auf den typischen und vorhersehbaren Schaden begrenzt.
+                        <br>
+                        <br> Im &Uuml;brigen ist die Haftung von tecpert GmbH f&uuml;r leichtfahrl&auml;ssige
+                        Pflichtverletzungen
+                        ausgeschlossen.
+                        <br>
+                        <br> Die tecpert GmbH haftet nicht f&uuml;r die eingegebenen Daten.
+                        <br>
+                        <br>
+
+                    </p>
+                </li>
+                <li>
+                    <h3>3.) Pflichten des/der Nutzers/Nutzerin, Verbot der gewerblichen Nutzung</h3>
+                    <p>Die Eingabe und &Uuml;bermittlung der pers&ouml;nlichen Daten durch den/die Nutzer/in erfolgt
+                        online &uuml;ber
+                        die von tecpert GmbH vorbereiteten Eingabemasken oder &uuml;ber andere ausdr&uuml;cklich von
+                        tecpert GmbH
+                        im Einzelfall vorgesehene &Uuml;bermittlungswege.
+                        <br>
+                        <br> F&uuml;r die Vollst&auml;ndigkeit und Richtigkeit s&auml;mtlicher nutzerseitig in die
+                        Eingabemaske
+                        eingegebenen oder sonst &uuml;bermittelten Daten ist ausschlie&szlig;lich der/die Nutzer/in
+                        selbst
+                        verantwortlich.
+                        <br>
+                        <br> Der/Die Nutzer/in ist dazu verpflichtet, den genauen Inhalt der eingegebenen Daten zu
+                        pr&uuml;fen und m&ouml;gliche Abweichungen umgehend zu melden.
+                        <br>
+                        <br> Sofern der/die Nutzer/in falsche, unwahre oder unzureichende Angaben macht, ist tecpert
+                        GmbH berechtigt, die Anfrage unbearbeitet zu lassen. F&uuml;r den Fall der &Uuml;bermittlung von
+                        vors&auml;tzlich falschen oder unwahren pers&ouml;nlichen Daten durch den/die Nutzer/in beh&auml;lt
+                        sich
+                        tecpert GmbH vor, ihn von der Inanspruchnahme der angebotenen bzw. zur Verf&uuml;gung gestellten
+                        Leistungen auszuschlie&szlig;en und Ersatz f&uuml;r dadurch eingetretene Sch&auml;den zu
+                        verlangen.
+                        <br>
+                        <br> Die kostenfreie Nutzung der Leistungen von tecpert GmbH ist nur privaten Nutzern oder
+                        Unternehmern zu Zwecken des unternehmerischen Eigenbedarfs gestattet, d.h. zu Zwecken, die nicht
+                        einer gewerblichen oder selbst&auml;ndigen beruflichen T&auml;tigkeit des/der Nutzers/Nutzerin
+                        zugerechnet
+                        werden k&ouml;nnen. Eine Nutzung der Leistungen von tecpert GmbH zu gewerblichen Zwecken oder im
+                        Rahmen einer selbst&auml;ndigen beruflichen T&auml;tigkeit ist ausdr&uuml;cklich untersagt.
+                        <br>
+                        <br> F&uuml;r jeden Fall der schuldhaften Zuwiderhandlung gegen das Verbot der gewerblichen,
+                        bzw.
+                        selbst&auml;ndig beruflichen Nutzung wird eine Vertragsstrafe in H&ouml;he von Euro 2.500
+                        vereinbart.
+                        tecpert GmbH ist berechtigt, erst nach mehrmaliger Verwirkung der Vertragsstrafe diese im Ganzen
+                        zu verlangen. Die Zusammenfassung mehrerer Einzelakte zu einer rechtlichen Einheit ist
+                        ausgeschlossen (Ausschluss des Fortsetzungszusammenhangs).
+                        <br>
+                        <br> Unbeschadet der Vertragsstrafe kann tecpert GmbH dar&uuml;ber hinaus Schadensersatz geltend
+                        machen und den/die Nutzer/in von der weiteren Inanspruchnahme der angebotenen, bzw. zur
+                        Verf&uuml;gung gestellten Leistungen ausschlie&szlig;en.
+                        <br>
+                        <br> Es verbleiben s&auml;mtliche Urheber-, Nutzungs- oder Schutzrechte bei der tecpert GmbH.
+                        <br>
+                        <br>
+
+                    </p>
+                </li>
+                <li>
+                    <h3>4.) Datenschutz/ Vertraulichkeit</h3>
+                    <p>Der/Die Nutzer/in ist damit einverstanden, dass die tecpert GmbH sach- und personenbezogene Daten
+                        im Sinne des Bundesdatenschutzgesetzes zur Erf&uuml;llung der Vermittlungst&auml;tigkeit an
+                        Dienstleister
+                        online und offline weiterzuleiten berechtigt ist.
+                        <br>
+                        <br> Des Weiteren werden die sach- und personenbezogenen Daten f&uuml;r die Zwecke der
+                        Dienstleistung
+                        gespeichert und intern verarbeitet.
+                        <br>
+                        <br> Es besteht das Recht &uuml;ber die sach- und personenbezogenen Daten Auskunft zu erhalten.
+                        Auch
+                        kann die Berichtigung unrichtiger Daten verlangt werden.
+                        <br>
+                        <br> Beachten Sie bitte die aktuelle Datenschutzerkl&auml;rung.
+                        <br>
+                        <br>
+
+                    </p>
+                </li>
+                <li>
+                    <h3>5.) Schlussbestimmungen, anwendbares Recht, Abweichende Gesch&auml;ftsbedingungen</h3>
+                    <p>Diese Allgemeinen Gesch&auml;ftsbedingungen sind abschlie&szlig;end f&uuml;r die Regelung der
+                        rechtlichen
+                        Beziehungen zwischen tecpert GmbH und dem/der Nutzer/in.
+                        <br>
+                        <br> Von diesen Allgemeinen Gesch&auml;ftsbedingungen abweichenden Bedingungen des/der
+                        Nutzers/Nutzerin gelten nicht.
+                        <br>
+                        <br> F&uuml;r Unternehmer als Vertragspartner gilt die nachfolgende Salvatorische Klausel:
+                        Sollten
+                        einzelne Bestimmungen dieser AGB unwirksam bzw. undurchf&uuml;hrbar sein oder werden, so wird
+                        davon
+                        die Wirksamkeit/Durchf&uuml;hrbarkeit der AGB im &Uuml;brigen nicht ber&uuml;hrt. Die
+                        Vertragsparteien
+                        verpflichten sich, die unwirksame/undurchf&uuml;hrbare Bestimmung durch eine wirksame/durchf&uuml;hrbare
+                        Bestimmung zu ersetzen, die dem Zweck der unwirksamen/undurchf&uuml;hrbaren Bestimmung nahe
+                        kommt
+                        oder entspricht. Gleiches gilt f&uuml;r den Fall einer Regelungsl&uuml;cke. F&uuml;r private
+                        Nutzer als
+                        Vertragspartner hingegen gelten die gesetzlichen Bestimmungen.
+                        <br>
+                        <br> Die vertraglichen Beziehungen der Parteien richten sich nach dem Recht der Bundesrepublik
+                        Deutschland unter Ausschluss der Kollisionsvorschriften des EGBGB.
+                        <br>
+                        <br> Soweit der/die Nutzer/in Kaufmann/Kauffrau, eine juristische Person des &ouml;ffentlichen
+                        Rechts
+                        oder des &ouml;ffentlich-rechtlichen Sonderverm&ouml;gens ist, ist als ausschlie&szlig;licher
+                        Gerichtsstand der
+                        Landgerichtsbezirk Hamburg vereinbart. F&uuml;r private Nutzer gelten die gesetzlichen
+                        Zust&auml;ndigkeitsregelungen.
+                        <br>
+                        <br> Hamburg, den 09.08.2019
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!--suppress HtmlEntityInspection -->
+    <script id="template-upload" type="text/x-tmpl">
+        {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <tr class="template-upload fade show">
+            <td>
+                <span class="preview"></span>
+            </td>
+            <td>
+                {% if (window.innerWidth > 480 || !o.options.loadImageFileTypes.test(file.type)) { %}
+                <p class="name">{%=file.name%}</p>
+                {% } %}
+                <strong class="error text-danger"></strong>
+            </td>
+            <td>
+                <p class="size">Processing...</p>
+                <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                    <div class="progress-bar progress-bar-success" style="width:0%;"></div>
+                </div>
+            </td>
+            <td>
+                {% if (!o.options.autoUpload && o.options.edit && o.options.loadImageFileTypes.test(file.type)) { %}
+                <button class="btn btn-success edit" data-index="{%=i%}" disabled>
+                    <i class="glyphicon glyphicon-edit"></i>
+                    <span>Edit</span>
+                </button>
+                {% } %} {% if (!i && !o.options.autoUpload) { %}
+                <button class="btn btn-primary start" disabled>
+                    <i class="glyphicon glyphicon-upload"></i>
+                    <span>Start</span>
+                </button>
+                {% } %} {% if (!i) { %}
+                <button class="btn btn-warning cancel">
+                    <i class="glyphicon glyphicon-ban-circle"></i>
+                    <span>Cancel</span>
+                </button>
+                {% } %}
+            </td>
+        </tr>
+        {% } %}
+
+
+    </script>
+
+    <!--suppress HtmlEntityInspection -->
+    <script id="template-download" type="text/x-tmpl">
+        {% for (var i=0, file; file=o.files[i]; i++) { %}
+        <tr class="template-download fade show">
+            <td>
+                <span class="preview">
+                      {% if (file.thumbnailUrl) { %}
+                          <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery><img src="{%=file.thumbnailUrl%}"></a>
+                      {% } %}
+                  </span>
+            </td>
+            <td>
+                {% if (window.innerWidth > 480 || !file.thumbnailUrl) { %}
+                <p class="name">
+                    {% if (file.url) { %}
+                    <a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" {%=file.thumbnailUrl? 'data-gallery': ''%}>{%=file.name%}</a> {% } else { %}
+                    <span>{%=file.name%}</span> {% } %}
+                </p>
+                {% } %} {% if (file.error) { %}
+                <div><span class="label label-danger">Error</span> {%=file.error%}</div>
+                {% } %}
+            </td>
+            <td>
+                <span class="size">{%=o.formatFileSize(file.size)%}</span>
+            </td>
+            <td>
+                {% if (file.deleteUrl) { %}
+                <button class="btn btn-danger delete" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}" {% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}' {% } %}>
+                    <i class="glyphicon glyphicon-trash"></i>
+                    <span>Delete</span>
+                </button>
+                <input type="checkbox" name="delete" value="1" class="toggle"> {% } else { %}
+                <button class="btn btn-warning cancel">
+                    <i class="glyphicon glyphicon-ban-circle"></i>
+                    <span>Cancel</span>
+                </button>
+                {% } %}
+            </td>
+        </tr>
+        {% } %}
+
+
+    </script>
+    <script src="assets/libs/jquery/jquery-3.5.0.min.js"></script>
+    <script src="assets/libs/blueimp/javascript-templates/tmpl.min.js"></script>
+    <script src="assets/libs/blueimp/load-image/load-image.all.min.js"></script>
+    <script src="assets/libs/blueimp/canvas-to-blob/canvas-to-blob.min.js"></script>
+    <script src="assets/libs/blueimp/gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="assets/libs/blueimp/jquery-fileupload/js/vendor/jquery.ui.widget.js"></script>
+    <script src="assets/libs/blueimp/jquery-fileupload/js/jquery.iframe-transport.js"></script>
+    <script src="assets/libs/blueimp/jquery-fileupload/js/jquery.fileupload.js"></script>
+    <script src="assets/libs/blueimp/jquery-fileupload/js/jquery.fileupload-process.js"></script>
+    <script src="assets/libs/blueimp/jquery-fileupload/js/jquery.fileupload-image.js"></script>
+    <script src="assets/libs/blueimp/jquery-fileupload/js/jquery.fileupload-audio.js"></script>
+    <script src="assets/libs/blueimp/jquery-fileupload/js/jquery.fileupload-video.js"></script>
+    <script src="assets/libs/blueimp/jquery-fileupload/js/jquery.fileupload-validate.js"></script>
+    <script src="assets/libs/blueimp/jquery-fileupload/js/jquery.fileupload-ui.js"></script>
+
+    <!--[if (gte IE 8)&(lt IE 10)]>
+    <script src="assets/libs/blueimp/jquery-fileupload/js/cors/jquery.xdr-transport.js"></script>
+    <![endif]-->
+
+
+</main>
+<script src="assets/libs/browser-report/report-browser.js"></script>
+<script src="assets/js/utils.js"></script>
+<script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/libs/bs-stepper/js/bs-stepper.js"></script>
+<script src="assets/libs/ua-parser/ua-parser.js"></script>
+<script src="assets/js/schaden-registrieren/report-damage-validation.js"></script>
+<script src="assets/js/schaden-registrieren/report-damage.js"></script>
+<script src="assets/js/mobile-navigation.js"></script>
+<script src="assets/libs/signature/js/signature_pad.umd.js"></script>
+<script src="assets/libs/signature/js/app.js"></script>
+</body>
+</html>

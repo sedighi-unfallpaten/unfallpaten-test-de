@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Unfallpaten - Passwort Reset</title>
+
+    <meta name="description"
+          content="Kfz-Gutachter, Rechtsanwalt f&uuml;r Verkehrsrecht, Werkst&auml;tten bis Mietwagen bekommst du auf einer Plattform, kostenlos! Hamburg, Berlin, K&ouml;ln bis M&uuml;nchen">
+    <meta name="keywords"
+          content="Kfz-Gutachten, Fahrzeug, Versicherung, Service, Kfz Gutachter, Kfz Sachverst&auml;ndiger, Begutachtung Auto, Autounfall was tun, Fachanwalt f&uuml;r Verkehrsrecht, Schaden der Versicherung melden">
+    <meta name="author" content="unfallpaten.de">
+    <meta name="robots" content="noindex, follow">
+
+    <link rel="shortcut icon" href="assets/img/icons/favicon.png">
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/font-awesome/dist/font-awesome.min.css">
+    <link rel='stylesheet' href='assets/libs/font-awesome/dist/font-awesome.min.css'>
+    <link rel="stylesheet" type="text/css" href="assets/libs/slick/css/slick.css"/>
+    <link rel="stylesheet" href="assets/css/password-reset-style.css">
+    <link rel="stylesheet" href="assets/libs/bs-stepper/css/bs-stepper.css">
+    <link rel="stylesheet" href="assets/libs/pace/pace.css">
+    <link rel="stylesheet" href="assets/css/loader-default.css">
+
+    <script src="assets/libs/jquery/jquery-3.5.0.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/libs/pace/pace.min.js"></script>
+    <script src="assets/libs/popper/umd/popper.min.js"></script>
+
+    <!-- Google Tag Manager -->
+    <!--suppress EqualityComparisonWithCoercionJS -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TTR6L3Q');</script>
+
+    <!-- End Google Tag Manager -->
+        <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+         if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+         n.queue=[];t=b.createElement(e);t.async=!0;
+         t.src=v;s=b.getElementsByTagName(e)[0];
+         s.parentNode.insertBefore(t,s)}(window, document,'script',
+                                         'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1445524302325324');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=1445524302325324&ev=PageView&noscript=1"/>
+    </noscript>
+<!-- End Facebook Pixel Code -->
+    </head>
+
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TTR6L3Q"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="overlay">
+    <div class="loader loader-default is-active" data-text="&Uuml;bermittle Daten..."></div>
+</div>
+
+<header class="report-header">
+
+    <div class="mobile-menu">
+        <div class="nav-bar">
+            <div class="nav-logo-mobile">
+                <a href="index.html" class="nav-logo-mobile"><img src="assets/img/logo/unfallpaten-black.png"
+                                                                  alt="unfallpaten mobile logo"></a>
+            </div>
+            <a href="#"><span onclick="openNav()"><i class="fa fa-bars"></i></span></a>
+        </div>
+    </div>
+
+    <div id="pagenav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a class="login-button" href="https://www.unfallpaten.de/portal/">Login</a>
+        </div>
+    </div>
+
+    <div class="report-menu topnav">
+        <a class="login-button report-accident-login" href="https://www.unfallpaten.de/portal/">Login</a>
+        <a class="topnav-links " href="index.html">Home</a>
+        <a href="index.html" class="nav-logo">
+            <img src="assets/img/logo/unfallpaten-black.png" alt="logo small corner">
+        </a>
+    </div>
+
+</header>
+
+<main class="report-main">
+    <div class="container">
+        <div class="row">
+            <div id="stepper-container" class="col-md-12 mt-5 mb-5">
+                <div id="passwort-reset-stepper" class="bs-stepper">
+                    <div class="bs-stepper-header">
+                        <div class="step" data-target="#test-l-1">
+                            <button type="button" class="btn step-trigger">
+                                <span class="bs-stepper-circle"></span>
+                                <span class="bs-stepper-label"></span>
+                            </button>
+                        </div>
+                        <div class="line"></div>
+                        <div class="step" data-target="#test-l-2">
+                            <button type="button" class="btn step-trigger">
+                                <span class="bs-stepper-circle"></span>
+                                <span class="bs-stepper-label"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bs-stepper-content mt-5 mb-5">
+                        <div class="report-form">
+                            <div id="test-l-1" class="content">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h1>Passwort zur&uuml;cksetzen</h1></div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <label for="email-password-reset">E-Mail*</label>
+                                            <input type="email" class="form-control" placeholder="name@email.com"
+                                                   id="email-password-reset" name="emailPasswordReset">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-left">* Pflichtfeld</div>
+                                <div class="col-12 mt-3 mb-5 text-center">
+                                    <button disabled class="btn-bg-orange" id="stepper-submit-password-reset"
+                                            onclick="passwordResetStepper.next()">Abschicken
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div id="test-l-2" class="content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="agb-modal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Allgemeine Gesch&auml;ftsbedingungen
+                der tecpert GmbH, Hudtwalckerstra&szlig;e 12, 22299 Hamburg
+            </h3>
+            <p>Die nachstehenden Allgemeinen Gesch&auml;ftsbedingungen gelten ausschlie&szlig;lich f&uuml;r s&auml;mtliche
+                dem/der Nutzer/in
+                von der tecpert GmbH GmbH unter der gesch&uuml;tzten Wortmarke &#8222;Unfallpaten&#8221; zur Verf&uuml;gung
+                gestellten
+                Dienstleistungen.
+                <br>
+                <br>
+            </p>
+            <ul>
+                <li>
+                    <h3>1.) Leistungen der tecpert GmbH</h3>
+                    <p>Die tecpert GmbH versteht sich als Fulfillment-L&ouml;sung f&uuml;r Unfallgesch&auml;digte und
+                        bietet die
+                        kostenlose Vermittlung von im Zusammenhang mit dem gemeldeten Schadenfall stehenden
+                        Dienstleistungen unterschiedlicher Art an. Die Leistungen der tecpert GmbH umfassen keine
+                        Rechts- oder Steuerberatung.
+                        <br>
+                        <br> Die tecpert GmbH nimmt online oder offline ausschlie&szlig;lich f&uuml;r private Nutzer
+                        oder
+                        Unternehmern zu Zwecken des unternehmerischen Eigenbedarfs (zusammen nachfolgend &#8222;Nutzer/in&#8221;
+                        genannt) unentgeltlich und unverbindlich einen von dem/der Nutzer/Nutzerin mitgeteilten
+                        Schadenfall entgegen und vermittelt auf der Grundlage der online oder offline nutzerseitig
+                        abgegebenen Daten Dienste an die jeweiligen mit tecpert GmbH kooperierenden Dienstleister.
+                        <br>
+                        <br> Durch die Inanspruchnahme der vermittelten Dienstleistungen von tecpert GmbH
+                        (beispielsweise Gutachtenerstellung, anwaltliche Vertretung, Werkstattauftrag, Stellung eines
+                        Mietwagens, Abschluss einer Rechtsschutzversicherung, etc.) sowie durch die &Uuml;bermittlung
+                        der
+                        Kontaktdaten des/der Nutzers/Nutzerin an tecpert GmbH kommt ein Maklervertrag zwischen dem/der
+                        Nutzer/in und tecpert GmbH zustande.
+                        <br>
+                        <br> Gegenstand des Maklervertrages ist jedoch nur die nutzerseitig angegebene Dienstleistung,
+                        die Gegenstand der nutzerseitigen Anfrage ist.
+                        <br>
+                        <br> Soweit der/die Nutzer/in nicht ausdr&uuml;cklich einen dar&uuml;ber hinausgehenden Bedarf
+                        angibt,
+                        entstehen keine Verpflichtungen tecpert GmbH in Bezug auf die Vermittlung anderer
+                        Dienstleistungen.
+                        <br>
+                        <br> Der Vertrag (Dienstleistung, Werkvertrag, Mietvertrag, etc.) kommt nur zwischen dem/der
+                        Nutzer/in und dem/den von ihm ausgew&auml;hlten Dienstleister(n) zustande. Die tecpert GmbH hat
+                        auf
+                        das Zustandekommen bzw. Nichtzustandekommen eines Vertragsverh&auml;ltnisses keinen Einfluss. Ob
+                        ein
+                        Vertrag mit dem/den Dienstleister(n) zustande kommt, ist abh&auml;ngig von den entsprechenden
+                        Bedingungen des jeweiligen Dienstleisters und obliegt ausschlie&szlig;lich dem jeweiligen
+                        Dienstleister. Die tecpert GmbH hat hierauf keinen Einfluss.
+                        <br>
+                        <br>
+                    </p>
+                </li>
+                <li>
+                    <h3>2.) Gew&auml;hrleistung und Haftungsbegrenzung</h3>
+                    <p>Die tecpert GmbH haftet f&uuml;r Vorsatz und grobe Fahrl&auml;ssigkeit sowie unabh&auml;ngig vom
+                        Verschuldensgrad f&uuml;r Sch&auml;den aus der Verletzung des Lebens, des K&ouml;rpers oder der
+                        Gesundheit, die
+                        auf einer Pflichtverletzung eines gesetzlichen Vertreters oder Erf&uuml;llungsgehilfen von
+                        tecpert
+                        GmbH beruhen.
+                        <br>
+                        <br> Die Haftung f&uuml;r die leichtfahrl&auml;ssige Verletzung von vertragswesentlichen
+                        Pflichten - das
+                        sind Verpflichtungen, deren Erf&uuml;llung die ordnungsgem&auml;&szlig;e Durchf&uuml;hrung des
+                        Vertrages &uuml;berhaupt
+                        erst erm&ouml;glichen und auf deren Einhaltung der Vertragspartner regelm&auml;&szlig;ig
+                        vertraut und vertrauen
+                        darf - ist auf den typischen und vorhersehbaren Schaden begrenzt.
+                        <br>
+                        <br> Im &Uuml;brigen ist die Haftung von tecpert GmbH f&uuml;r leichtfahrl&auml;ssige
+                        Pflichtverletzungen
+                        ausgeschlossen.
+                        <br>
+                        <br> Die tecpert GmbH haftet nicht f&uuml;r die eingegebenen Daten.
+                        <br>
+                        <br>
+
+                    </p>
+                </li>
+                <li>
+                    <h3>3.) Pflichten des/der Nutzers/Nutzerin, Verbot der gewerblichen Nutzung</h3>
+                    <p>Die Eingabe und &Uuml;bermittlung der pers&ouml;nlichen Daten durch den/die Nutzer/in erfolgt
+                        online &uuml;ber
+                        die von tecpert GmbH vorbereiteten Eingabemasken oder &uuml;ber andere ausdr&uuml;cklich von
+                        tecpert GmbH
+                        im Einzelfall vorgesehene &Uuml;bermittlungswege.
+                        <br>
+                        <br> F&uuml;r die Vollst&auml;ndigkeit und Richtigkeit s&auml;mtlicher nutzerseitig in die
+                        Eingabemaske
+                        eingegebenen oder sonst &uuml;bermittelten Daten ist ausschlie&szlig;lich der/die Nutzer/in
+                        selbst
+                        verantwortlich.
+                        <br>
+                        <br> Der/Die Nutzer/in ist dazu verpflichtet, den genauen Inhalt der eingegebenen Daten zu
+                        pr&uuml;fen und m&ouml;gliche Abweichungen umgehend zu melden.
+                        <br>
+                        <br> Sofern der/die Nutzer/in falsche, unwahre oder unzureichende Angaben macht, ist tecpert
+                        GmbH berechtigt, die Anfrage unbearbeitet zu lassen. F&uuml;r den Fall der &Uuml;bermittlung von
+                        vors&auml;tzlich falschen oder unwahren pers&ouml;nlichen Daten durch den/die Nutzer/in beh&auml;lt
+                        sich
+                        tecpert GmbH vor, ihn von der Inanspruchnahme der angebotenen bzw. zur Verf&uuml;gung gestellten
+                        Leistungen auszuschlie&szlig;en und Ersatz f&uuml;r dadurch eingetretene Sch&auml;den zu
+                        verlangen.
+                        <br>
+                        <br> Die kostenfreie Nutzung der Leistungen von tecpert GmbH ist nur privaten Nutzern oder
+                        Unternehmern zu Zwecken des unternehmerischen Eigenbedarfs gestattet, d.h. zu Zwecken, die nicht
+                        einer gewerblichen oder selbst&auml;ndigen beruflichen T&auml;tigkeit des/der Nutzers/Nutzerin
+                        zugerechnet
+                        werden k&ouml;nnen. Eine Nutzung der Leistungen von tecpert GmbH zu gewerblichen Zwecken oder im
+                        Rahmen einer selbst&auml;ndigen beruflichen T&auml;tigkeit ist ausdr&uuml;cklich untersagt.
+                        <br>
+                        <br> F&uuml;r jeden Fall der schuldhaften Zuwiderhandlung gegen das Verbot der gewerblichen,
+                        bzw.
+                        selbst&auml;ndig beruflichen Nutzung wird eine Vertragsstrafe in H&ouml;he von Euro 2.500
+                        vereinbart.
+                        tecpert GmbH ist berechtigt, erst nach mehrmaliger Verwirkung der Vertragsstrafe diese im Ganzen
+                        zu verlangen. Die Zusammenfassung mehrerer Einzelakte zu einer rechtlichen Einheit ist
+                        ausgeschlossen (Ausschluss des Fortsetzungszusammenhangs).
+                        <br>
+                        <br> Unbeschadet der Vertragsstrafe kann tecpert GmbH dar&uuml;ber hinaus Schadensersatz geltend
+                        machen und den/die Nutzer/in von der weiteren Inanspruchnahme der angebotenen, bzw. zur
+                        Verf&uuml;gung gestellten Leistungen ausschlie&szlig;en.
+                        <br>
+                        <br> Es verbleiben s&auml;mtliche Urheber-, Nutzungs- oder Schutzrechte bei der tecpert GmbH.
+                        <br>
+                        <br>
+
+                    </p>
+                </li>
+                <li>
+                    <h3>4.) Datenschutz/ Vertraulichkeit</h3>
+                    <p>Der/Die Nutzer/in ist damit einverstanden, dass die tecpert GmbH sach- und personenbezogene Daten
+                        im Sinne des Bundesdatenschutzgesetzes zur Erf&uuml;llung der Vermittlungst&auml;tigkeit an
+                        Dienstleister
+                        online und offline weiterzuleiten berechtigt ist.
+                        <br>
+                        <br> Des Weiteren werden die sach- und personenbezogenen Daten f&uuml;r die Zwecke der
+                        Dienstleistung
+                        gespeichert und intern verarbeitet.
+                        <br>
+                        <br> Es besteht das Recht &uuml;ber die sach- und personenbezogenen Daten Auskunft zu erhalten.
+                        Auch
+                        kann die Berichtigung unrichtiger Daten verlangt werden.
+                        <br>
+                        <br> Beachten Sie bitte die aktuelle Datenschutzerkl&auml;rung.
+                        <br>
+                        <br>
+
+                    </p>
+                </li>
+                <li>
+                    <h3>5.) Schlussbestimmungen, anwendbares Recht, Abweichende Gesch&auml;ftsbedingungen</h3>
+                    <p>Diese Allgemeinen Gesch&auml;ftsbedingungen sind abschlie&szlig;end f&uuml;r die Regelung der
+                        rechtlichen
+                        Beziehungen zwischen tecpert GmbH und dem/der Nutzer/in.
+                        <br>
+                        <br> Von diesen Allgemeinen Gesch&auml;ftsbedingungen abweichenden Bedingungen des/der
+                        Nutzers/Nutzerin gelten nicht.
+                        <br>
+                        <br> F&uuml;r Unternehmer als Vertragspartner gilt die nachfolgende Salvatorische Klausel:
+                        Sollten
+                        einzelne Bestimmungen dieser AGB unwirksam bzw. undurchf&uuml;hrbar sein oder werden, so wird
+                        davon
+                        die Wirksamkeit/Durchf&uuml;hrbarkeit der AGB im &Uuml;brigen nicht ber&uuml;hrt. Die
+                        Vertragsparteien
+                        verpflichten sich, die unwirksame/undurchf&uuml;hrbare Bestimmung durch eine wirksame/durchf&uuml;hrbare
+                        Bestimmung zu ersetzen, die dem Zweck der unwirksamen/undurchf&uuml;hrbaren Bestimmung nahe
+                        kommt
+                        oder entspricht. Gleiches gilt f&uuml;r den Fall einer Regelungsl&uuml;cke. F&uuml;r private
+                        Nutzer als
+                        Vertragspartner hingegen gelten die gesetzlichen Bestimmungen.
+                        <br>
+                        <br> Die vertraglichen Beziehungen der Parteien richten sich nach dem Recht der Bundesrepublik
+                        Deutschland unter Ausschluss der Kollisionsvorschriften des EGBGB.
+                        <br>
+                        <br> Soweit der/die Nutzer/in Kaufmann/Kauffrau, eine juristische Person des &ouml;ffentlichen
+                        Rechts
+                        oder des &ouml;ffentlich-rechtlichen Sonderverm&ouml;gens ist, ist als ausschlie&szlig;licher
+                        Gerichtsstand der
+                        Landgerichtsbezirk Hamburg vereinbart. F&uuml;r private Nutzer gelten die gesetzlichen
+                        Zust&auml;ndigkeitsregelungen.
+                        <br>
+                        <br> Hamburg, den 09.08.2019
+
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+<script type="text/javascript" src="assets/libs/bs-stepper/js/bs-stepper.js"></script>
+<script type="text/javascript" src="assets/js/mobile-navigation.js"></script>
+<script type="text/javascript" src="assets/js/passwort-reset/password-reset.js"></script>
+
+</body>
+
+</html>
